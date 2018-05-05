@@ -1,0 +1,405 @@
+.mui-bar {
+	background: #4a5c74;
+}
+.mui-bar a,.mui-title {
+	color: #FFFFFF;
+}
+/*修改个人资料首页*/
+.mui-content {
+	overflow-x:hidden;
+}
+.perfect-data-header {
+	height: 100px;
+	text-align: center;
+	background: #FFFFFF;
+}
+.perfect-data-header img {
+	height: 50px;
+	width: 50px;
+	border-radius: 30px;
+	margin-top: 25px;
+}
+.perfect-data-input {
+	height: 52px;
+	background: #FFFFFF;
+	margin-bottom: 13px;
+}
+.perfect-data-input span {
+	width: 74.6%;
+	margin-left: 13%;
+	display: inline-block;
+	height: 25px;
+	margin-top: 13px;
+}
+.selected-sex {
+	text-align: center !important;
+}
+
+.selected input {
+	color: #66CC99 !important;
+	
+}
+.selected{
+	border-bottom: 1px solid #66CC99 !important;
+}
+.perfect-data-input span input {
+	width: 45.7%;
+	border: 1px solid #b4b4b4;
+	border-radius: 0px;
+	color: #999999;
+	height: 25px;
+	line-height: 10px;
+}
+.perfect-data-input span input:first-child {
+	margin-right: 18px;
+}
+.perfect-data-input .nickname{
+	width: 50%;
+	margin-left: 25%;
+	text-align: center;
+	border-radius: 0px;
+	border: 0px;
+	height: 100%;
+	font-size: 14px;
+}
+.perfect-data-choose li{
+	height: 52px;
+	background: #FFFFFF;
+	font-size: 14px;
+	color: #666666;
+	line-height: 52px;
+	margin-bottom: 1px;
+	padding:0px 10px;
+}
+.perfect-data-choose li a{
+	color: #999999;
+	line-height: 52px;
+} 
+.perfect-data-choose li span {
+	margin-top: 14px;
+}
+.perfect-data-choose li span .mui-switch{
+	width: 45px;
+	height: 23px;
+}
+.perfect-data-choose li span .mui-switch-handle{
+	height: 20px;
+}
+.perfect-data-lang ul{
+	/*height: 52px;*/
+	background: #FFFFFF !important;
+	border:0px !important;
+	padding-left: 10px !important;
+}
+.perfect-data-lang ul li{
+	padding: 0px !important;
+    height: 52px;
+    border: 0px !important;
+    margin-top: 11px !important;
+    margin-right: 10px !important;
+}
+.perfect-data-lang li:last-child {
+	margin-right: -20px !important;
+}
+.perfect-data-lang ul li input{
+	width: 96%;
+    font-size: 12px;
+    color: #999999;
+    border-radius: 0px;
+    height: 25px;
+    line-height: 0px;
+    margin-top: 3px;
+}
+.foreigner-cate {
+	position: absolute;
+    margin-top: 14px;
+    margin-left: -20px;
+    width: 9px;
+    height: 5px;
+}
+.perfect-special-choose {
+	color: #66CC99 !important;
+	border: 0px !important;
+}
+.guide-service {
+	margin-top: 13px;
+	margin-bottom: 1px;
+}
+/*.guide-service li:last-child {
+	line-height: 20px;
+}*/
+.perfect-switch-add li{
+	height: 38px;
+	background: #FFFFFF;
+	line-height: 38px;
+	color: #666666;
+	font-size: 14px;
+	padding: 0px 10px;
+}
+.perfect-switch-add li:last-child{
+	line-height: 20px;
+}
+.perfect-switch-add li:last-child{
+	color: #66CC99;
+	font-size: 13px;
+	padding-left: 20%;
+}
+.perfect-switch-add li span {
+	margin-top: 8px;
+}
+.perfect-switch-add li span .mui-switch{
+	width: 45px;
+	height: 23px;
+	border: 1px solid #DDDDDD !important;
+	}
+.perfect-switch-add li span .mui-switch-handle{
+	height: 22px;
+}
+
+
+/*修改个人资料第二页*/
+.perfect-data-select {
+	background:transparent;
+}
+.perfect-data-select li {
+	height: 52px;
+	margin-bottom: 1px;
+	background: #FFFFFF;
+	font-size: 14px;
+	color: #666666;
+	padding: 0px 10px;
+	line-height: 52px;
+}
+.perfect-data-select li span{
+	color: #999999;
+	position: ABSOLUTE;
+    right: 0px;
+}
+.perfect-data-select a {
+	line-height: 53.5px;
+	color: #999999;
+}
+
+.perfect-data-title {
+	height: 43px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 45px;
+	color: #666666;
+}
+.perfect-hobby-cate ul {
+	background-color: transparent !important;
+	height: 43px;    	
+}
+.perfect-hobby-cate ul li{
+	height: 43px;
+	padding: 0px !important;
+	/*border: 0px !important;*/
+}
+.perfect-hobby-cate ul li:first-child {
+	margin-left: 0% !important;
+}
+.perfect-hobby-cate ul li input{
+	height: 98%;
+	width: 100%;
+	border: 0px;
+	border-radius: 0px;
+	color: #999999;
+}
+
+/*正在录制中*/
+.perfect-data-voice {
+	height: 92px;
+	text-align: center;
+}
+.perfect-data-voice span {
+	height: 64px;
+	width: 83px;
+	margin: auto;
+}
+.perfect-data-voice li {
+	border: 0px !important;
+}
+.perfect-data-voice li:first-child {
+	text-align: right !important;
+}
+.perfect-data-voice li:first-child img{
+	margin-right: 30px;
+}
+.perfect-data-voice li:first-child p{
+	margin-right: 20px;
+}
+.perfect-data-voice li:last-child {
+	text-align: left !important;
+}
+.perfect-data-voice li:last-child img{
+	width: 35px;
+	height: 35px;
+}
+.perfect-data-voice img{
+	width: 27px;
+	height: 35px;
+	margin-top: 15px;
+}
+.perfect-data-voice p{
+	line-height: 25px;
+	font-size: 14px;
+	color: #666666 !important;
+}
+
+/*/已录制完*/
+.perfect-voice-del {
+	height: 92px;
+	text-align: center;
+}
+.perfect-voice-del span {
+	height: 64px;
+	width: 83px;
+	margin: auto;
+}
+.perfect-voice-del li {
+	border: 0px !important;
+}
+.perfect-voice-del li:first-child {
+	text-align: right !important;
+}
+/*.perfect-voice-del li:first-child img{
+	margin-right: 30px;
+}*/
+.perfect-voice-del li:first-child p{
+	margin-right: 15px;
+}
+.person-voice-time {
+	display: inline-block !important;
+	color: #999999 !important;
+	font-size: 12px;
+	padding: 3px 0px !important;
+	    position: ABSOLUTE !important;
+    margin-top: 23px !important;
+    margin-left: -10px !important;
+}
+.perfect-voice-del li:last-child {
+	text-align: left !important;
+}
+.perfect-voice-del li:last-child img{
+	width: 35px;
+	height: 35px;
+}
+.perfect-voice-del li:last-child p{
+	padding-left: 5px;
+}
+.perfect-voice-del img{
+	width: 35px;
+	height: 35px;
+	margin-top: 15px;
+	margin-right: 25px;
+}
+.perfect-voice-del p{
+	line-height: 25px;
+	font-size: 14px;
+	color: #666666 !important;
+}
+/*.perfect-voice-del li p:first-child{
+	padding-right: 20px !important;
+}*/
+
+
+/*未几点录制自我介绍*/
+.unclick-voice {
+	height: 92px;
+	text-align: center;
+}
+.unclick-voice span {
+	height: 64px;
+	width: 83px;
+	margin: auto;
+}
+.unclick-voice li {
+	border: 0px !important;
+	text-align: center;
+}
+.unclick-voice img{
+	width: 27px;
+	height: 35px;
+	margin-top: 5px;
+}
+.unclick-voice p{
+	line-height: 20px;
+	font-size: 14px;
+	color: #666666 !important;
+}
+.perfect-data-textarea {
+	height: 113px;
+}
+.perfect-data-textarea textarea {
+	height: 100%;
+	width: 100%;
+	border: 0px;
+	font-size: 12px;
+	color: #b4b4b4;
+}
+.perfect-btn-group {
+	height: 40px;
+	background: #FFFFFF;
+	border-top: 1px solid #66CC99;
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+}
+.perfect-btn-group input {
+	width: 48.3%;
+	height: 40px;
+	border: 0px;
+	border-radius: 0px;
+	color: #66CC99;
+}
+.perfect-btn-group span {
+	width: 1px;
+    height: 40px;
+    margin-top: 0px;
+    display: inline-block;
+    border-left: 1px solid #E5E5E5;
+}
+.unclick-voice li{
+	text-align: center !important;
+}
+.perfect-img {
+	/*text-align: center;*/
+	padding-top: 20px;
+    padding-bottom: 50px;
+    /*padding-left: 10px;*/
+}
+/*.perfect-img img {
+	width: 65px;
+	height: 65px;
+}*/
+.select-person-sex {
+	color: #66CC99 !important;
+	border: 1px solid #66CC99 !important;
+}
+.free-house {
+	margin-bottom: 60px;
+}
+/*上传图片*/
+.add_imgBox{
+	padding: 0 10px;
+	/*margin-bottom: 30px;*/ 
+}
+.add_imgBox>img{
+	width: 20%;	
+	margin-right: 5%;
+}
+@media only screen and (min-width: 100px) and (max-width: 373px) {
+	.add_imgBox>img{
+		/*margin-right: 6.5%;*/
+	}
+}
+.add_img{
+	width: 18.9%;
+	margin: 0 auto;
+	/*margin-bottom: 20px;*/
+	display: inline-block;
+}
+.add_img img{
+	width: 100%;
+}

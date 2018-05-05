@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>编辑提醒</title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/addNotification.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav nav">
+			<span class="back mui-action-back background"></span>
+			<h1 class="mui-title" id='pageTitile'></h1>
+			<span id="send" class="mui-pull-right send-dynamic">保存</span>
+		</header>
+		<div class="mui-content" id='content'>
+		
+		</div>
+	</body>
+		<script src="../js/jquery-2.1.1.min.js"></script>
+		<script src="../js/functions.js"></script>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/mui.picker.min.js"></script>
+		<script src="../js/cache.js"></script>
+		<script src="../js/zs.js"></script>
+		<script src="../js/zs.remind.js"></script>
+		<script src="../template/remind.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/edit_remind.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			new zs.Init('EditRemind');
+		</script>
+</html>

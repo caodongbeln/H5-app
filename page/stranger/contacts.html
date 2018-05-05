@@ -1,0 +1,15 @@
+{{each list}}
+<ul class="mui-table-view">
+	{{if $value.conversationTitle !== '新朋友' }}
+	<li class="mui-table-view-cell mui-media">
+		<a class="">
+			<img class="mui-media-object mui-pull-left" src="../images/renwuzhushou.png">
+			<div class="mui-media-body">
+				<span>{{$value.conversationTitle}} ({{$value.unreadMessageCount}})</span>
+				<p class='mui-ellipsis'>{{$value.latestMessage.content.message.content}}</p>
+			</div>
+		</a>
+	</li>	
+	{{/if}}
+</ul>
+{{/each}}

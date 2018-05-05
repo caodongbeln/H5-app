@@ -1,0 +1,281 @@
+.mui-table-view {
+	background-color: transparent;
+}
+
+.mui-table-view:after {
+	height: 0;
+}
+
+.mui-table-view-cell {
+	padding: 11px 0px;
+	padding-top: 10px;
+	height: 70px;
+	border: 0px !important;
+}
+
+.padding-content {
+	margin-top: 0px !important;
+}
+
+.mui-table-view:before {
+	background-color: #f0eff4;
+}
+
+.mui-table-view-cell>a:not(.mui-btn) {
+	padding: 10px 10px 0;
+}
+
+.mui-navigate-right:after,
+.mui-push-left:after,
+.mui-push-right:after {
+	top: 60%;
+}
+
+.mui-navigate-right:after,
+.mui-push-right:after {
+	right: 10px;
+}
+
+.benrenerweima {
+	float: right;
+	width: 22px !important;
+	height: 22px;
+	position: absolute;
+	right: 15px;
+	top: 24px;
+}
+
+.setting-caifu {
+	display: table;
+	width: 100%;
+	border-top: 1px solid #F0EFF4 !important;
+}
+
+.setting-caifu li {
+	height: 44px !important;
+}
+
+.setting-caifu {
+	border-left: none;
+}
+
+.lingsheng,
+.jinbi,
+.youhuiquan,
+.yangshengqi {
+	display: inline-block;
+	vertical-align: top;
+	width: 22px;
+	height: 22px;
+	margin-top: 5px;
+}
+
+.lingsheng+span,
+.jinbi+span,
+.youhuiquan+span,
+.yangshengqi+span {
+	line-height: 34px;
+	font-size: 14px;
+}
+
+.jinbi {
+	background-image: url(../images/jinbi.png);
+}
+
+.caifufenlei {
+	float: left;
+	width: 33.33%;
+	padding-bottom: 5px !important;
+}
+
+.lingsheng {
+	background-image: url(../images/lingsheng.png);
+}
+
+.setting-caifu .mui-table-view-cell {
+	padding: 0 8px 0 15px;
+	/*padding-top: 17px;*/
+}
+
+.caifufenlei>div {
+	text-align: center;
+	margin-top: 5px;
+	height: 34px;
+	width: 100%;
+}
+
+.setting-caifu .caifufenlei {
+	padding: 0;
+	/*padding-top: 17px;*/
+}
+
+.youhuiquan {
+	background-image: url(../images/youhuiquan.png);
+}
+
+.yangshengqi {
+	width: 24px;
+	height: 19px;
+	background-image: url(../images/yangshengqi.png);
+}
+
+.xiabanbufen li {
+	height: 44px;
+	/*padding-top: 10px;*/
+}
+
+.dongtai,
+.huodong,
+.daoju,
+.shangdian,
+.shuikanguowo,
+.yinsishezhi,
+.jinrirenwu {
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	/*padding-top: 10px;*/
+	/*margin-top: 11.5px;*/
+	vertical-align: middle;
+}
+
+.dongtai+span,
+.huodong+span,
+.daoju+span,
+.shangdian+span,
+.shuikanguowo+span,
+.yinsishezhi+span,
+.jinrirenwu+span {
+	line-height: 44px;
+	font-size: 14px;
+}
+
+.dongtai {
+	background-image: url(../images/dongtai.png);
+}
+
+.huodong {
+	background-image: url(../images/huodong.png);
+}
+
+.daoju {
+	background-image: url(../images/daoju.png);
+}
+
+.shangdian {
+	background-image: url(../images/shangdian.png);
+}
+
+.shuikanguowo {
+	background-image: url(../images/shuikanguowo.png);
+}
+
+.yinsishezhi {
+	background-image: url(../images/yinsishezhi.png);
+}
+
+.jinrirenwu {
+	background-image: url(../images/jinrirenwu.png);
+}
+
+.xiabanbufen-box {
+	background-color: #f0eff4;
+}
+
+.xiabanbufen-box:before {
+	content: '';
+	display: table;
+	width: 0;
+	height: 0;
+}
+
+.xiabanbufen {
+	background-color: #fff;
+	margin-top: 10px;
+	border-top: none !important;
+}
+
+
+/*最新动态的头像和红点*/
+
+.zuixindongtai {
+	width: 30px;
+	/*height: 30px;*/
+	margin-top: 8px;
+	margin-right: 25px;
+}
+
+.zuixindongtai>img {
+	width: 100%;
+}
+
+.hongdian {
+	right: 0;
+	top: 0;
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	background-image: url(../images/hongdian.png);
+}
+
+.hongdian img {
+	width: 100%;
+}
+
+.set {
+	background-image: url(../images/set.png);
+	background-repeat: no-repeat;
+	background-size: 22px;
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	margin-top: 11px;
+	margin-right: 10px;
+}
+
+
+/*二维码弹出框*/
+
+.qrcode {
+	background-color: #fff;
+	width: 255px;
+	height: 379px;
+	padding-top: 10px;
+}
+
+.qrcode p {
+	font-size: 14px;
+	text-align: center;
+	margin-top: 6px;
+}
+
+.qrcode .info {
+	height: 58px;
+}
+
+.qrcode .info img {
+	width: 58px;
+	height: 58px;
+	float: left;
+	margin-left: 22px;
+	margin-right: 12px;
+	margin-top: 0px !important;
+}
+
+.qrcode .info div {
+	display: inline-block;
+	color: #999;
+	font-size: 12px;
+	margin-top: 10px;
+}
+
+.qrcode .info div span {
+	color: #666;
+}
+
+.qrcode img {
+	margin-top: 0px;
+	margin-left: 22px;
+	width: 212px;
+}
+

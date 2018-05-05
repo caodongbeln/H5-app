@@ -1,0 +1,6 @@
+<a class="mui-icon-left return-button mui-action-back">
+	<img src="../images/return.png" />
+</a>
+<h1 class="mui-title" style="width: 50%;margin: 0 auto;">{{username}}</h1>
+<div class="icon-custom-share mui-pull-right"><img src="../images/share.png" data-share /></div>
+<a class="icon-custom-more mui-pull-right" style="display: table;" href="#topPopover" ><img src="../images/more.png"/></a> 

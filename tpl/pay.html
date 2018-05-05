@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>去结算</title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/go_pay.css" />
+		<link rel="stylesheet" href="../css/Notification_list.css" />
+		<style type="text/css">
+			.graphic-list-count {
+				display: inline-block;
+				float: right;
+				margin-right: 10px;
+			}
+			
+			.mui-numbox {
+				height: 22px;
+				border-radius: 0px;
+			}
+			
+			.mui-numbox-btn-minus {
+				padding-right: 5px !important;
+			}
+			
+			.number-days {
+				height: 22px;
+				margin-top: -11px;
+			}
+			
+			.mui-input-numbox {
+				text-align: center;
+			}
+			
+			.mui-numbox-btn-plus {
+				padding-right: 5px !important;
+			}
+			
+			.graphic-list-count span {
+				color: #666 !important;
+			}
+			
+			button {
+				border: none;
+			}
+			
+			.mui-table-view-cell {
+				padding: 0;
+				padding-left: 10px;
+			}
+			
+			.mui-active {
+				background-color: transparent !important;
+			}
+			
+			.none {
+				display: none !important;
+			}
+			.pay_coupon {
+				margin-top: 9px;
+				margin-bottom: 9px;
+			}
+			.pay_coupon li span:first-child {
+				float: left;
+				margin-left: 0px;
+			}
+			.pay_coupon li span:nth-child(2) {
+				margin-left: 10px;
+				background-color: #e60012;
+				height: 12px;
+				width: 46px;
+				font-size: 9px;
+				color: #FFFFFF;
+				padding-left: 5px;
+				padding-right: 5px;
+			}
+			.pay_coupon div {
+				color: #f59901;
+				line-height: 10px;
+				text-align: center !important;
+				width: 100px !important;
+				background-image:url(../images/pull_right.png) !important;
+				background-size:11px 19px !important;
+				background-repeat:no-repeat !important;
+				background-position:right !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav nav">
+			<span class="back mui-action-back background"></span>
+			<h1 class="mui-title" id="toolName"></h1>
+		</header>
+		<div class="mui-content" id="payContent">
+
+		</div>
+		<script src="../js/jquery-2.1.1.min.js"></script>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/cache.js"></script>
+		<script src="../js/zs.js"></script>
+		<script src="../template/pay.min.js"></script>
+		<script src="../js/go_pay.js"></script>
+		<script type="text/javascript">
+			new zs.Init('Gopay');
+			
+		</script>
+	</body>
+
+</html>

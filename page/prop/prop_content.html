@@ -1,0 +1,29 @@
+{{if list != null || list != undefined || list != ''}}
+<ul class="mui-table-view">
+	{{each list}}
+	<li class="mui-table-view-cell mui-media">
+		<a href="javascript:;">
+			<img class="mui-media-object mui-pull-left" src="../images/default_img.png" data-src="{{$value.toolsInfo.icon}}">
+			<div class="mui-media-body">
+				<p class="line-height-14"><span id="" class="color_333 font_14" style="line-height: 18px;">{{$value.toolsInfo.name}}</span>
+					<!--默认为月份-->
+					{{if $value.type == 0}}
+					<i class="riqibiaoshi">{{if $value.tid == 3}}1小时{{else}}周{{/if}}</i>
+					{{else if $value.type == 1}}
+					<i class="riqibiaoshi">{{if $value.tid == 3}}3小时{{else}}月{{/if}}</i>
+					{{else if $value.type == 2}}
+					<i class="riqibiaoshi">{{if $value.tid == 3}}5小时{{else}}季{{/if}}</i>
+					{{else}}
+					<i class="riqibiaoshi">{{if $value.tid == 3}}7小时{{else}}年{{/if}}</i>
+					{{/if}}
+				</p>
+				<p class="line-height-12" style="text-align: right;margin-top: -15px;width: 80px;float: right;">
+					{{$value.usable}}个未使用
+				</p>
+				<p class="line-height-12" style="margin-top: 15px;"><span id="" class="mui-ellipsis mui-ellipsis-xiankuan" style="width: 100%;">{{$value.toolsInfo.desc}}</span></p>
+			</div>
+		</a>
+	</li>
+	{{/each}}
+</ul>
+{{/if}}

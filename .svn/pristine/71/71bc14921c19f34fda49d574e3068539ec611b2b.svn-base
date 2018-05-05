@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/alert.css"/>
+    <script type="text/javascript" charset="UTF-8">
+      	mui.init(); 
+    </script>
+</head>
+<body>
+	<div class="mui-content">
+	    <div class="activity-alert">
+	    	<div class="activity-alert-title">
+	    		友情提示
+	    	</div>
+	    	<div class="activity-alert-content">
+	    		请先沟通一致,再行发送,否则可能会被拒绝。确定继续发送？
+	    	</div>
+	    	<ul class="mui-table-view mui-grid-view mui-grid-9 activity-alert-group">
+				<li class="mui-table-view-cell mui-media mui-col-xs-6">
+					<input type="button" name="partner" id="partner" value="取消"/>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-6">
+					<input type="button" name="partner" id="partner" value="确定"/>
+				</li>
+			</ul>
+	    </div>
+	    <!--<div class="activity-alert">
+	    	<div class="activity-alert-title">
+	    		请确定您提供的类别
+	    	</div>
+	    	<div class="activity-alert-content">
+				<input type="button" name="guide" id="guide" value="免费向导"/>
+				<input type="button" name="guide" id="guide" value="免费住宿"/>
+	    	</div>
+	    	<ul class="mui-table-view mui-grid-view mui-grid-9 activity-alert-group">
+				<li class="mui-table-view-cell mui-media mui-col-xs-12">
+					<input type="button" name="partner" id="partner" value="取消"/>
+				</li>
+			</ul>
+	    </div>-->
+	</div>
+</body>
+</html>

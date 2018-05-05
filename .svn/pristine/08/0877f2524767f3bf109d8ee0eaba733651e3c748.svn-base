@@ -1,0 +1,138 @@
+p{
+	margin-bottom: 0;
+}
+.simplify-dynamic-box{
+	/*padding-left: 10px;*/
+	/*padding-bottom: 10px;*/
+	background-color: #fff;
+	width: 100%;
+	display: table;
+		padding-top: 6px;
+}
+.Head-portrait{
+	width: 50px;
+	/*display: inline-block;*/
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.Head-portrait img{
+	width: 100%;
+}
+.simplify-dynamic{
+	/*display: inline-block;*/
+	margin-top: -3px;
+	width: 100%;
+	padding-left: 70px;
+}
+.release-time{
+	margin-right: 10px;
+}
+.positioning-release{
+	width: 100px;
+	display: inline-block;
+	margin-left: 22px;
+	line-height: 12px;
+}
+.positioning-icon{
+	width: 22px;
+	height: 22px;
+	background-image: url(../images/location-orange.png);
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 10px;
+	margin-top: 3px;
+}
+.distance-release{
+	vertical-align: top;
+}
+.my-speak-content{
+	line-height: 29px;
+}
+.mui-grid-view.mui-grid-9{
+	background-color: transparent;
+	border: none !important;
+}
+.mui-grid-view.mui-grid-9 .mui-table-view-cell{
+	padding: 0 2.5px;
+}
+
+.picture-box{
+	padding-right: 10px;
+	width: 100%;
+}
+.picture-box img{
+	width: 100%;
+}
+.myimg img{
+	width: 100%;
+	/*height: 50px;*/
+}
+.dianzan-talk-share{
+	display: table;
+	width: 100%;
+}
+.dianzan-talk-share i{
+	width: 32px;
+	height: 22px;
+	display: inline-block;
+	float: right;
+	background-size: 22px;
+}
+.pinglun-dianji-icon{
+	background-image: url(../images/pinglun-icon-44.png);
+	/*background-size: ;*/
+}
+.dianzan-dianji-icon{
+	background-image: url(../images/dianzanxiao.png);
+}
+.fenxiang-dianji-icon{
+	background-image: url(../images/fenxiang-icon-44.png);
+}
+.dianzan-dianji-icon-active{
+	background-image: url(../images/dianzanxiao-active.png);
+}
+.mui-grid-view.mui-grid-9 .mui-table-view-cell{
+	border: none !important;
+}
+.xiaotouxiang-big-box,.xiaotouxiang-box{
+	width: 100%;
+}
+.dianzan-xiao{
+	width: 30px;
+	height: 30px;
+	background-image: url(../images/dianzanxiao.png);
+	display: inline-block;
+	float: left;
+}
+.xiaotouxiang-box{
+	padding-left: 8px;
+}
+.xiaolouxiang-ji{
+	display: table;
+}
+.xiaotouxiang-box li{
+	float: left;
+	width: 36px;
+	height: 36px;
+	padding: 0 2px;
+}
+.xiaotouxiang-box li img{
+	width: 32px;
+	height: 32px;
+}
+
+.all-pinglun-zhankai,.all-pinglun-shouqi{
+	bottom:3px;
+	right: 10px;
+}
+
+.simplify-dynamic-box{
+	margin-top: 10px;
+}
+.simplify-dynamic-box:nth-child(1){
+	margin-top: 0;
+}
+.footer-dynamic-detail{
+	bottom: 0;
+	z-index: 1000;
+}

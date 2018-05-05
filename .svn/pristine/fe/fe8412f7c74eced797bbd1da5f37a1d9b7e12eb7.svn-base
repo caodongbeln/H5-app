@@ -1,0 +1,33 @@
+input[type=search]{
+	width: 100%;
+	border-radius:0 ;
+	background-color: #fff;
+	height: 32px;
+	line-height: 32px;
+	margin-top: 3px;
+}
+.margin-top-0{
+	margin-top: 0 !important;
+}
+.mui-search{
+	height: 38.5px;
+}
+.mui-media-body .mui-ellipsis span{
+	display: inline-block;
+}
+.mui-media-body p{
+	margin-top: 0;
+}
+.xuanxiang-tongyi{
+	padding: 6px 12px;
+	background-color: #028ce6;
+}
+.sousuoanniu{
+	width: 36px;
+	height: 100%;
+	background-color: #79bded !important;
+	display: inline-block;
+	line-height: 34px;
+	margin-top: 2px;
+	text-align: center;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>定位足迹</title>
+		<script src="../js/mui.min.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/Positioning_footprint.css" />
+		<style type="text/css">
+			.mui-content {
+				padding: 10px;
+			}
+			
+			.sanjiao-icon {
+				width: 1px;
+				height: 1px;
+				border: 10px solid transparent;
+				border-top-color: red;
+				display: block;
+				margin-left: 9%;
+			}
+			
+			p {
+				margin-bottom: 0;
+				line-height: 16px;
+				font-size: 14px;
+				/*color: #666;*/
+				4
+			}
+			
+			#map {
+				width: 100%;
+				position: fixed;
+				top: 45px;
+				bottom: 0px;
+				line-height: 200px;
+				text-align: center;
+				background: #FFFFFF;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+						<!--
+            	作者：949961306@qq.com
+            	时间：2016-06-08
+            	描述：控制播放栏一行
+            -->
+			<div class="positioning-nav-box" id='content'>				
+				<div class="positioning-nav releative">
+					<div class="positioning-switch">
+						<ul class="mui-table-view mui-grid-view mui-grid-9 sangeanniu">
+							<li id='slowDown' class="mui-table-view-cell mui-media mui-col-xs-4">
+								<span class="sangeanniu"><img src="../images/Shape 3 copy.png"/></span>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<span class="sangeanniu">
+									<img src="../images/Shape 3.png" id="bofang"/>
+									<img src="../images/Shape 4 copy.png" id="zanting"/>
+								</span>
+							</li>
+							<li id='speedUp' class="mui-table-view-cell mui-media mui-col-xs-4">
+								<span class="sangeanniu"><img src="../images/kuaijin-right.png"/></span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../js/jquery-2.1.1.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/cache.js"></script>
+	<script src="../js/zs.js"></script>
+	<script src="../js/functions.js"></script>
+	<script src="../template/print_tools.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/print_tools.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		new zs.Init('Print_tools');
+	</script>
+
+</html>

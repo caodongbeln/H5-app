@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>联系人</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/Notification_list.css" />
+		<link rel="stylesheet" href="../css/list_img.css" />
+		<link rel="stylesheet" type="text/css" href="../css/message.css" />
+		<link rel="stylesheet" type="text/css" href="../css/yincanggundongtiao.css"/>
+		<style type="text/css">
+			.mui-segmented-control.mui-segmented-control-inverted {
+				height: 60px;
+			}
+			
+			.mui-media-body p {
+				line-height: 12px;
+			}
+			
+			.mui-scroll-wrapper,
+			.mui-slider {
+				overflow: visible;
+			}
+			
+			.mui-media-object img {
+				width: 100%;
+			}
+			
+			.mui-control-content {
+				background-color: #f0eff4;
+				min-height: 200px;
+			}
+			
+			.mui-content {
+				padding-bottom: 50px;
+			}
+			
+			li:active {
+				background: #EDFAFF !important;
+			}
+			
+			li a:active {
+				background: #EDFAFF !important;
+			}
+			.mui-ellipsis {
+				height: 17px;
+			}
+			.mui-table-view .mui-media-body span {
+				margin-top: 0px !important;
+			}
+			html,body,.mui-content{
+				width: 100%;
+				height: 100%;
+			}
+			.mui-content{
+				overflow-y: auto;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav nav">
+			<h1 class="mui-title">联系人</h1>
+			<span class="jiahaobaise background" data-href="add_friend.html"></span>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view">
+				<!--<li class="mui-table-view-cell mui-media" id="mission" href="task_assistant.html">
+						<a class="">
+							<div class="mui-media-object mui-pull-left releative">
+								<img src="../images/renwuzhushou.png">
+								<i class="weidu-hongdian absolute color-fff" style="display: none" id="mission_unread">0</i>
+							</div>
+
+							<div class="mui-media-body">
+								<span>任务助手</span>
+								<p class='mui-ellipsis' id="mission_content"></p>
+							</div>
+						</a>
+					</li>-->
+				<!--<li class="mui-table-view-cell mui-media" id="notice" href="location_notice.html">
+					<a class="">
+						<div class="mui-media-object mui-pull-left releative">
+							<img src="../images/tongzhizhushou.png">
+							<i class="weidu-hongdian absolute color-fff" style="display: none" id="notice_unread">0</i>
+						</div>
+						<div class="mui-media-body">
+							<span>通知助手</span>
+							<p class='mui-ellipsis' id="notice_content"></p>
+						</div>
+					</a>
+				</li>-->
+				<li class="mui-table-view-cell mui-media" id="remind" hrefs="location_remind.html">
+					<a class="">
+						<div class="mui-media-object mui-pull-left releative">
+							<img src="../images/weizhitixingzhu shou.png">
+							<i class="weidu-hongdian absolute color-fff" style="display: none" id="remind_unread">0</i>
+						</div>
+						<div class="mui-media-body">
+							<span>提醒助手</span>
+							<p class='mui-ellipsis' id="remind_content"></p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media" id="weizhi" hrefs="position_open.html">
+					<a class="">
+						<div class="mui-media-object mui-pull-left releative">
+							<i class="weidu-hongdian absolute color-fff" style="display: none" id="weizhi_unread">0</i>
+							<img src="../images/gongkaiweizhitixing.png">
+						</div>
+						<div class="mui-media-body">
+							<span>位置关系助手</span>
+							<p class='mui-ellipsis' >有
+								<lebal id="weizhi_content">0</lebal>个好友申请查看位置</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media" id="new_friend" hrefs="new_friend.html">
+					<a class="">
+						<div class="mui-media-object mui-pull-left releative">
+							<i class="weidu-hongdian absolute color-fff" style="display: none" id="new_friend_unread">0</i>
+							<img src="../images/addFriend.png">
+						</div>				
+						<div class="mui-media-body">
+							<span>新的朋友</span>
+							<p class='mui-ellipsis'>有
+								<lebal id="new_friend_count">0</lebal>个好友申请等待通过</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view" id="friend_list">
+
+			</ul>
+		</div>
+		<nav id='nav' class="mui-bar mui-bar-tab nav-footer"></nav>
+	</body>
+	<script src="../js/jquery-2.1.1.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/cache.js"></script>
+	<script src="../js/functions.js"></script>
+	<script src="../js/zd.js"></script>
+	<script src="../js/zs.js"></script>
+	<script src="../template/contacts.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/contacts.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		new zs.Init('Contacts');
+	</script>
+</html>

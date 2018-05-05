@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>默认的陌生人详情页</title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/big_img.css" />
+		<link rel="stylesheet" type="text/css" href="../css/The_personal_data.css" />
+		<link rel="stylesheet" type="text/css" href="../css/yincanggundongtiao.css"/>
+		<style type="text/css">
+			.shouyedituxianshi {
+				padding: 6px 10px;
+			}
+			.mui-btn-block{
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+			.riqixingming .mui-table-view-cell.mui-active{
+				background-color: #fff;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav nav">
+			<span class="back mui-action-back background"></span>
+			<h1 class="mui-title" id="stranger_title">个人资料</h1>
+			<!--<span id="send-dynamic" class="mui-pull-right send-dynamic">下一步</span>-->
+		</header>
+		<div class="mui-content" id="strangerDetail" style="padding-bottom: 1px;">
+
+		</div>
+		<script src="../js/jquery-2.1.1.min.js"></script>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/cache.js"></script>
+		<script src="../js/zs.js"></script>
+		<script src="../js/mui.zoom.js"></script>
+		<script src="../js/mui.previewimage.js"></script>
+		<script src="../js/user_info.js"></script>
+		<script src="../template/stranger_detail.min.js"></script>
+		<script src="../js/personal.js"></script>
+		<script type="text/javascript">
+			new zs.Init('Stranger');
+		</script>
+	</body>
+
+</html>

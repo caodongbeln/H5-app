@@ -1,0 +1,49 @@
+.identity-change {
+	font-size: 14px;
+	height: 44px;
+	background: #FFFFFF;
+	border-bottom: 1px solid #f0eff4;
+	padding-left: 10px;
+	color: #666;
+	line-height: 44px;
+}
+.identity-change input {
+	border: 0px;
+	height: 43px;
+	/*width: 80%;*/
+}
+#color_333 {
+	color: #666 !important;
+}
+.identity-change span {
+	display: inline-block;
+	width: 21px;
+	height: 22px;
+	background-image:url(../images/close.png);
+	background-size:21px;
+	background-repeat:no-repeat ;
+	margin-top: 11px;
+}
+.mui-input-row .mui-input-clear~.mui-icon-clear, .mui-input-row .mui-input-password~.mui-icon-eye, .mui-input-row .mui-input-speech~.mui-icon-speech {
+	margin-top: 0px !important;
+}
+.mui-icon-clear:before, .mui-icon-close-filled:before {
+	content:none !important;
+	}
+.mui-plus-visible {
+	display: inline-block !important;
+    width: 90%;
+    float: right;
+    height: 43px;
+}
+.mui-media-body {
+	font-size: 14px;
+	color: #666;
+}
+.mui-media-body  p {
+	font-size: 12px;
+	color: #999;
+}
+.mui-table-view {
+	margin-left: -5px;
+}

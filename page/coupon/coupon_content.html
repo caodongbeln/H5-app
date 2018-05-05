@@ -1,0 +1,32 @@
+{{if list != ''}}
+{{each list}}
+<li style="margin-top: 25px;">
+	<div class="{{if $value.status == 3}}coupon-ed{{/if}}">
+		{{if $value.toolsInfo != null}} 道具 {{else}} 金币 {{/if}}
+	</div>
+	<div>
+		<div>
+			{{if $value.toolsInfo != null}}
+			<img data-src="{{$value.toolsInfo.icon}}" />
+			{{else}}
+			<img src="../images/duobao.png" />	
+			{{/if}}
+		</div>
+		<div>
+			{{if $value.toolsInfo != null}} {{$value.toolsInfo.name}} {{else}} {{$value.couponInfo.num}}金币 {{/if}}
+			<span>
+			{{if  $value.toolsInfo != null}}{{$value.toolsInfo.desc}}{{else}}{{$value.couponInfo.desc}}{{/if}}
+			</span>
+		</div>
+		<div style="margin-top: 10px;">
+			有限期: {{$value.couponInfo.btime}}至{{$value.couponInfo.etime}}
+		</div>
+	</div>
+	<div></div>
+</li>
+{{/each}}
+{{else}}
+<div class="no-results">
+	暂未优惠券哦~
+</div>
+{{/if}}

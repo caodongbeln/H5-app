@@ -1,0 +1,13 @@
+<div class="pinglunqu releative {{if commentscount == 0}} none{{/if}}" id="simplify-dynamic-box-pinlun" style="margin-bottom: 50px;">
+	<ul class="mui-table-view" id="pinlunqu{{id}}">
+		{{if commentscount == 0}} {{else}} {{each say_commentInfo as html jj}}
+		<li class="mui-table-view-cell mui-media border-bottom">
+			<img class="mui-media-object mui-pull-left" src="../images/cover.png" data-src = '{{html.cover}}' data-css='a50' data-username ='' data-uid = "{{uid}}">
+			<div class="mui-media-body">
+				<p class="line-height-14 user_time"><span class="font_12 color_028ce6 line-height-14">{{html.username}}</span><span class="mui-pull-right font_12 color_999 line-height-14">{{html.releaseTime}}</span></p>
+				<p class='pinglun-content font_12 color_333 line-height-14'>{{html.msg}}</p>
+			</div>
+		</li>
+		{{/each}} {{/if}}
+	</ul>
+</div>

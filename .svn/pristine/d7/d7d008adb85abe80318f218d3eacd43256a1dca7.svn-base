@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>投诉</title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<style type="text/css">
+			.mui-content>.mui-table-view:first-child{
+				margin-top: 0;
+			}
+			ul li a{
+				font-size: 14px;
+			}
+			input[type="text"]{
+				width: 100%;
+				border: none;
+				margin-bottom: 0;
+				border-bottom: 1px solid #f0eff4;
+			}
+			.mui-table-view-cell{
+				padding: 11px 10px;
+			}
+			.mui-table-view-cell>a:not(.mui-btn){
+				padding: 11px 15px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav nav">
+			<span class="back mui-action-back background"></span>
+			<h1 class="mui-title">投诉原因</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view mui-table-view-radio">
+				<input type="text" name="" id="" value="" placeholder="请选择投诉与原因" disabled="disabled" />
+				<li class="mui-table-view-cell border-bottom" id="pornographic">
+					<a class="mui-navigate-right">色情低俗</a>
+				</li>
+				<li class="mui-table-view-cell border-bottom" id="advertisement">
+					<a class="mui-navigate-right">广告骚扰</a>
+				</li>
+				<li class="mui-table-view-cell border-bottom" id="politics">
+					<a class="mui-navigate-right">政治敏感</a>
+				</li>
+				<li class="mui-table-view-cell border-bottom" id="rumor">
+					<a class="mui-navigate-right">谣言</a>
+				</li>
+				<li class="mui-table-view-cell border-bottom" id="cheat">
+					<a class="mui-navigate-right">欺诈骗钱</a>
+				</li>
+				<li class="mui-table-view-cell border-bottom" id="Illegal">
+					<a class="mui-navigate-right">违法</a>
+				</li>
+			</ul>
+		</div>
+	<script src="../js/jquery-2.1.1.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/cache.js"></script>
+	<script src="../js/zs.js"></script>
+	<script src="../js/tousu.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		new zs.Init('Tousu');
+	</script>
+	</body>
+	
+
+</html>

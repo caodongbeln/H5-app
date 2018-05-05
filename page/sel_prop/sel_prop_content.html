@@ -1,0 +1,22 @@
+<ul class="mui-table-view mui-table-view-radio pay">
+	{{each list}} {{if $value.usable != 0 && get_tid == $value.tid}}
+	<li class="mui-table-view-cell money-radio" data_name="{{$value.toolsInfo.name}}" data_count="{{$value.usable}}" data_id="{{$value.id}}" data_tid="{{$value.tid}}">
+		<a class="mui-navigate-right">
+
+			<img class="mui-pull-left" src="../images/default_img.png" data-src="{{$value.toolsInfo.icon}}" width="42" height="42" style="margin-right: 10px;">
+			<div class="mui-media-body">
+				<p class="line-height-14"><span class="color_333 font_14" style="line-height: 18px;">{{$value.toolsInfo.name}}</span>
+					<!--默认为月份-->
+					{{if $value.type == 0}}
+					<i class="riqibiaoshi" type='0'>{{if $value.tid == 3}}1小时{{else}}周{{/if}}</i>{{else if $value.type == 1}}
+					<i class="riqibiaoshi" type='1'>{{if $value.tid == 3}}3小时{{else}}月{{/if}}</i>{{else if $value.type == 2}}
+					<i class="riqibiaoshi" type='1'>{{if $value.tid == 3}}5小时{{else}}季{{/if}}</i>{{else}}
+					<i class="riqibiaoshi" type='2'>{{if $value.tid == 3}}7小时{{else}}年{{/if}}</i>{{/if}}
+					<span style="margin-left: 5px;">共{{$value.usable}}个</span>
+				</p>
+				<p class="line-height-12" style="margin-top: 6px;"><span class="mui-ellipsis mui-ellipsis-xiankuan">{{$value.toolsInfo.desc}}</span></p>
+			</div>
+		</a>
+	</li>
+	{{/if}} {{/each}}
+</ul>

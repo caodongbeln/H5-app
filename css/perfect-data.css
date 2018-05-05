@@ -1,0 +1,247 @@
+.mui-bar {
+	background: #4a5c74;
+}
+.mui-bar a,.mui-title {
+	color: #FFFFFF;
+}
+/*修改个人资料首页*/
+.perfect-data-header {
+	height: 100px;
+	text-align: center;
+	background: #FFFFFF;
+}
+.perfect-data-header img {
+	height: 50px;
+	width: 50px;
+	border-radius: 30px;
+	margin-top: 25px;
+}
+.perfect-data-input {
+	height: 52px;
+	background: #FFFFFF;
+	margin-bottom: 13px;
+}
+.perfect-data-input span {
+	width: 70.6%;
+	margin-left: 15%;
+	display: inline-block;
+	height: 25px;
+	margin-top: 13px;
+}
+.perfect-data-input span input {
+	width: 45.7%;
+	border: 1px solid #999999;
+	border-radius: 0px;
+	color: #999999;
+	height: 25px;
+	line-height: 10px;
+}
+.perfect-data-input span input:first-child {
+	margin-right: 18px;
+}
+.perfect-data-input .nickname{
+	width: 30%;
+	margin-left: 35%;
+	text-align: center;
+	border-radius: 0px;
+	border: 0px;
+	height: 100%;
+	font-size: 14px;
+}
+.perfect-data-choose li{
+	height: 52px;
+	background: #FFFFFF;
+	font-size: 14px;
+	color: #666666;
+	line-height: 52px;
+	margin-bottom: 1px;
+	padding:0px 10px;
+}
+.perfect-data-choose li a{
+	color: #666666;
+	line-height: 52px;
+} 
+.perfect-data-choose li span {
+	margin-top: 14px;
+}
+.perfect-data-choose li span .mui-switch{
+	width: 45px;
+	height: 23px;
+}
+.perfect-data-choose li span .mui-switch-handle{
+	height: 20px;
+}
+.perfect-data-lang ul{
+	height: 52px;
+	background: #fff;
+}
+.perfect-data-lang ul li{
+	font-size: 14px !important;
+    color: #666666 !important;
+    line-height: 5px;
+    height: 25px;
+    margin-top: 14px !important;
+    border: 1px solid #999999 !important;
+}
+.perfect-data-lang ul li a{
+	line-height: 0px;
+    font-size: 25px !important;
+    margin-top: -7px !important;
+}
+.guide-service {
+	margin-top: 13px;
+	margin-bottom: 1px;
+}
+.perfect-switch-add li{
+	height: 38px;
+	background: #FFFFFF;
+	line-height: 38px;
+	color: #666666;
+	font-size: 14px;
+	padding: 0px 10px;
+}
+.perfect-switch-add li:last-child{
+	color: #66CC99;
+	font-size: 13px;
+	padding-left: 20%;
+}
+.perfect-switch-add li span {
+	margin-top: 8px;
+}
+.perfect-switch-add li span .mui-switch{
+	width: 45px;
+	height: 23px;
+}
+.perfect-switch-add li span .mui-switch-handle{
+	height: 20px;
+}
+
+
+/*修改个人资料第二页*/
+.perfect-data-select {
+	background:transparent;
+}
+.perfect-data-select li {
+	height: 52px;
+	margin-bottom: 1px;
+	background: #FFFFFF;
+	font-size: 14px;
+	color: #666666;
+	padding: 0px 10px;
+	line-height: 52px;
+}
+.perfect-data-select a {
+	line-height: 52px;
+	color: #999999;
+}
+.perfect-data-title {
+	height: 43px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 45px;
+	color: #666666;
+}
+.perfect-hobby-cate ul {
+	background-color: transparent !important;
+	height: 43px;    	
+}
+.perfect-hobby-cate ul li{
+	height: 43px;
+	padding: 0px !important;
+	border: 0px !important;
+	width: 24.5% !important;
+	margin-left: 0.5% !important;
+}
+.perfect-hobby-cate ul li:first-child {
+	margin-left: 0% !important;
+}
+.perfect-hobby-cate ul li input{
+	height: 100%;
+	width: 100%;
+	border: 0px;
+	border-radius: 0px;
+	color: #999999;
+}
+.perfect-data-voice {
+	height: 92px;
+	text-align: center;
+}
+.perfect-data-voice span {
+	height: 64px;
+	width: 83px;
+	margin: auto;
+}
+.perfect-data-voice img{
+	width: 27px;
+	height: 35px;
+	margin-top: 15px;
+}
+.perfect-data-voice p{
+	line-height: 25px;
+	font-size: 14px;
+	color: #666666 !important;
+}
+.perfect-data-textarea {
+	height: 113px;
+}
+.perfect-data-textarea textarea {
+	height: 100%;
+	width: 100%;
+	border: 0px;
+	font-size: 12px;
+	color: #b4b4b4;
+}
+.perfect-btn-group {
+	height: 40px;
+	background: #FFFFFF;
+	border-top: 1px solid #66CC99;
+	width: 100%;
+}
+.perfect-btn-group input {
+	width: 48.3%;
+	height: 40px;
+	border: 0px;
+	border-radius: 0px;
+	color: #66CC99;
+}
+.perfect-btn-group span {
+	width: 1px;
+    height: 25px;
+    margin-top: 8px;
+    display: inline-block;
+    border-left: 1px solid #999999;
+}
+
+/*修改个人资料第三页*/
+/*.perfect-data-img {
+	width: 79%;
+	margin-left: 11%;
+	background: #FFFFFF;
+	margin-right: 10%;
+}*/
+.img-add {
+	height: 196px;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+}
+.img-add .img {
+	height: 156px;
+	text-align: center;
+	padding-top: 36px;
+}
+.img-add .img p {
+	color: #666666;
+}
+.img-add .img img {
+	width: 65px;
+	height: 65px;
+}
+.img-add input {
+	width: 100%;
+	height: 40px;
+	border-radius: 0px;
+	border: 0px;
+	border-top: 1px solid #66CC99;
+	color: #66CC99;
+}

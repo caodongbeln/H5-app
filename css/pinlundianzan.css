@@ -1,0 +1,13 @@
+.pinglunqu .mui-table-view-cell{
+	padding: 5px 10px 5px 12px;
+}
+.pinglunqu .user_time{
+	margin-bottom: 6px;
+}
+.pinglunqu .mui-table-view .mui-media-object {
+	width: 35px;
+	height: 35px;
+}
+.pinglunqu .mui-table-view .mui-media-object.mui-pull-left {
+	margin-right: 4px;
+}

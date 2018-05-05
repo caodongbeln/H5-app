@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>好友选择</title>		
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/Notification_list.css" />
+		<link rel="stylesheet" href="../css/list_img.css" />
+		<link rel="stylesheet" type="text/css" href="../css/yincanggundongtiao.css"/>
+		<style type="text/css">
+		.mui-media-body i{
+			font-size: 12px;
+		}
+		input[type=checkbox],input[type=radio],.checkbox-mask{
+			-webkit-appearance: none;
+			-moz-appearance:none;
+			/*-ms-appearance: ;*/
+			width: 16px;
+			height: 12px;
+			/*border: 1px solid #79bded;*/
+		}
+		input[type=checkbox]:checked,input[type=radio]:checked,.checkbox-mask-checked{
+			-webkit-appearance: none;
+			-moz-appearance:none;
+			/*border: 1px solid #79bded;*/
+			background-image: url(../images/duigou.png);
+			background-size: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		.checkbox{
+			right: 10px;
+			top: 27px;
+		}
+		label{
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav nav">
+			<span class="back mui-action-back background"></span>
+			<h1 class="mui-title">好友选择列表</h1>
+			<span id="send-dynamic" class="mui-pull-right send-dynamic">确定</span>
+		</header>
+		<div class="mui-content" >
+			<ul class="mui-table-view" id="friend_choose_list">
+			</ul>
+		</div>
+	</body>
+		<script src="../js/jquery-2.1.1.min.js"></script>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/mui.picker.min.js"></script>
+		<script src="../js/cache.js"></script>
+		<script src="../js/functions.js"></script>
+		<script src="../js/zs.js"></script>	
+		<script src="../template/friend_list.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/friend_choose_list.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			new zs.Init('FriendChooseList');
+		</script>
+</html>

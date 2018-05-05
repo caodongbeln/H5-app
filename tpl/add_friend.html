@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>添加朋友</title>		
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/Notification_list.css" />
+		<!--<link rel="stylesheet" type="text/css" href="../css/list_img.css" />-->
+		<link rel="stylesheet" href="../css/whoCanSee.css" />
+		<link rel="stylesheet" type="text/css" href="../css/add_friend.css" />
+		<style type="text/css">
+			.mui-media-body {
+				margin-top: 9px;
+			}
+			
+			.mui-media-body p {
+				margin-top: 0;
+			}
+			
+			.mui-table-view-cell>a:not(.mui-btn) {
+				padding: 10px 14px;
+			}
+			
+			.mui-table-view .mui-media-object {
+				/*margin-top: 8px;*/
+			}
+			
+			.mui-table-view .mui-media-object {
+				width: 35px;
+				height: 35px;
+				max-height: 35px;
+				max-width: 35px;
+				line-height: 70px;
+			}
+			
+			.mui-media-body span {
+				margin-top: 0;
+			}
+			/*.mui-table-view .mui-media, .mui-table-view .mui-media-body{
+				margin-top: 5px;
+			}*/
+			
+			.mui-table-view .mui-media-object.mui-pull-left {
+				margin-top: 12px;
+				margin-bottom: 12px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav nav">
+			<span class="back mui-action-back background"></span>
+			<h1 class="mui-title">添加朋友</h1>
+		</header>
+		<div class="mui-content">
+			<!--
+            	作者：949961306@qq.com
+            	时间：2016-06-15
+            	描述：搜索框部分
+            -->
+			<div class="padding-content">
+				<span class="sousuoanniu mui-pull-right font_14 color-fff" id='search'>
+					搜索
+				</span>
+				<div style="padding-right: 40px;width: 100%;">
+					<div class="mui-input-row mui-search" style="margin-top: 3px;">
+						<input type="search" class="mui-input-clear" placeholder="请输入手机号/ID">
+					</div>
+				</div>
+			</div>
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell mui-media" data-href="stranger_list.html">
+					<img class="mui-media-object mui-pull-left" src="../images/fujin.png">
+					<div class="mui-media-body">
+						<span>添加附近的人</span>
+						<p class='mui-ellipsis'>添加身边的朋友</p>
+					</div>
+			</li>
+			<li class="mui-table-view-cell mui-media" data-href='barcode_scan.html'>
+				<a class="">
+					<img class="mui-media-object mui-pull-left" src="../images/lansesaoyisao.png">
+					<div class="mui-media-body">
+						<span>扫一扫</span>
+						<p class='mui-ellipsis'>扫一扫二维码名片</p>
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media" data-href="contact_list.html">
+				<a class="">
+					<img class="mui-media-object mui-pull-left" src="../images/hongselianxiren.png">
+					<div class="mui-media-body">
+						<span>手机联系人</span>
+						<p class='mui-ellipsis'>添加或要求通讯录中 的朋友</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</body>
+	<script src="../js/jquery-2.1.1.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/cache.js"></script>	
+	<script src="../js/zs.js"></script>	
+	<script src="../js/add_friend.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		new zs.Init('Addfriend');
+	</script>
+</html>

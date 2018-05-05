@@ -1,0 +1,99 @@
+.mui-bar{
+	background-color: #4A5C74;
+}
+
+.mui-content{
+	background-color: #f6f6f6;
+}
+.mui-content>.mui-table-view:first-child{
+	margin-top: 0;
+}
+.mui-table-view-cell{
+	padding: 10px;
+}
+.mui-media-object{
+	width: 45px;
+	height: 45px;
+}
+.mui-table-view-cell>a:not(.mui-btn){
+	margin: -11px -10px;
+}
+/*关注按钮*/
+.guanzhu_icon{
+	width: 56px;
+	height: 22px;
+	display: inline-block;
+	background-image: url(../images/guanzhu.png);
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	float: right;
+}
+.lvtu_img img{
+	width: 100%;
+	display: block;
+}
+.lvtuExplanation{
+	height: 40px;
+	line-height: 40px;
+	padding: 0 10px;
+	font-size: 11px;
+	background-color: #fff;
+	margin-bottom: 5px;
+	display: table;
+	width: 100%;
+}
+.lvtuExplanation i{
+	display: inline-block;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	vertical-align: middle;
+}
+.dingwei_img{
+	display: inline-block;
+	
+}
+.dingwei_img i{
+	width: 8.5px;
+	height: 12px;
+	background-image: url(../images/dingwei_green.png);
+}
+.share_img{
+	/*width: 9%;*/
+	height: 40px;
+	display: inline-block;
+	float: right;
+	margin-right: 12.5px;
+}
+.share_img i{
+	width: 20px;
+	height: 20px;
+	vertical-align:middle;
+}
+.share_img i:first-child{
+	background-image: url(../images/HUG点击.png);
+	    margin-top: -5px;	
+}
+b{
+	font-weight: normal;
+	vertical-align: middle;
+	color: #999;
+}
+/*.share_img i:last-child{
+	background-image: url(../images/share.png);	
+	float: right;
+	margin-top: 10px;
+	margin-right: 12.5px;
+}*/
+.lvtuExplanation p{
+	line-height: 23px;
+	font-size: 11px;
+	margin-bottom:0px ;
+}
+.lvtuExplanation  span {
+	color: #666666;
+}
+.trip-color-style .mui-media-body {
+	color: #666666;
+}

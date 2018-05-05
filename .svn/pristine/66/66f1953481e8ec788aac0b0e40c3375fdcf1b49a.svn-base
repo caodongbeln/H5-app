@@ -1,0 +1,15 @@
+.mui-table-view .mui-media-object{
+	max-width: 22px;
+	height: 22px;
+	line-height: 22px;
+	margin-top: 10px;
+}
+.mui-table-view-cell {
+	padding: 6px 10px;
+}
+.mui-content>.mui-table-view:first-child{
+	margin-top: 0;
+}
+p{
+	font-size: 12px;
+}

@@ -1,0 +1,42 @@
+<div class="shurukuang">
+	<input type="text" name="" id="title" value="{{if item}}{{item.title}}{{/if}}" placeholder="我到达/离开的通知" />
+</div>
+<ul>
+	<li class="padding-content border-bottom" style="color: #666; display: none;">
+		<img src="../images/anytime.png" class="mui-pull-left anytime" />
+		<div class="anytime-jieshao" id='demo1' data-options=''>
+			任何时间
+		</div>
+	</li>
+	<li class="padding-content mui-table-view-cell" name="" data-href='choose_position.html' data-view='choose_position'>
+		<img src="../images/leave-location.png" class="mui-pull-left anytime" />
+		<b class="font_14 color_666" id="addr">
+			{{if item && item.type==0}}
+			到达/离开{{item.addr}}
+			{{else if item && item.type==1}}
+			到达{{item.addr}}
+			{{else if item && item.type==2}}
+			离开{{item.addr}}
+			{{else}}
+			到达/离开的位置
+			{{/if}}
+		</b>
+	</li>
+</ul>
+<ul class="mui-table-view notification">
+	<li class="padding-content mui-table-view-cell" id="select_uid" data-href='friend_choose_list.html' data-view='friend_choose_list' data-extras='{"isradio":false,fid:[1,2,3]}'>
+		<img src="../images/add-allfriends_03.png" class="mui-pull-left anytime" /> 接收通知的好友
+		<div class="mui-pull-right" id='users'>
+			{{if users}} {{each users}}
+			<img src="../images/cover.png" data-src="{{$value.user.cover}}" data-css='a50'/>
+			{{/each}}{{/if}}
+		</div>
+	</li>
+	<li class="padding-content mui-table-view-cell">
+		<img src="../images/qiyong.png" class="mui-pull-left anytime" /> 启用通知
+
+		<div class="mui-switch mui-switch-blue  {{if item && item.status==1}}mui-active{{/if}}" id="switch2">
+			<div class="mui-switch-handle"></div>
+		</div>
+	</li>
+</ul>

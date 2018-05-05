@@ -1,0 +1,55 @@
+<div style="width: 100%" class="releative">
+	<span class="absolute time-my_activity color-fff font_14">{{deal_time}}</span>
+	<div class="absolute name-introduction-box">
+			<p>
+				<span class="introduction-my_activity color-fff font_14">{{title}}</span> <i class="color-fff line-height-12">-</i>
+				<span class="name-my_activity color-fff font_14">{{typeInfo.text}}</span>
+			</p>
+			<p style="padding-left: 77px;padding-right: 20px;" >
+				<i class="mui-ellipsis color-fff font_14 line-height-14" style="width: 100%;display: inline-block;vertical-align: top;text-align: right;">{{addr}}</i>
+				<i class="background activity-location absolute" style="top: 22px;right: 10px;display: block;" data-href='../tpl/dynamic_position_map.html' data-view='dandu_map' data-extras='{"releasePosition":{{releasePosition}}}'></i>
+			</p>
+		</div>
+	<!--<img src="../images/activity-one.png" />-->
+	<div id="slider" class="mui-slider">
+		<div class="mui-slider-group mui-slider-loop">
+			<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+		
+			<div class="mui-slider-item mui-slider-item-duplicate">
+				<a href="#">
+					<img src="../images/default_back_cover.jpg" data-src = '{{lastImg}}' data-css = "a320X160">
+				</a>
+			</div>
+				{{each imgs}}
+			<!-- 第一张 -->
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="../images/default_back_cover.jpg" data-src = '{{$value}}' data-css = "a320X160">
+				</a>
+			</div>
+			{{/each}}
+			
+			
+			<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+			<div class="mui-slider-item mui-slider-item-duplicate">
+				<a href="#">
+					<img src="../images/default_back_cover.jpg" data-src = '{{firstImg}}' data-css = "a320X160">
+				</a>
+			</div>
+		</div>
+		<div class="mui-slider-indicator">
+			{{each imgs}}
+			<div class="mui-indicator"></div>
+			{{/each}}
+		</div>
+	</div>
+</div>
+<div class="header" data-username = "{{userInfo.username}}" data-uid = "{{uid}}">
+	<img src="../images/cover.png" data-src = '{{userInfo.cover}}' data-css='a50'/>
+</div>
+<p class="activity-person" id="activity-person">
+	<i style="margin-left: 72px;">{{userInfo.username}}</i><span><i  data-href = 'activity_pinlun.html' data-view = 'activity_pinlun' data-extras = '{"activityid":{{id}},"acticityIndex":{{acticityIndex}},"activitySource":"{{activitySource}}","index":{{val}}}'></i><i  id="dianzan-dianji{{id}}" class="{{if is_like == 1}}dianzan-active{{/if}}"  data-dianzan='{{id}}' data-uid='{{uid}}' data-val = '{{val}}'></i><i style="width: 50px;" id="share" data-share = ''></i></span>
+</p>
+<p style="margin-top: 5px;display: table;width: 100%;">
+	<i class="mui-pull-right distance-release font_14" style="padding-right: 10px;"></i>
+</p>

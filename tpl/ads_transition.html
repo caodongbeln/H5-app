@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+				margin: 0px auto;
+				overflow: hidden;
+			}
+			
+			.ads_img img {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.ads_operation {
+				position: absolute;
+				z-index: 100;
+				top: 0px;
+				width: 100% !important;
+				height: 100% !important;
+			}
+			
+			.ads_operation_header {
+				height: 30px;
+				width: 60px;
+				margin-top: 20px;
+				line-height: 30px;
+				font-size: 14px;
+				opacity: 0.8px;
+				color: #FFFFFF;
+				text-align: right;
+				padding-right: 10px;
+				position: absolute;
+				right: 10px;
+			}
+			
+			.ads_operation_footer {
+				position: absolute;
+				bottom: 50px;
+				height: 50px;
+				width: 100%;
+				line-height: 50px;
+				font-size: 18px;
+				color: #fff;
+				background: #000;
+				opacity: 0.4;
+				z-index: 101;
+				padding-left: 20px !important;
+			}
+			
+			.ads_operation_footer span {
+				display: inline-block;
+				width: 30px;
+				height: 50px;
+				margin-right: 40px;
+				float: right;
+			}
+			
+			.ads_operation_footer span img {
+				width: 15px;
+				height: 20px;
+				margin-left: 10px;
+			}
+			i {
+				font-style: normal !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="ads_img">
+				<img id="adsImg" src="" />
+			</div>
+			<div class="ads_operation">
+				<div class="ads_operation_header" id="item" style="border: 1px solid #fff !important;">
+					跳过<i id="time" style="color: #028ce6;padding:0px 2px;font-weight: bold;">3</i>s
+				</div>
+				<div class="ads_operation_footer">
+					了解详情<span class="mui-pull-right"><img src="../images/pull_right.png"/></span>
+				</div>
+			</div>
+		</div>
+		<script src="../js/jquery-2.1.1.min.js"></script>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/cache.js"></script>
+		<script src="../js/zs.js"></script>
+		<script src="../js/ads.js"></script>
+		<script type="text/javascript">
+			new zs.Init('Ads');
+		</script>
+		<script type="text/javascript">
+			var ads_height = $(window).height();
+			var ads_width = $(window).width();
+			$('.ads_img').height(ads_height);
+			$('.ads_img').width(ads_width);
+		</script>
+	</body>
+
+</html>

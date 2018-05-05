@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>新的朋友</title>		
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/Notification_list.css" />
+		<link rel="stylesheet" type="text/css" href="../css/list_img.css" />
+		<!--<link rel="stylesheet" type="text/css" href="../css/add_friend.css" />-->
+		<link rel="stylesheet" type="text/css" href="../css/new_friend.css"/>
+		<style type="text/css">
+			.new-friend-top{
+				line-height: 30px;
+				height: 30px;
+				padding-left: 10px;
+			}
+			p{
+				margin-bottom: 0;
+			}
+			html,body,.mui-content,.mui-table-view{
+				width: 100%;
+				height: 100%;
+			}
+			.mui-table-view{
+				background-color: #fff;
+				overflow-y: auto;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav nav">
+			<span class="back mui-action-back background"></span>
+			<h1 class="mui-title">新的朋友</h1>
+		</header>
+		<div class="mui-content">
+			<div class="mui-input-row mui-search padding-content">
+				<input type="search" id="search" class="mui-input-clear" placeholder="输入手机号">
+			</div>
+		
+		<!--<p class="new-friend-top color_999 font_14">新的朋友</p>-->
+		<ul class="mui-table-view" id='new_friend_list'>
+			
+		</ul>
+		</div>
+	</body>
+	<script src="../js/jquery-2.1.1.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/cache.js"></script>
+	
+	<script src="../js/zs.js"></script>	
+	<script src="../template/new_friend.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/new_friend.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		new zs.Init('Newfriend');
+	</script>
+</html>

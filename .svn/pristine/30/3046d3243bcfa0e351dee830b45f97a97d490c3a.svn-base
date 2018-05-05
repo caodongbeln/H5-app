@@ -1,0 +1,5 @@
+{{each list}} 
+	<li>
+		<i>{{$value}}</i>
+	</li>
+{{/each}}

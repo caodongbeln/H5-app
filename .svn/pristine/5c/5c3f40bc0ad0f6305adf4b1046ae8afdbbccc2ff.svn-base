@@ -1,0 +1,4 @@
+[0602/144004:ERROR:proxy_service_factory.cc(105)] Cannot use V8 Proxy resolver in single process mode.
+[0602/144035:ERROR:proxy_service_factory.cc(105)] Cannot use V8 Proxy resolver in single process mode.
+[0602/151023:ERROR:proxy_service_factory.cc(105)] Cannot use V8 Proxy resolver in single process mode.
+[0618/104920:ERROR:proxy_service_factory.cc(105)] Cannot use V8 Proxy resolver in single process mode.

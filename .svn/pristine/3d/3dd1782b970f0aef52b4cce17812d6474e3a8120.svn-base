@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>修改密码</title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/account.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav mui">
+			<a class="mui-icon-left houtui_white mui-action-back" change_password></a>
+			<h1 class="mui-title">密码修改</h1>
+			<!--<a class="mui-pull-right">确定</a>-->
+		</header>
+		<div class="mui-content">
+			<div class="account-being-push being-push-certification">
+				<span><input type="password" name="oldPassword" id="oldPassword"  placeholder="输入旧密码"/></span>
+			</div>
+			<div class="account-being-push">
+				<span><input type="password" name="newPassword" id="newPassword"  placeholder="输入新密码"/></span>
+			</div>
+			<div class="account-being-push being-push-notification">
+				<span><input type="password" name="ConfirmPassword" id="ConfirmPassword"  placeholder="确认新密码"/></span>
+			</div>
+			<input type="button" class="account-logOut account-sure" name="sure" id="sure" value="确    定" />
+		</div>
+	</body>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/cache.js"></script>
+	<script src="../js/zs.js"></script>
+	<script src="../js/account.js" type="text/javascript" charset="utf-8"></script>
+
+	<script type="text/javascript" charset="utf-8">
+		new zs.Init('Account');
+	</script>
+
+</html>

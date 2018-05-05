@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>联系人</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">		
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/Notification_list.css" />
+		<link rel="stylesheet" href="../css/list_img.css" />
+		<!--<link rel="stylesheet" type="text/css" href="../css/message.css" />-->
+		<style type="text/css">
+			.mui-segmented-control.mui-segmented-control-inverted {
+				height: 44px;
+			}			
+			.mui-media-body p {
+				line-height: 12px;
+			}			
+			.mui-scroll-wrapper,
+			.mui-slider {
+				overflow: visible;
+			}
+			
+			.mui-media-object img {
+				width: 100%;
+			}
+			
+			.mui-control-content {
+				background-color: #f0eff4;
+				min-height: 200px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+				<ul class="mui-table-view" id='conversation_list'>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script src="../js/jquery-2.1.1.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/cache.js"></script>	
+	<script src="../js/zs.js"></script>	
+	<script src="../template/contacts.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/contacts_msg.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		new zs.Init('Contactsmsg');
+	</script>
+</html>

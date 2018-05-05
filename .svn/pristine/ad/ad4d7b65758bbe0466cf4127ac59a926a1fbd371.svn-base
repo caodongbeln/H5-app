@@ -1,0 +1,41 @@
+
+<div class="account-being-push being-push-certification">
+	<span>通过或未通过实名认证时</span>
+	<a class="mui-pull-right">
+		<div data-field='certification' class="mui-switch mui-switch-mini {{if setting.certification==1}} mui-active {{/if}}" id='certification_set'>
+			<div class="mui-switch-handle"></div>
+		</div>
+	</a>
+</div>
+<div class="account-being-push">
+	<span>收到私聊信息时</span>
+	<a class="mui-pull-right">
+		<div data-field='msg' class="mui-switch mui-switch-mini {{if setting.msg==1}} mui-active {{/if}}" id='msg_set'>
+			<div class="mui-switch-handle"></div>
+		</div>
+	</a>
+</div>
+<div class="account-being-push">
+	<span>收到申请或要邀请单时</span>
+	<a class="mui-pull-right">
+		<div data-field='invite' class="mui-switch mui-switch-mini {{if setting.invite==1}} mui-active {{/if}}" id='invite_set'>
+			<div class="mui-switch-handle"></div>
+		</div>
+	</a>
+</div>
+<div class="account-being-push">
+	<span>得到关注或hug时</span>
+	<a class="mui-pull-right">
+		<div data-field='hug' class="mui-switch mui-switch-mini {{if setting.hug==1}} mui-active {{/if}}" id='hug_set'>
+			<div class="mui-switch-handle"></div>
+		</div>
+	</a>
+</div>
+<div class="account-being-push being-push-notification">
+	<span>系统其它相关通知</span>
+	<a class="mui-pull-right">
+		<div data-field='other' class="mui-switch mui-switch-mini {{if setting.other==1}} mui-active {{/if}}" id='other_set'>
+			<div class="mui-switch-handle"></div>
+		</div>
+	</a>
+</div>

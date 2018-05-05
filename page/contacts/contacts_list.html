@@ -1,0 +1,33 @@
+{{each list}}
+<li class="mui-table-view-cell mui-media">
+	<a class="">
+		<img class="mui-media-object mui-pull-left" src="{{$photos}}">
+		<div class="mui-media-body">
+			<span class="color_333"><i>{{$value.displayname}}</i></span>
+			<p class='mui-ellipsis'>{{$value.mobile}}</p>
+		</div>
+		<!--
+                            	作者：949961306@qq.com
+                            	时间：2016-05-31
+                            	描述：浮动的已完成或者前往的div
+                            -->
+		{{if $value.status == 0}}
+		<div class="fuceng-yiwancheng">
+			等待验证
+		</div>
+		{{else if $value.status == 1}}
+		<div class="fuceng-yiwancheng">
+			已添加
+		</div>
+		{{else if $value.status == 2}}
+		<div class="fuceng-yiwancheng">
+			已拒绝
+		</div>	
+		{{else}}		
+		<div class="fuceng-yiwancheng fuceng-qianwang" data-add='contacts' data-id='{{$value.zu_id}}'>
+			添加
+		</div>
+		{{/if}}
+	</a>
+</li>
+{{/each}}

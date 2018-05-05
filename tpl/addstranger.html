@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>添加陌生人</title>		
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<style type="text/css">
+			textarea {
+				/*margin-top: ;*/
+				min-height: 180px;
+				padding-top: 10px;
+				/*margin-bottom: 10px;*/
+				margin-bottom: 0;
+				color: #999;
+				padding-left: 10px;
+				padding-right: 10px;
+				border-radius: 0;
+				border: none;
+				font-size: 14px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav nav">
+			<span class="back mui-action-back background"></span>
+			<h1 class="mui-title"></h1>
+			<span id="send-dynamic" class="mui-pull-right send-dynamic" style="border: 1px solid transparent;" >下一步</span>
+		</header>
+		<div class="mui-content">
+			<!--生活照部分-->
+			<div class="General_lighting_box">
+				<ul class="General_lighting" id="back_cover">
+				</ul>
+			</div>
+
+			<textarea name="" rows="" cols="" placeholder="简单介绍一下自己吧！" class="personal-margin-top" id='desc'></textarea>
+		</div>
+
+	</body>
+	<script src="../js/jquery-2.1.1.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/cache.js"></script>	
+	<script src="../js/zs.js"></script>	
+	<script src="../template/addstranger.min.js" type="text/javascript" charset="utf-8"></script>	
+	<script src="../js/add_stranger.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		new zs.Init('Addstranger');
+	</script>
+</html>

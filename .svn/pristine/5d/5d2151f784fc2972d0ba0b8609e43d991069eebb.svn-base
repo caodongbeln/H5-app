@@ -1,0 +1,9 @@
+<li class="mui-table-view-cell mui-media" id='new_friend_list' conversationType="{{conversationType}}" targetId="{{targetId}}">
+	<a class="">
+		<img class="mui-media-object mui-pull-left" src="../images/addFriend.png">
+		<div class="mui-media-body">
+			<span>新的朋友</span>
+			<p class='mui-ellipsis'>有<b id='unread'>{{unreadMessageCount}}</b>个好友申请等待通过</p>
+		</div>
+	</a>
+</li>

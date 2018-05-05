@@ -1,0 +1,13 @@
+<ul class="mui-table-view">
+	{{each list}}
+	<li class="mui-table-view-cell mui-media">
+		<a class="">
+			<img class="mui-media-object mui-pull-left" src="../images/lixiaxia.png">
+			<div class="mui-media-body">
+				<span class="releative"><span class="mui-ellipsis" style="width: 40%;padding-top: 3px !important;">{{$value.userInfo.username}}</span></span>
+				<p class='mui-ellipsis'>今天看过我{{$value.count}}次</p>
+			</div>
+		</a>
+	</li>
+	{{/each}}
+</ul>

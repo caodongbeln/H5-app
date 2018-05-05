@@ -1,0 +1,78 @@
+<ul class="General_lighting" id="General_lighting">
+	{{each user.back_cover}}
+	<li>
+		<div class="">
+			<img src="../images/default_header.png" data-src="{{$value}}" href="{{$value}}" data-preview-src="" data-preview-group="{{$index}}" />
+		</div>
+	</li>
+	{{/each}}
+	<li id="last">
+		<div class="">
+			<img src="../images/add-people.png" />
+		</div>
+	</li>
+</ul>
+<ul class="mui-table-view riqixingming personal-margin-top">
+	<li class="mui-table-view-cell font_14 color_999 releative border-bottom">昵 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称<span id="nick" class="color_333 riqixingming-span">{{user.username}}</span>
+		<span class="color_333 xiugaibeizhu absolute" id='promptBtn'>修改昵称</span>
+	</li>
+</ul>
+<ul class="personal-margin-top background-color-white Personal-signature" style="background: #FFFFFF !important;margin-top: -10px !important;">
+	<li class="font_14 color_999">个人签名</li>
+	<li class="font_14 color_999"><textarea name="" rows="" cols="" placeholder="有什么想和你朋友说的么？" id="mood">{{user.mood}}</textarea></li>
+</ul>
+<ul class="mui-table-view riqixingming" style="margin-top: 1px !important;">
+	<li class="mui-table-view-cell font_14 color_999 releative border-bottom">ID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号<span class="color_333 riqixingming-span">{{user.id}}</span>
+	</li>
+</ul>
+<ul class="mui-table-view riqixingming personal-margin-top">
+	<span class="sex">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别</span>
+	<select class="mui-btn mui-btn-block mui-table-view-cell font_14 color_999 border-bottom" id="gender">
+		<option value="male" {{if user.gender == 1}}selected="selected"{{/if}}>男</option>
+		<option value="female" {{if user.gender == 0}}selected="selected"{{/if}}>女</option>
+	</select>
+	<li class="mui-table-view-cell font_14 color_999 border-bottom" id="pickDateBtn" style="width: 100%;">出生日期<span class="color_333 riqixingming-span" id="data" style="margin-left: 6px;">{{if user.birth == null || user.birth == 0}}未设置{{else}}{{user.birth}}{{/if}}</span></li>
+	<li class="mui-table-view-cell font_14 color_999 border-bottom" style="height: 42px;">手 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机<input type="number" class="enjoy-input color_333" id="tel" style="border:0px;padding-left:10px;margin-top: -15px !important;height: 42px;" value="{{user.mobile}}" /></li>
+</ul>
+<!--
+            	作者：949961306@qq.com
+            	时间：2016-06-02
+            	描述：工作单位,地点等....
+            -->
+<ul class="mui-table-view riqixingming personal-margin-top">
+	<li class="mui-table-view-cell font_14 color_999 releative border-bottom" id="seLjob">工作单位<span class="color_333 riqixingming-span" id="job">{{user.work_unit}}</span></li>
+	<li class="mui-table-view-cell font_14 color_999 border-bottom releative" id="seLaddr">工作地点<span class="color_333 riqixingming-span" id="job_addr">{{user.work_addr}}</span><i class="personal-location-icon absolute"><img src="../images/location-icon.png"/></i></li>
+	<li class="mui-table-view-cell font_14 color_999 border-bottom releative" id="seLlive">生活地点<span class="color_333 riqixingming-span" id="live">{{user.living_addr}}</span><i class="personal-location-icon absolute"><img src="../images/location-icon.png"/></i></li>
+	<li class="mui-table-view-cell font_14 color_999 border-bottom releative" id="seLsee">常出没地<span class="color_333 riqixingming-span" id="see">{{user.often_addr}}</span><i class="personal-location-icon absolute"><img src="../images/location-icon.png"/></i></li>
+</ul>
+<!--
+            	作者：949961306@qq.com
+            	时间：2016-06-02
+            	描述：兴趣爱好
+            -->
+<div class="Interests_and_hobbies personal-margin-top" style="padding-bottom: 10px !important;">
+	<p class="background-color-white padding-content border-bottom">兴趣爱好</p>
+	<ul class="mui-table-view riqixingming">
+		<!--<li class="mui-table-view-cell font_14 color_999 releative border-bottom">-->
+		<li class="mui-table-view-cell font_14 color_999 border-bottom releative">电 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;影<input type="text" placeholder="请输入您最喜欢的电影哦" class="enjoy-input color_333" id="movie" {{if user.hobby !=null}}value="{{user.hobby.movie}}" {{/if}}/></li>
+		<li class="mui-table-view-cell font_14 color_999 border-bottom">书 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;籍<input type="text" placeholder="请输入您最喜欢的书籍哦" class="enjoy-input color_333" id="book" {{if user.hobby !=null}} value="{{user.hobby.book}}" {{/if}}/></li>
+		<li class="mui-table-view-cell font_14 color_999 border-bottom">音 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;乐<input type="text" placeholder="请输入您最喜欢的音乐哦" class="enjoy-input color_333" id="music" {{if user.hobby !=null}} value="{{user.hobby.music}}" {{/if}} /></li>
+	</ul>
+</div>
+
+<!--
+            	作者：949961306@qq.com
+            	时间：2016-06-02
+            	描述：个人签名
+           -->
+<!--
+            	作者：949961306@qq.com
+            	时间：2016-06-02
+            	描述：关联应用
+            -->
+<!--<ul class="Associated-application personal-margin-top background-color-white" style="background: #FFFFFF !important;">
+	<li class="font_14 color_999">关联应用</li>
+	<li class="font_14 color_999" id="sina"><i class="Associated-application-icon-sina background"></i><span class="color_333 Associated-application-name font_12">新浪微博</span></li>
+	<li class="font_14 color_999" id="tencent"><i class="Associated-application-icon-ternea background"></i><span class="color_333 Associated-application-name font_12">腾讯微博</span></li>
+	<!--<li class="font_14 color_999" id="renren"><i class="Associated-application-icon-renren background"></i><span class="color_333 Associated-application-name font_12"> &nbsp;人人网</span></li>-->
+<!--</ul>-->

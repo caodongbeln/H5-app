@@ -1,0 +1,27 @@
+{{each list}}
+<div class="activity-list releative">
+	<div style="width: 100%;" class="releative" data-href="activity_detail.html" data-view='activity_detail' data-extras='{"activityid":{{$value.id}},"acticityIndex":{{$index}},"index":{{$value.val}}}'>
+		<span class="absolute time-my_activity color-fff font_12">{{$value.deal_time}}</span>
+		<div class="absolute name-introduction-box">
+			<p>
+				<span class="introduction-my_activity color-fff font_12">{{$value.title}}</span> <i class="color-fff line-height-12">-</i>
+				<span class="name-my_activity color-fff font_12">{{$value.typeInfo.text}}</span>
+			</p>
+			<p style="padding-left: 77px;padding-right: 20px;">
+				<i class="mui-ellipsis color-fff font_12 line-height-14" style="width: 100%;display: inline-block;vertical-align: top;text-align: right;">{{$value.addr}}</i>
+				<i class="background activity-location absolute" data-href='../tpl/dynamic_position_map.html' data-view='dandu_map' data-extras='{"releasePosition":{{$value.releasePosition}}}'></i>
+			</p>
+		</div>
+		<img src="../images/default_back_cover.jpg" data-src='{{$value.imgs[0]}}' data-css = 'a320X160'/>
+	</div>
+	<div class="header" data-uid="{{$value.uid}}" data-username="{{$value.userInfo.username}}">
+		<img src="../images/cover.png" data-src="{{$value.userInfo.cover}}" data-css='a50'/>
+	</div>
+	<p class="activity-person">
+		<i style="margin-left: 72px;">{{$value.userInfo.username}}</i><span><i data-pinlun = '' data-href = 'activity_pinlun.html' data-view = 'activity_pinlun' data-extras = '{"activityid":{{$value.id}},"acticityIndex":{{$index}},"activitySource":"surrounding_dynamic_activity","index":{{$value.val}}}'></i><i id="dianzan-dianji{{$value.id}}" class="{{if $value.is_like == 1}}dianzan-active{{/if}}"  data-dianzan='{{$value.id}}' data-uid='{{$value.uid}}' data-index = '{{$index}}' data-val = '{{$value.val}}'></i><i style="width: 50px;" class="share" data-share=""></i></span>
+	</p>
+	<p style="margin-top: -1px;">
+		<i class="mui-pull-right juli{{$value.pagenum}}" style="padding-right: 10px;margin-top: 5px;"></i>
+	</p>
+</div>
+{{/each}}

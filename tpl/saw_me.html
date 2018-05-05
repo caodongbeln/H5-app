@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>谁看过我</title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/Notification_list.css" />
+		<link rel="stylesheet" type="text/css" href="../css/list_img.css" />
+		<link rel="stylesheet" type="text/css" href="../css/yincanggundongtiao.css"/>
+		<style type="text/css">
+			.mui-media-body span b {
+				font-weight: 400;
+				/*margin-left: 37%;*/
+			}
+			
+			.mui-table-view-cell>a:not(.mui-btn) {
+				padding: 5px 10px;
+			}
+			
+			.mui-table-view .mui-media-object.mui-pull-left {
+				margin-top: 2px;
+			}
+			
+			.mui-media-body>span {
+				margin-top: -2px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav nav">
+			<span class="back mui-action-back background"></span>
+			<h1 class="mui-title">谁看过我</h1>
+		</header>
+		<div class="mui-content" id="sawContent">
+
+		</div>
+		<script src="../js/jquery-2.1.1.min.js"></script>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/cache.js"></script>
+		<script src="../js/zs.js"></script>
+		<script src="../template/saw_me.min.js"></script>
+		<script src="../js/saw_me.js"></script>
+		<script type="text/javascript">
+			new zs.Init('SawMe');
+		</script>
+	</body>
+
+</html>

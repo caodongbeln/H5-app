@@ -1,0 +1,166 @@
+.mui-title span:first-child{
+	min-width: 23%;
+}
+.xiangxia_active{
+	background-image: url(../images/xiangxiajiantou.png);
+}
+.bendi_img img{
+	width: 100%;
+	display: block;
+}
+.bendi_fenlei{
+	height: 50px;
+	border-bottom: 1px solid #999;
+	background-color: #fff;
+}
+.bendi_fenlei a {
+	width: 1px;
+    height: 25px;
+    margin-top: 8px;
+    display: inline-block;
+    border-left: 1px solid #999999;
+}
+.bendi_activity,.bendi_foreigner{
+	height: 35px;
+	display: inline-block;
+	width: 48.5%;
+	margin-top: 7.5px;
+	text-align: center;
+	color: rgb(153,153,153);
+	line-height: 35px;
+}
+.bendi_activity{
+	border-right: 1px solid #E5E5E5;
+}
+.bendi_fenlei span{
+	display: inline-block;
+	height: 22px;
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+.bendi_activity span{
+	background-image: url(../images/activity.png);
+	width: 22px;
+	margin-top: -3px;
+}
+.bendi_foreigner span{
+	background-image: url(../images/foreigner.png);
+	width: 22px;
+	margin-top: -2px;
+}
+.authors{
+	position: relative;
+}
+.bendi_img-first {
+	margin-top: 10px;
+}
+.Activities_content{
+	position: absolute;
+	bottom: 25px;
+	right: 0;
+	/*width: ;*/
+	min-width: 60%;
+}
+.Activities_content_left{
+	left: 0;
+}
+.text_align_right{
+	text-align: right;
+}
+.text_align_left{
+	text-align: left;
+}
+.padding_left{
+	padding-left: 10px;
+}
+.Activities_content p{
+	padding-right: 10px;	
+}
+.Activities_content p .id_card{
+	width: 18px;
+	height: 11px;
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	background-image: url(../images/id_card.png);
+}
+.Activities_content p:first-child{
+	line-height: 17px;
+}
+.Activities_content p:last-child{
+	line-height: 14px;
+}
+.touxiang{
+	width: 49px;
+	height: 49px;
+	position: absolute;
+	left: 10px;
+	bottom: 1px;
+}
+.touxiang img{
+	width: 100%;
+	border-radius: 50%;
+}
+.user_information{
+	line-height: 25px;
+	height: 25px;
+	color: #666;
+	padding: 0 10px;
+	background-color: #fff;
+}
+.user_information_padding_left_img{
+	padding-left: 62px;
+}
+.people,.house{
+	display: inline-block;
+	height: 25px;
+	float: right;	
+}
+.people{
+	margin-right: 20px;
+}
+.house i,.people i {
+	display: inline-block;
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+.house i{
+	width: 11px;
+	height: 11px;
+	background-image: url(../images/home.png);
+	    margin-top: -5px;
+}
+.people i{
+	width: 11.5px;
+	height: 10px;
+	background-image: url(../images/reception.png);
+	margin-top:-4px
+}
+.discover_icon_active{
+	background-image: url(../images/discover_active.png);
+}
+.mui-title .lvtu_list{
+	border-bottom: none;
+}
+.inlocal{
+	width: 20px;
+	height: 20px;
+	background-image: url(../images/jinrubendihuodong.png);
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: block;
+	float: right;
+	margin-top: 12px;
+}
+.foreigner_img_disabled{
+	background-image: url(../images/foreigner_disabled.png) !important;
+}
+.activity_img_disabled{
+	background-image: url(../images/activity_disabled.png) !important;
+}

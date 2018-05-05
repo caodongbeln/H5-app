@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>道具</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/Notification_list.css" />
+		<link rel="stylesheet" type="text/css" href="../css/message.css" />
+		<style type="text/css">
+			.mui-segmented-control.mui-segmented-control-inverted {
+				height: 44px;
+			}
+			
+			.mui-media-body p {
+				line-height: 12px;
+			}
+			
+			.mui-scroll-wrapper,
+			.mui-slider {
+				overflow: visible;
+			}
+			
+			.mui-media-body p {
+				margin-top: 10px !important;
+			}
+			
+			.mui-control-item {
+				margin-left: -44px;
+			}
+			.weidu-hongdian{
+				top: 10px;
+			}
+			.wexin{
+				width: 22px !important;
+				height: 22px !important;
+				top: 12px !important;
+				left: 10px !important;
+				z-index: 100 !important;
+			}
+			
+		</style>
+	</head>
+
+	<body style="overflow-x: hidden !important;">
+		<style>
+			.mui-control-content {
+				background-color: #f0eff4;
+				min-height:570px;
+			}
+			@media only screen and (max-height: 480px) {
+				.mui-control-content {
+					background-color: #f0eff4;
+					min-height: 480px !important;
+				}
+			}
+		</style>
+		<div class="mui-content">
+			<div id="slider" class="mui-slider prop" style="width: 100% !important;overflow:hidden !important;">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" style="overflow-x: hidden !important;width: 100% !important;">
+					<span class="back mui-action-back background"></span>
+					<a class="mui-control-item mui-active" href="#item1mobile" style="border-top-right-radius: 0px !important;border-bottom-right-radius: 0px !important;">道具</a>
+					<a class="mui-control-item" href="#item2mobile" style="border-top-left-radius: 0px !important;border-bottom-left-radius: 0px !important;">金币</a>
+				</div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	<script src="../js/jquery-2.1.1.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/cache.js"></script>
+	<script src="../js/zs.js"></script>
+	<script src="../template/shop.min.js"></script>
+	<script src="../js/shop.js"></script>
+	<script type="text/javascript">
+		new zs.Init('Shop');
+	</script>
+	</body>
+</html>

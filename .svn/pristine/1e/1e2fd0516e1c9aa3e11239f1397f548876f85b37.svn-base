@@ -1,0 +1,19 @@
+{{if list != ''}}
+{{each list}}
+<li class="mui-table-view-cell mui-media" data-extras='{"dynamicid":{{$value.id}},"dynamicname":"{{$value.username}}"}' data-id="{{$value.fid}}" data-href="friend_detail.html">
+	<a class="">
+		<img class="mui-media-object mui-pull-left" src="../images/cover.png" data-src="{{$value.user.cover}}" data-css='a50'>
+		<div class="mui-media-body">
+			<span><i>{{$value.username}}</i><i class="distance" id="distance_{{$index}}">距离{{$value.distance}}</i><i>{{$value.atime}}</i></span>
+			<p class='mui-ellipsis'>{{$value.user_location.address}}</p>
+		</div>
+	</a>
+</li>
+{{/each}}
+{{else}}
+		<!--在没有好友的情况下显示-->
+	<div class="no-results" style="margin-top: 1px;padding-top:20px;padding-bottom: 50px;background-color:transparent !important;">
+		暂无任何好友
+		<p><span id="add" data-href="add_friend.html"/>添加</span></p>
+	</div>
+{{/if}}

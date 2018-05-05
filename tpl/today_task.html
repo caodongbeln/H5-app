@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>今日任务</title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/my_prop.css" />
+		<link rel="stylesheet" type="text/css" href="../css/yincanggundongtiao.css"/>
+		<style type="text/css">
+			.mui-media-body>p:first-child {
+				line-height: 22px;
+				color: #666;
+			}
+			
+			.color {
+				color: #666;
+				line-height: 15px;
+			}
+			
+			.mui-table-view .mui-media-object {
+				width: 31.5px;
+				height: 33.5px;
+				margin-top: 5px;
+			}
+			
+			.mui-table-view-cell {
+				padding: 10px 15px;
+			}
+			
+			.mui-media-body>p:last-child {
+				line-height: 14px;
+			}
+			
+			.mui-media-body {
+				position: relative;
+			}
+			
+			.fuceng-yiwancheng {
+				position: absolute;
+				top: 0;
+				right: 10px;
+				color: #999;
+				font-size: 12px;
+				top: 28%;
+			}
+			
+			.fuceng-qianwang {
+				background-color: #028ce6;
+				padding: 5px 8px;
+				color: #fff;
+				/*top: ;*/
+			}
+			
+			.dinglantongzhi {
+				line-height: 30px;
+				margin-bottom: 0;
+				margin-top: 60%;
+				text-align: center;
+				font-size: 12px;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav nav">
+			<span class="back mui-action-back background"></span>
+			<h1 class="mui-title">今日任务</h1>
+			<!--<span class="prop_icon background"></span>-->
+		</header>
+		<div class="mui-content">
+			<p class="dinglantongzhi padding-content" style="margin-top: 0px !important;">今日已获得<span id='total'></span>金币，继续努力哦！</p>
+			<ul class="mui-table-view" id='task'>
+
+			</ul>
+		</div>
+		<script src="../js/jquery-2.1.1.min.js"></script>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/cache.js"></script>
+		<script src="../js/zs.js"></script>
+		<script src="../template/task.min.js"></script>
+		<script src="../js/task.js"></script>
+		<script type="text/javascript">
+			new zs.Init('Task');
+		</script>
+	</body>
+
+</html>

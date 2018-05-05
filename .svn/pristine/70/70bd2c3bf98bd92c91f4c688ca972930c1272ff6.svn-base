@@ -1,0 +1,21 @@
+input[type=search]{
+	width: 100%;
+	border-radius:0 ;
+	background-color: #fff;
+	height: 32px;
+	line-height: 32px;
+	margin-top: 3px;
+}
+.mui-search{
+	
+	height: 38.5px;
+}
+.sousuoanniu{
+	width: 36px;
+	height: 100%;
+	background-color: #79bded !important;
+	display: inline-block;
+	line-height: 34px;
+	margin-top: 2px;
+	text-align: center;
+}

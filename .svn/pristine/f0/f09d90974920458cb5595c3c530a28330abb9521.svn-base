@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+		<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>好友详情</title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/big_img.css" />
+		<link rel="stylesheet" type="text/css" href="../css/The_personal_data.css" />
+		<link rel="stylesheet" type="text/css" href="../css/yincanggundongtiao.css"/>
+		<style type="text/css">
+			.right-icon-div li {}
+			.sangexuanxiang-div img {
+				width:50px;
+				height: 50px;
+			}
+			.no-jinzhi{
+				width: 19px !important;
+				height: 19px !important;
+				margin-top: 2px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav nav">
+			<span class="back mui-action-back background"></span>
+			<h1 class="mui-title" id="username"></h1>
+			<span class="right-icon background" id="right-icon-friend-detail"></span>
+		</header>
+		<ul class="right-icon-div mui-table-view" id="right-icon-friend-detail-div" style="position: fixed;top:44px">
+			<li class="dingwei mui-table-view-cell font_12 color_666" id="confirmBtn"><span class="background jinzhi"><img src="" id="location"/></span><i id="location_see"></i></li>
+			<!--<li class="background sao mui-table-view-cell font_12 color_666"><span class="background fasonggaimingpian"></span>转发该名片</li>-->
+			<li class="background add-friend mui-table-view-cell  font_12 color_666" id="tousu"><span class="background tousu"></span>投诉</li>
+			<li class="background add-friend mui-table-view-cell  font_12 color_666" id="delete"><span class="background f_delete"></span>删除</li>
+		</ul>
+		<div class="mui-content">
+			<div id="detailHeader">
+				
+			</div>
+			<div id="detailContent"></div>
+			<div id="detailFooter"></div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/jquery-2.1.1.min.js"></script>
+		<script src="../js/cache.js"></script>
+		<script src="../js/zs.js"></script>
+		<script src="../js/mui.zoom.js"></script>
+		<script src="../js/mui.previewimage.js"></script>
+		<script src="../js/user_info.js"></script>
+		<script src="../template/friend_detail.min.js"></script>
+		<script src="../js/personal.js"></script>
+		<script type="text/javascript">
+			new zs.Init('Friend');
+			document.getElementById('right-icon-friend-detail').addEventListener('tap', function() {
+				$('#right-icon-friend-detail-div').toggleClass('block');
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,66 @@
+			.dynamic-biaoqing-box {
+				width: 100%;
+				display: table;
+				background-color: #fff;
+			}
+			
+			.dynamic-biaoqing-box li {
+				width: 10%;
+				/*text-align: center;*/
+				float: left;
+				/*border: 1px solid red;*/
+				height: 30px;
+			}
+			
+			.dynamic-biaoqing-box i {
+				margin: 0 auto;
+				display: block;
+				width: 20px;
+				height: 20px;
+			}
+			
+			.dynamic-biaoqing-box i img {
+				width: 100%;
+				height: 100%;
+			}
+			.textarea img{
+				width: 20px;
+				height: 20px;
+			}
+/*表情包html代码
+ * <ul class="dynamic-biaoqing-box">
+					<li>
+						<i><img src="../images/QQ图片20160621110159.png" alt="" /></i>
+					</li>
+					<li>
+						<i><img src="../images/QQ图片20160621110159.png" alt="" /></i>
+					</li>
+					<li>
+						<i><img src="../images/QQ图片20160621110159.png" alt="" /></i>
+					</li>
+					<li>
+						<i><img src="../images/QQ图片20160621110159.png" alt="" /></i>
+					</li>
+					<li>
+						<i><img src="../images/QQ图片20160621110159.png" alt="" /></i>
+					</li>
+					<li>
+						<i><img src="../images/QQ图片20160621110159.png" alt="" /></i>
+					</li>
+					<li>
+						<i><img src="../images/QQ图片20160621110159.png" alt="" /></i>
+					</li>
+					<li>
+						<i><img src="../images/QQ图片20160621110159.png" alt="" /></i>
+					</li>
+					<li>
+						<i><img src="../images/QQ图片20160621110159.png" alt="" /></i>
+					</li>
+					<li>
+						<i><img src="../images/QQ图片20160621110159.png" alt="" /></i>
+					</li>
+					
+					<li>
+						<i><img src="../images/QQ图片20160621110159.png" alt="" /></i>
+					</li>
+				</ul>*/

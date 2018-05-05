@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title class="i18n" name='title'>实名认证</title>
+		<meta id="i18n_pagename" content="index-common">
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/header_dark.css" />
+		<link rel="stylesheet" type="text/css" href="../css/btn_bottom.css" />
+		<link rel="stylesheet" type="text/css" href="../css/Verified.css" />		
+				<style type="text/css">
+			input::-webkit-input-placeholder {
+				/* WebKit browsers */
+				font-size: 14px;
+				color: #999;
+			}
+			
+			:-moz-placeholder {
+				/* Mozilla Firefox 4 to 18 */
+				font-size: 14px;
+				color: #999;
+			}
+			
+			input::-moz-placeholder {
+				/* Mozilla Firefox 19+ */
+				font-size: 14px;
+				color: #999;
+			}
+			:-ms-input-placeholder {
+				/* Internet Explorer 10+ */
+				font-size: 14px;
+				color: #999;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title index_listWhiteColor font_17">实名认证</h1>
+			<a class="mui-pull-left houtui_white mui-action-back"></a>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					
+						真实姓名
+						<input type="text" name="" id="ture_name" value="" placeholder="请填写证件上的姓名"/>
+					
+				</li>
+				<li class="mui-table-view-cell">
+
+					证件号码
+					<input type="text" id='card' class="font_14 phone" placeholder="填写"/>
+
+				</li>
+				<li class="mui-table-view-cell" id="countryList" data-href='chooseCountry.html' data-view='chooseCountry'>
+					<a class="mui-navigate-right font_14">
+						颁发证件国家<span id="country" style="float: right;margin-right: 25px;"></span>
+					</a>
+				</li>
+			</ul>
+			<div class="pictureBox">
+				<div class="shengming">
+					上传手持证件照
+				</div>
+				<div class="shili_box">
+					
+				<div class="idcardBox">
+					<div class="id_card">
+						<img src="../images/1_03.jpg"/>
+					</div>
+					<div class="idcard_explain">
+						身份证示例
+					</div>
+				</div>
+				
+				
+				<div class="idcardBox">
+					<div class="id_card">
+						<img src="../images/1_05.jpg"/>
+					</div>
+					<div class="idcard_explain">
+						护照示例
+					</div>
+				</div>
+				
+				</div>
+				<div class="idcardBox shangchuan" >
+					<div id='add_img'>
+						
+					</div>
+					<div class="id_card" id='last'>
+						<img src="../images/1_12.jpg"/>
+					</div>
+					<div class="idcard_explain">
+						上传您的证件照
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="btnBox"><div class="mui-btn mui-btn-block" id="renz">提交认证</div></div>
+	</body>
+	<script src="../js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/mui.picker.min.js"></script>
+	<script src="../js/mui.poppicker.min.js"></script>
+	<script src="../js/city.data.js" type="text/javascript" charset="utf-8"></script>
+	<!-- 加载语言包文件 -->
+	<script src="../js/jquery.i18n.properties-min-1.0.9.js"></script>
+	<script src="../js/cache.js"></script>
+	<script src="../js/zs.js"></script>
+	<script src="../js/verified.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">	
+		new zs.Init('Verified');
+	</script>
+</html>

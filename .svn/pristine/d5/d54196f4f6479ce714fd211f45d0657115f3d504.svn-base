@@ -1,0 +1,38 @@
+{{if list != null}}
+{{each list}}
+<li class="{{if $value.couponInfo.status == 2}}coupon-invalid{{/if}}">
+	<span>
+		{{if $value.toolsInfo != null}}
+			{{$value.toolsInfo.name}}
+		{{else}}
+			{{$value.couponInfo.num}}金币
+		{{/if}}
+		{{if $value.couponInfo.status == 0}}
+		<a class="mui-pull-right">未使用</a>
+		{{else if $value.couponInfo.status == 1}}
+		<a class="mui-pull-right">已使用</a>
+		{{else}}
+		<a class="mui-pull-right">失效</a>
+		{{/if}}
+	</span>
+	<span>
+		{{if  $value.toolsInfo != null}}
+		{{$value.toolsInfo.desc}}
+		{{else}}
+		{{$value.couponInfo.desc}}
+		{{/if}}
+		<br />
+		{{$value.couponInfo.btime}}至{{$value.couponInfo.etime}}有效
+	</span>
+	{{if  $value.toolsInfo != null}}
+		<span class="ears"><img src="../images/eye.png" data-src="{{$value.toolsInfo.icon}}"/></span>
+	{{else}}
+	<span class="pig"></span>
+	{{/if}}
+</li>
+{{/each}}
+{{else}}
+<div class="no-result">
+	您还没有优惠券哦~
+</div>
+{{/if}}

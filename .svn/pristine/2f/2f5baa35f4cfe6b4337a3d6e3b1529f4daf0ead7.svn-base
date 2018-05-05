@@ -1,0 +1,13 @@
+<div class="simplify-dynamic {{if say_likeInfo == null }}none{{/if}} border-top" style="margin-top: 2px;padding-left: 40px;">
+		<div class="xiaotouxiang-big-box" style="display: table;">
+			<i class="dianzan-xiao background"></i>
+			<div class="xiaotouxiang-box">
+				<ul class="xiaolouxiang-ji" id="smallHeadPortrait{{id}}">
+					{{if say_likeInfo == null }} {{else}} {{each say_likeInfo as smallheadPortrait hh}}
+					<li data-username = "" data-uid = "{{uid}}"><img src="../images/cover.png" data-src="{{smallheadPortrait.cover}}" /></li>
+					{{/each}} {{/if}}
+				</ul>
+			</div>
+
+		</div>
+	</div>

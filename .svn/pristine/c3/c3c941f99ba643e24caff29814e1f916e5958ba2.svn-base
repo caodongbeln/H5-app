@@ -1,0 +1,15 @@
+<div class="simplify-dynamic {{if strategy_likeInfo}}border-top{{/if}} {{if !is_trategy_likeInfo}}none{{/if}}" style="background-color: #fff;margin-top: 0;padding-top: 5px;padding-left: 5px;" id="simplify-dynamic">
+	<div class="xiaotouxiang-big-box" id="xiaotouxiang-big-box">
+		<i class="dianzan-xiao background"></i>
+		<div class="xiaotouxiang-box">
+			<ul class="xiaolouxiang-ji" id="smallHeadPortrait{{id}}">
+				{{if is_trategy_likeInfo}}
+				{{each strategy_likeInfo}} 
+				<li data-username = "" data-uid = "{{$value.uid}}"><img src="../images/cover.png" data-src = "{{$value.cover}}" data-css='a50'/></li>
+				{{/each}}
+				{{/if}}
+			</ul>
+		</div>
+
+	</div>
+</div>

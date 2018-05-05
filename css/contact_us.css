@@ -1,0 +1,48 @@
+.contact-img {
+	text-align: center;
+	height:160px
+}
+.contact-img img {
+	height: 116px;
+	margin-top: 22px;
+}
+.contact-ul li{
+	background-color:#fff ;
+	height: 44px;
+	color: #666;
+	margin-bottom: 1px;
+	font-size: 14px;
+	line-height: 44px;
+	padding-left: 42px;
+}
+.contact-ul li .mui-pull-right {
+	padding-right: 10px;
+}
+.contact-ul li:first-child {
+	background-image:url(../images/tel.png);
+	background-repeat:no-repeat ;
+	background-size:22px;
+	background-position:11px 10px;
+}
+.contact-ul li:last-child {
+	margin-top: -1px;
+	padding-left: 10px;
+}
+.contact-ul li:nth-child(2) {
+	background-image:url(../images/sina.png);
+	background-repeat:no-repeat ;
+	background-size:22px;
+	background-position:11px 10px;
+}
+.contact-ul li:nth-child(3) {
+	background-image:url(../images/tencent.png);
+	background-repeat:no-repeat ;
+	background-size:22px;
+	background-position:11px 10px;
+}
+.contact-ul li:nth-child(4) {
+	background-image:url(../images/qq-grey.png);
+	background-repeat:no-repeat ;
+	background-size:22px;
+	background-position:11px 10px;
+}

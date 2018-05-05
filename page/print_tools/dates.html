@@ -1,0 +1,15 @@
+<div class="positioning-time">
+	当前足迹时间：<span id ="current"></span>
+</div>
+<div class="positioning-day">
+	<ul class="positioning-ul">
+		{{each weeks}}
+		<li>{{$value}}</li>
+		{{/each}}
+	</ul>
+	<ul id='dates' class="positioning-ul">
+		{{each dates}}
+		<li data-time='{{times[$index]}}'><span {{if $value==dates[6]}}class="positioning-xuanzhong"{{/if}} id='id{{$value}}'>{{$value}}</span></li>
+		{{/each}}
+	</ul>
+</div>

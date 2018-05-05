@@ -1,0 +1,21 @@
+			/*首页地图显示*/
+			
+			.shouyedituxianshi {
+				padding: 6px 10px;
+			}
+			
+			.shouyedituxianshi a {
+				padding: 10px 15px !important;
+			}
+			
+			.shouyedituxianshi .mui-ellipsis {
+				margin-top: 18px;
+			}
+			
+			.mui-content>.mui-table-view:first-child {
+				margin-top: 0;
+			}
+			
+			.sanhangtan li {
+				text-align: center;
+			}

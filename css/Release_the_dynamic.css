@@ -1,0 +1,73 @@
+.send-dynamic{
+	font-size: 14px;
+	margin-right: 10px;
+}
+.mui-content{
+	background-color: #fff;
+}
+.mui-table-view-cell{
+	padding: 11px 6px;
+}
+textarea{
+	/*margin-top: ;*/
+	min-height: 180px;
+	padding-top: 10px;
+	/*margin-bottom: 10px;*/
+	margin-bottom:0;
+	color: #999;
+	padding-left:10px ;
+	padding-right: 10px;
+	border-radius:0
+}
+.touxiang{
+	display: table;
+	padding: 10px 0 6px 0;
+	border-bottom: 1px solid #dedfe0;
+}
+.touxiang li{
+	width: 15.625%;
+	/*height: 50px;*/
+	float: left;
+	margin-left: 10px;
+	margin-bottom: 4px;
+}
+.touxiang li img{
+	width: 100%;
+	display: table;
+}
+.huitiao{
+	height: 10px;
+	width: 100%;
+	/*background-color: #f0eff4;*/
+	margin-bottom: 0;
+	margin-top: -4px;
+}
+.location,.gongkai{
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+}
+.location{
+	background-image: url(../images/location-green.png);
+}
+.gongkai{
+	background-image: url(../images/gongkai.png);
+}
+.location+span,.gongkai+span{
+	color: #666;
+	font-size: 14px;
+	vertical-align: top;
+	line-height: 22px;
+	height: 22px;
+	display: inline-block;
+}
+.mui-table-view-cell{
+	height: 44px;
+	border-bottom:1px solid  #dedfe0;
+}
+.shifougongkai{
+	float: right;
+	color: #999;
+	font-weight: 400;
+	font-size: 14px;
+}

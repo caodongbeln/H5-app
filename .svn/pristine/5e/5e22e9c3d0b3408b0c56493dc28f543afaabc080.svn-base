@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>通知列表</title>  
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/Notification_list.css" />
+    <link rel="stylesheet" type="text/css" href="../css/list_img.css"/>
+    <style type="text/css">
+    	.mui-table-view-cell>a:not(.mui-btn){
+    		padding: 7px 10px;
+    	}
+    </style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav nav">
+		<span class="back mui-action-back background"></span>	
+		<h1 class="mui-title">通知列表</h1>
+		<span class="jiahaobaise background" data-href='editNotice.html' data-view='editNotice'></span>
+	</header>
+	<div class="mui-content">
+		<ul class="mui-table-view" id="noticeContent">		
+		</ul>
+	</div>
+	<script src="../js/jquery-2.1.1.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/cache.js"></script>
+	<script src="../js/zs.js"></script>
+	<script src="../js/zs.notice.js"></script>
+	<script src="../template/notice.min.js"></script>
+	<script src="../js/notice_list.js"></script>
+	<script type="text/javascript">
+		new zs.Init('Notice_list'); 
+	</script>
+</body>
+</html>

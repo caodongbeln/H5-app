@@ -1,0 +1,15 @@
+<div class="pinglunqu {{if !strategy_commentInfo}}none{{/if}}" style="background-color: #fff;display: table;width: 100%;"> 
+	<ul class="mui-table-view" id="pinlunqu{{id}}">
+	{{if strategy_commentInfo}}{{each strategy_commentInfo}}
+	<li class="mui-table-view-cell mui-media border-bottom">
+			<img class="mui-media-object mui-pull-left" src="../images/cover.png" data-src = '{{$value.cover}}' data-css='a50' data-username = "{{$value.username}}" data-uid = "{{$value.uid}}">
+			<div class="mui-media-body">
+				<p class="line-height-14 user_time"><span class="font_12 color_028ce6 line-height-14"  data-username = "{{$value.username}}" data-uid = "{{$value.uid}}">{{$value.username}}</span><span class="mui-pull-right font_12 color_999 line-height-14">{{$value.releaseTime}}</span></p>
+				<p class='pinglun-content font_12 color_333 line-height-14'>{{$value.msg}}</p>
+			</div>
+		</li>
+	{{/each}}
+	</ul> 
+	{{else}}
+	{{/if}}
+</div>

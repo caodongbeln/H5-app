@@ -1,0 +1,82 @@
+/*一个按钮的时候*/
+/*<div class="btnBox"><div class="mui-btn mui-btn-block">发 &nbsp;布</div></div>*/
+.mui-btn-block{
+	position: fixed;
+	bottom: 0;
+	/*margin-top: 172px;*/
+	width: 100%;
+	height: 40px;
+	padding: 0;
+	margin-bottom: 0;
+	line-height: 40px;
+	color: rgb(102,204,153);
+	border: none;
+	border-top: 1px solid rgb(102,204,153);
+	font-size: 15px;
+}
+
+/*两个按钮的时候*/
+/*<div class="btnBox">
+		<div class="btn_2_left">保存并退出</div>
+		<div class="btn_2_right">继续完善</div>
+		</div>*/
+.btnBox{
+	position: fixed;
+	height: 40px;
+	width: 100%;
+	border: none;
+	border-top: 2px solid rgb(102,204,153);
+	bottom: 0;
+	background-color: #fff;
+}
+.btnBox .btn_default{
+	border-right:2px solid #999999 ;
+}
+.btnBox .btn_default:last-child{
+	border-right:0 ;
+}
+.btn_default{
+	display: inline-block;
+	height: 40px;
+	text-align: center;
+	color: rgb(102,204,153);
+	border: none;
+	font-size: 15px;
+	background-color: #fff;
+	line-height: 40px;
+	box-sizing: border-box;
+}
+.btn_2_width{
+	width: 49.37%;
+}
+/*3个按钮的时候*/
+/*<div class="btnBox">
+		<div class="btn_default btn_3_width">私 &nbsp;聊</div>
+		<div class="btn_default btn_3_width">进入讨论组</div>
+		<div class="btn_default btn_3_width">退出讨论组</div>
+		</div>*/
+.btn_3_width{
+	width: 32.49%;
+}
+/*4个按钮的时候*/
+/*<div class="btnBox">
+		<div class="btn_default btn_4_width">退 &nbsp;出</div>
+		<div class="btn_default btn_4_width">私 &nbsp;聊</div>
+		<div class="btn_default btn_4_width">进入讨论组</div>
+		<div class="btn_default btn_4_width">退出讨论组</div>
+		</div>*/
+.btn_4_width{
+	width: 24.058%;
+	margin-left: -1px;
+}
+@media only screen and (min-width: 100px) and (max-width: 374px) {
+/*.btn_4_width{
+	width: 23.89%;
+}*/
+.btn_3_width{
+	width: 32.35%;
+}
+.btn_2_width{
+	width: 49.26%;
+}
+}

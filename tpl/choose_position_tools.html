@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>选择位置</title>
+		<script src="../js/mui.min.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/Notification_list.css" />
+		<link rel="stylesheet" type="text/css" href="../css/list_img.css" />
+		<link rel="stylesheet" type="text/css" href="../css/new_friend.css" />
+		<style type="text/css">
+			.new-friend-top {
+				line-height: 30px;
+				height: 30px;
+				padding-left: 10px;
+			}
+			
+			p {
+				margin-bottom: 0;
+			}
+			
+			.scale {
+				width: 200px;
+				height: 24px;
+				background-color: #fff;
+				color: #028CE6;
+				border: 1px solid #d2d2d2;
+				display: table;
+				border-radius: 4px;
+			}
+			
+			.scale span {
+				width: 25%;
+				height: 100%;
+				float: left;
+				text-align: center;
+				font-size: 14px;
+				line-height: 24px;
+				box-sizing: border-box;
+			}
+			
+			.spanBorderRight {
+				border-right: 1px solid #aaaaaa;
+			}
+			
+			.floating_layer {
+				line-height: 30px;
+				background-color: #FFF;
+				width: 202px;
+				padding: 0 10px;
+				border-radius: 15px;
+			}
+			
+			.floating_layer span {
+				width: 50%;
+				display: inline-block;
+				text-align: center;
+			}
+			
+			.floating_layer i {
+				width: 22px;
+				height: 22px;
+				display: inline-block;
+				vertical-align: middle;
+			}
+			
+			.jinru {
+				background-image: url(../images/jinruandtuichu_03.png);
+			}
+			
+			.likai {
+				background-image: url(../images/likai_03.png);
+			}
+			
+			.mui-table-view-cell {
+				padding: 3px 10px;
+			}
+			
+			.mui-ellipsis.color_333 {
+				color: #333 !important;
+			}
+			
+			.mui-ellipsis.font_14 {
+				font-size: 14px;
+			}
+			
+			.mui-icon-search:before {
+				left: 38%;
+			}
+			#map {
+				width: 100%;
+				/*position: fixed;*/
+				/*top: 45px;*/
+				/*bottom: 0px;*/
+				height: 200px;
+				
+				background: #FFFFFF;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<!--
+        	作者：949961306@qq.com
+        	时间：2016-06-23
+        	描述：比例尺部分
+        -->
+			<div class="scale">
+				<span class="spanBorderRight">50km</span>
+				<span class="spanBorderRight">520km</span>
+				<span class="spanBorderRight">230km</span>
+				<span>3km</span>
+			</div>
+			<!--
+        	作者：949961306@qq.com
+        	时间：2016-06-23
+        	描述：浮层
+        -->
+			<div class="floating_layer color-fff color_333 font_14">
+				<span class="spanBorderRight"><i class="background jinru"></i>进入触发</span><span>离开触发<i class="background likai"></i></span>
+			</div>			
+		</div>
+	</body>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/cache.js"></script>
+	<script src="../js/zs.js"></script>
+	<script src="../js/choose_position.js" type="text/javascript" charset="utf-8"></script>
+
+	<script type="text/javascript" charset="utf-8">
+		new zs.Init('Choose_position');
+	</script>
+
+</html>

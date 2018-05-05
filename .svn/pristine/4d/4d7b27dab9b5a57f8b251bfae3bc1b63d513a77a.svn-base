@@ -1,0 +1,71 @@
+.shuru-box{
+	margin-top: 25px;
+	
+}
+.username-box{
+	height: 44px;
+	border: 1px solid #d7d7d7;
+	padding-left: 7px;
+	padding-top: 11px;
+	margin-bottom: 10px;
+}
+.username-box input{
+	outline: none;
+	font-size: 14px;
+	line-height: 14px;
+	height: 14px;
+	border: none;
+	background-color: transparent;
+	width: 90%;
+	padding-left: 8px;
+	margin-bottom: 0;	
+}
+.username,.password{
+	width: 22px;
+	height: 22px;
+	display: table;
+	float: left;
+}
+.username{
+	background-image: url(../images/username-icon.png);
+}
+.password{
+	background-image: url(../images/password-icon.png);
+}
+.login-margin{
+	margin-top: 36px;
+}
+.forgot-password{
+	display: table;
+	margin-top: 7.5px;
+	color: #999;
+	font-size: 12px;
+	width: 100%;
+}
+.forgot-password span:last-child{
+	float: right;
+}
+.third-party{
+	/*border: 1px solid red;*/
+	margin-top: 105px;
+	padding: 0 18%;
+}
+.third-party p{
+	font-size: 14px;
+	color: #666;
+	text-align: center;
+}
+.WeChat,.QQ,.weibo{
+	display: inline-block;
+	width:35px;
+	height:35px;
+}
+.WeChat{
+	background-image: url(../images/WeChat.png);
+}
+.QQ{
+	background-image: url(../images/QQ.png);
+}
+.weibo{
+	background-image: url(../images/weibo.png);
+}

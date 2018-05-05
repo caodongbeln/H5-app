@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>隐私设置</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/whoCanSee.css" />
+		<style type="text/css">
+			.mui-table-view-cell>a:not(.mui-btn){
+				padding: 5.5px 15px;
+			}
+			.record{
+				color:green !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav nav">
+			<span class="back mui-action-back background" id="back"></span>
+			<h1 class="mui-title">隐私设置</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view mui-table-view-radio mui-media">
+				<!--<li class="mui-table-view-cell border-bottom" value="0">
+					<a class="mui-navigate-right">
+						<img class="mui-media-object mui-pull-left" src="../images/gongkai_da.png">
+						<div class="mui-media-body font_14">
+							公开
+							<p class='mui-ellipsis'>所有人可见</p>
+						</div>
+					</a>
+				</li>-->
+				<li class="mui-table-view-cell border-bottom" value="1">
+					<a class="mui-navigate-right">
+						<img class="mui-media-object mui-pull-left" src="../images/friendCanSee.png">
+						<div class="mui-media-body font_14">
+							好友可见
+							<p class='mui-ellipsis'>只有好友能看到</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell border-bottom" value="2">
+					<a class="mui-navigate-right">
+						<img class="mui-media-object mui-pull-left" src="../images/notcansee.png">
+						<div class="mui-media-body font_14">
+							不出现在附近中
+							<p class='mui-ellipsis'>对他人显示位置，单不出现附近的人</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell" value="3">
+					<a class="mui-navigate-right">
+						<img class="mui-media-object mui-pull-left" src="../images/close-location.png">
+						<div class="mui-media-body font_14">
+							关闭位置
+							<p class='mui-ellipsis'>对所有人隐身</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script src="../js/jquery-2.1.1.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/cache.js"></script>
+	<script src="../js/zs.js"></script>
+	<script src="../js/privacy.js"></script>
+	<script type="text/javascript">
+		new zs.Init('Privacy');
+	</script>
+</html>

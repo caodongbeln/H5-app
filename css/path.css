@@ -1,0 +1,528 @@
+@charset "UTF-8";
+#menu {
+	background: rgba(111, 0, 0, 0);
+}
+
+.html-hidden {
+	overflow-x:auto; 
+	overflow-y:hidden; 
+}
+.flyout-content-height {
+	height: 92%;
+    margin: 0px;
+    /*overflow: hidden;*/
+}
+.flyout-content-height ul {
+	margin-top: 83% !important;
+}
+.flyout-content {
+	width: 100%;
+	/*height: 198px;*/
+	margin: 320px auto;
+	padding: 0px;
+	background: transparent;
+	/*border: solid #6641E2 1px;*/
+	position: fixed;
+    bottom: 50px;
+    z-index: 100000;
+}
+
+.flyout-content ul {
+	padding: 0;
+	margin: 0;
+}
+
+.flyout-content li {
+	padding: 0;
+	margin: 0;
+}
+
+.flyout-content a {
+	padding: 0;
+	margin: 0;
+}
+
+.flyout-content span {
+	padding: 0;
+	margin: 0;
+}
+
+.flyout-wrap {
+	position: relative;
+  	bottom: 0px;
+  	height: 102%;
+}
+
+.flyout-wrap .flyout {
+	position: relative;
+	margin: 0 0 0px 0px;
+	line-height: 0;
+	height: 101.5%;
+    background: gray;
+    opacity: 0.5;
+}
+.flyout-content-height li {
+	top: 59% !important;
+}
+.flyout-wrap .flyout > li {
+	position: absolute;
+	display: block;
+	left: 165px;
+	height: 170px;
+	background: yellow;
+	-webkit-transform-origin: 12.5px bottom;
+	text-align: Center;
+	top: 175px;
+	margin-top: 100px;
+}
+.expand li:first-child {
+	  margin-left: -10% !important;
+	  top: 60% !important;
+}
+.expand li:last-child {
+	margin-top: 68px !important;
+    left: 48.5% !important;
+}
+.expand li:nth-child(2) {
+	left: 39% !important;
+}
+.flyout-wrap .flyout > li:nth-of-type(1) {
+	-webkit-transform: rotate(-60deg);
+}
+
+.flyout-wrap .flyout > li:nth-of-type(2) {
+	-webkit-transform: rotate(0deg);
+}
+
+.flyout-wrap .flyout > li:nth-of-type(3) {
+	-webkit-transform: rotate(60deg);
+}
+
+
+/*li 内 a标签的样式*/
+
+.flyout-wrap .flyout > li a {
+	position: absolute;
+	display: block;
+	width: 32px;
+	height: 32px;
+	overflow: hidden;
+	text-indent: 5px;
+    line-height: 90px;
+	/*background: #444;*/
+	/*border: 3px solid #fff;*/
+	border-radius: 50%;
+	/*box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px 0, rgba(0, 0, 0, 0.2) 0 0 0 1px, inset rgba(0, 0, 0, 0.5) 0 0 2px 0;*/
+	color: #666666;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.flyout-wrap .flyout li a {
+	top: 150px;
+	-webkit-animation: contract 0.35s ease-out 1 backwards;
+}
+
+
+/*li 内 a标签 被激活 的样式*/
+
+.flyout-wrap .flyout > li a:active {
+	background: #000;
+	border-color: #555;
+}
+
+
+/*li 内 a span 被激活 的样式*/
+
+.flyout-wrap .flyout > li a:active span {
+	opacity: 0.3;
+}
+
+
+/*li 内 a span 的样式*/
+
+.flyout-wrap .flyout > li a span {
+	display: block;
+	width: 100%;
+	height: 100%;
+	/*background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16px' height='16px'><path fill='#fff' d='M11.045,9.879l1.906,6.114l-4.949-3.791L3.059,16l1.9-6.117L0,6.114l6.123,0.013L7.998,0l1.879,6.12L16,6.104L11.045,9.879z'/></svg>") no-repeat center center;*/
+	background-size: 16px 16px;
+}
+.flyout-wrap .flyout > li:last-child a span {
+	background-image:url(../images/path-parter.png);
+	background-size:100%  100%;
+	background-repeat:no-repeat ;
+}
+.flyout-wrap .flyout > li:nth-child(2) a span {
+	background-image:url(../images/tel.png);
+	background-size:100%  100%;
+	background-repeat:no-repeat ;
+}
+.flyout-wrap .flyout > li:first-child a span {
+	background-image:url(../images/guide.png);
+	background-size:100%  100%;
+	background-repeat:no-repeat ;
+}
+
+/*初始 li全部隐藏*/
+
+.flyout-wrap .flyout-init li {
+	display: none;
+}
+
+
+/*展开li*/
+
+.flyout-wrap .flyout.expand li a {
+	top: 10px;
+	-webkit-animation: expand 0.6s ease 1 backwards;
+	width: 71px;
+  height: 71px;
+}
+
+
+/*展开的li 被点击的动画*/
+
+.flyout-wrap .flyout.fade li a.clicked {
+	top: 10px;
+	-webkit-animation: clicked 0.5s ease-out 1 forwards;
+}
+
+
+/*展开的li（没被点击的） 消失的动画*/
+
+.flyout-wrap .flyout.fade li a:not(.clicked) {
+	top: 10px;
+	-webkit-animation: fade 0.5s ease-out 1 forwards;
+}
+
+
+/*fade 样式下span 的切换效果：透明度在0.5s内切换完成*/
+
+.flyout-wrap .flyout.fade li a:not(.clicked) span {
+	opacity: 0.1;
+	transition: opacity 0.5s ease;
+}
+
+
+/*控制按钮样式*/
+/*@media only screen and (min-width: 100px) and (max-width: 640px) {
+	
+}*/
+@media only screen and (max-width: 320px){
+	.flyout-wrap .flyout-btn {
+		left: 42.7% !important;
+	}
+	.flyout-wrap .flyout > li {
+		left: 141px !important;
+	}
+}
+.flyout-wrap .flyout-btn {
+	position: absolute;
+	bottom: 0;
+	left: 44%;
+	z-index: 99999;
+	width: 46px;
+	height: 46px;
+	overflow: hidden;
+	text-indent: -99999px;
+	background: #4a5c74;
+	background: linear-gradient(top, #f76f54 0, #dd3535 49%, #d32121 51%, #c61f1f 100%);
+	/*border: 4px solid #fff;*/
+	border-radius: 50%;
+	outline: none;
+    bottom: -368px;
+    left: 158px;
+}
+/*.btn-rotate {
+	top:200px;
+}*/
+
+
+/*控制按钮内span标签样式 */
+
+.flyout-wrap .flyout-btn span {
+	display: block;
+	width: 100%;
+	height: 100%;
+	/*background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='20px' height='20px'><g><path fill='#fff' d='M20,11.402c0,0.453-0.367,0.82-0.822,0.82H0.82c-0.453,0-0.82-0.367-0.82-0.82V8.598 c0-0.454,0.367-0.821,0.82-0.821h18.357C19.633,7.776,20,8.144,20,8.598V11.402z'/><path fill='#fff' d='M8.598,20c-0.453,0-0.821-0.367-0.821-0.82V0.821c0-0.452,0.368-0.82,0.821-0.82h2.804 c0.453,0,0.82,0.368,0.82,0.82V19.18c0,0.453-0.367,0.82-0.82,0.82H8.598z'/></g></svg>") no-repeat center center;*/
+	background-image:url(../images/path-open.png);
+	/*border: 4px solid #fff;*/
+	background-repeat:no-repeat ;
+	/*background-size:100% 100%;*/
+	transition: -webkit-transform 0.4s ease;
+	background-size:20px;
+	background-position:13px;
+	border-radius: 30px;
+}
+.btn-rotate {
+	/*margin-top: -5px !important;*/
+	bottom: -57px !important;
+}
+.btn-rotate span {
+	background-image:url(../images/path-close.png);
+}
+
+
+/*控制按钮旋转 */
+
+.flyout-wrap .flyout-btn.btn-rotate span {
+	-webkit-transform: rotate(-135deg);
+}
+
+@-webkit-keyframes expand {
+	0% {
+		top: 150px;
+	}
+	50% {
+		top: -10px;
+	}
+	70% {
+		top: 15px;
+	}
+	100% {
+		top: 10px;
+	}
+}
+
+@-webkit-keyframes contract {
+	0% {
+		top: 10px;
+	}
+	40% {
+		top: -37.5px;
+	}
+	100% {
+		top: 150px;
+	}
+}
+
+@-webkit-keyframes clicked {
+	0% {
+		-webkit-transform: scale(1);
+		opacity: 1;
+		top: 10px;
+		/*left: ;*/
+	}
+	90% {
+		top: 10px;
+	}
+	99% {
+		-webkit-transform: scale(6);
+		opacity: 0;
+		top: 150px;
+	}
+	100% {
+		-webkit-transform: scale(0);
+	}
+}
+
+@-webkit-keyframes fade {
+	0% {
+		-webkit-transform: scale(1);
+		opacity: 1;
+		top: 10px;
+	}
+	90% {
+		opacity: 0;
+		top: 10px;
+	}
+	99% {
+		-webkit-transform: scale(0);
+		top: 150px;
+	}
+	100% {
+		-webkit-transform: scale(0);
+	}
+}
+
+
+/*动画开始时间延迟0.2s*/
+
+.flyout-wrap .flyout li:nth-of-type(1) a {
+	animation-delay: 0.1s;
+}
+
+
+/*关闭时动画效果*/
+
+.flyout-wrap .flyout li:nth-of-type(1) a:not(.clicked) span {
+	-webkit-animation: spin1-contract 0.9s ease-out 1 backwards;
+}
+
+
+/*展开时动画延迟时间为0s*/
+
+.flyout-wrap .flyout.expand li:nth-of-type(1) a {
+	animation-delay: 0.05s;
+	-webkit-transform: rotate(0deg);
+	width: 71px !important;
+	height: 71px !important;
+}
+
+
+/*展开时动画效果*/
+
+.flyout-wrap .flyout.expand li:nth-of-type(1) a span {
+	-webkit-transform: rotate(60deg);
+	-webkit-animation: spin1-expand 0.6s ease-out 1 backwards;
+}
+
+
+/*被点击后做旋转*/
+
+.flyout-wrap .flyout.fade li:nth-of-type(1) a.clicked span {
+	-webkit-transform: rotate(0deg);
+}
+
+@-webkit-keyframes spin1-expand {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	60% {
+		-webkit-transform: rotate(-300deg);
+	}
+	100% {
+		-webkit-transform: rotate(-300deg);
+	}
+}
+
+@-webkit-keyframes spin1-contract {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	50% {
+		-webkit-transform: rotate(-360deg);
+	}
+	100% {
+		-webkit-transform: rotate(-360deg);
+	}
+}
+
+
+/*动画开始时间延迟0.2s*/
+
+.flyout-wrap .flyout li:nth-of-type(2) a {
+	animation-delay: 0.05s;
+}
+
+
+/*关闭时动画效果*/
+
+.flyout-wrap .flyout li:nth-of-type(2) a:not(.clicked) span {
+	-webkit-animation: spin2-contract 0.9s ease-out 1 backwards;
+}
+
+
+/*展开时动画延迟时间为0s*/
+
+.flyout-wrap .flyout.expand li:nth-of-type(2) a {
+	animation-delay: 0.1s;
+	width: 71px !important;
+	height: 71px !important;
+}
+
+
+/*展开时动画效果*/
+
+.flyout-wrap .flyout.expand li:nth-of-type(2) a span {
+	-webkit-transform: rotate(0deg);
+	-webkit-animation: spin2-expand 0.6s ease-out 1 backwards;
+}
+
+
+/*被点击后做旋转*/
+
+.flyout-wrap .flyout.fade li:nth-of-type(2) a.clicked span {
+	-webkit-transform: rotate(0deg);
+}
+
+@-webkit-keyframes spin2-expand {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	60% {
+		-webkit-transform: rotate(-360deg);
+	}
+	100% {
+		-webkit-transform: rotate(-360deg);
+	}
+}
+
+@-webkit-keyframes spin2-contract {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	50% {
+		-webkit-transform: rotate(-420deg);
+	}
+	100% {
+		-webkit-transform: rotate(-420deg);
+	}
+}
+
+
+/*动画开始时间延迟0.2s*/
+
+.flyout-wrap .flyout li:nth-of-type(3) a {
+	animation-delay: 0s;
+}
+
+
+/*关闭时动画效果*/
+
+.flyout-wrap .flyout li:nth-of-type(3) a:not(.clicked) span {
+	-webkit-animation: spin3-contract 0.9s ease-out 1 backwards;
+}
+
+
+/*展开时动画延迟时间为0s*/
+
+.flyout-wrap .flyout.expand li:nth-of-type(3) a {
+	animation-delay: 0.15s;
+	-webkit-transform: rotate(300deg);
+}
+
+
+/*展开时动画效果*/
+
+.flyout-wrap .flyout.expand li:nth-of-type(3) a span {
+	-webkit-transform: rotate(-360deg);
+	-webkit-animation: spin3-expand 0.6s ease-out 1 backwards;
+	width: 71px !important;
+	height: 71px !important;
+}
+
+
+/*被点击后做旋转*/
+
+.flyout-wrap .flyout.fade li:nth-of-type(3) a.clicked span {
+	-webkit-transform: rotate(0deg);
+}
+
+@-webkit-keyframes spin3-expand {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	60% {
+		-webkit-transform: rotate(-360deg);
+	}
+	100% {
+		-webkit-transform: rotate(-360deg);
+	}
+}
+
+@-webkit-keyframes spin3-contract {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	50% {
+		-webkit-transform: rotate(-480deg);
+	}
+	100% {
+		-webkit-transform: rotate(-480deg);
+	}
+}
+
+
+/*# sourceMappingURL=path.css.map */

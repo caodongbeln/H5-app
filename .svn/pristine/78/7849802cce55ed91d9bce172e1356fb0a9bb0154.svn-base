@@ -1,0 +1,31 @@
+<ul class="mui-table-view">
+	<li class="mui-table-view-cell mui-media shouyedituxianshi">
+		<a href="javascript:;">
+			<div class="mui-switch mui-switch-blue mui-pull-right {{if is_show == 1}}mui-active{{/if}}" id="seLshow">
+				<div class="mui-switch-handle"></div>
+			</div>
+			<div class="mui-media-body color_333 font_14">
+				首页地图显示
+				<p class='mui-ellipsis font_12'>打开后,您可直接在首页地图操作</p>
+			</div>
+		</a>
+	</li>
+</ul>
+<div class="personal-margin-top background-color-white">
+	<ul class="mui-table-view mui-grid-view mui-grid-9 transparent dianjiul border-none">
+		<li class="mui-table-view-cell mui-media mui-col-xs-4 sangexuanxiang border-none" data-auth='true' data-id='{{fid}}' data-href="index.html" data-view='index'>
+			<div class="locationDiv sangexuanxiang-div location{{if relation != '1'}}-disabled{{/if}}" style="background-size:50px;">
+			</div>
+		</li>
+		<li class="mui-table-view-cell mui-media mui-col-xs-4 sangexuanxiang border-none" data-tools='true' data-tid='1'
+			data-auth='true' data-id='{{fid}}' data-href='footprint.html' data-view='footprint'>
+			<div class="zujiDiv sangexuanxiang-div zuji{{if relation != '1'}}-disabled{{/if}}" style="background-size:50px;">
+			</div>
+		</li>
+		<li class="mui-table-view-cell mui-media mui-col-xs-4 sangexuanxiang border-none" data-tools='true' data-tid='2'
+			data-auth='true' data-id='{{fid}}' data-href='remind_list.html' data-view='remind_list' >
+			<div class="noticeDiv sangexuanxiang-div naoling{{if relation != '1'}}-disabled{{/if}}" style="background-size:50px;">
+			</div>
+		</li>
+	</ul>
+</div>

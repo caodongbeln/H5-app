@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>周边活动，周边动态</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/message.css" />
+		<link rel="stylesheet" type="text/css" href="../css/surrounding_dynamic.css" />
+		<style type="text/css">
+			body,html{
+				background-color: #f0eff4 !important;
+			}
+			.mui-segmented-control.mui-segmented-control-inverted {
+				height: 44px;
+			}
+			
+			.mui-media-body p {
+				line-height: 12px;
+			}
+			
+			.mui-scroll-wrapper,
+			.mui-slider {
+				overflow: visible;
+			}
+			
+			.mui-media-object img {
+				width: 100%;
+			}
+			
+			.mui-control-content {
+				background-color: #f0eff4;
+				min-height: 200px;
+			}
+			
+			.mui-content .mui-pull-top-pocket {
+				top: 40px !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header id="slider" class="mui-slider">
+			<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+				<a class="mui-control-item mui-active" style="border-top-right-radius: 0px !important;border-bottom-right-radius: 0px !important;" id="dynamic">周边动态</a>
+				<a class="mui-control-item" style="border-top-left-radius: 0px !important;border-bottom-left-radius: 0px !important;" id="activity">周边活动</a>
+				<span id="fabu" class="background jiahaobaise" ></span>
+			</div>
+		</header>
+		<div class="mui-content" id="mui-content">
+
+		</div>
+		<nav id='nav' class="mui-bar mui-bar-tab nav-footer"></nav>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/cache.js"></script>
+		<script src="../js/zs.js"></script>
+		<script type="text/javascript" src="../template/surrounding_dynamic.min.js"></script>
+		<script src="../js/surrounding_dynamic.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8">
+			new zs.Init('SurroundingDynamic');
+		</script>
+
+	</body>
+
+</html>

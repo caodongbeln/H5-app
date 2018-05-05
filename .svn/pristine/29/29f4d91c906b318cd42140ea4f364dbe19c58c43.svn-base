@@ -1,0 +1,79 @@
+.mui-bar{
+	background-color: #FFFFFF;
+}
+.mui-title span{
+	display: inline-block;
+	/*width:16%;*/
+	/*height: 40px;*/
+	height: 37px;
+	color: #66CC99;
+}
+.mui-title i {
+	display: inline-block;
+	width: 12px;
+	height: 8px;
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin-left: 10px;
+}
+.xiangxia{
+	background-image: url(../images/xiangxiajiantou.png);
+}
+.mui-title span{
+	padding-bottom: 7px;
+	color: #000000;
+}
+.houtui_white {
+	background-image: url(../images/return.png) !important;
+}
+.mui-title .lvtu_list{
+	color: rgb(102,204,153);
+	border-bottom: 1px solid rgb(102,204,153);
+}
+.lvtu_img img{
+	width: 100%;
+	display: block;
+}
+.mui-table-view-cell{
+	padding: 10px;
+}
+.total_number_of_personal_travel_map{
+	float: right;
+}
+/*.mui-title span*/ 
+.total_number_of_personal_travel_map{
+	line-height: 21px;
+}
+.lvtuExplanation{
+	height: 25px;
+	line-height: 25px;
+	padding: 0 10px;
+	font-size: 11px;
+	background-color: #fff;
+	display: table;
+	width: 100%;
+}
+.lvtuExplanation i{
+	display: inline-block;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	vertical-align: middle;
+}
+.dingwei_img{
+	display: inline-block;
+	
+}
+.dingwei_img i{
+	width: 8.5px;
+	height: 12px;
+	background-image: url(../images/dingwei_green.png);
+}
+.mui-content{
+	background-color: #F6F6F6;
+}
+.Personal_travel_map_details{
+	margin-bottom: 10px;
+	color: #666666;
+}

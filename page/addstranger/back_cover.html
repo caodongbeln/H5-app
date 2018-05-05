@@ -1,0 +1,16 @@
+{{if list != ''}}
+{{each list}}
+<li>
+	<div class="">
+		<img data-src="{{$value}}" src='src="../images/cover.png"' data-css='a50'/>
+	</div>
+</li>
+{{/each}}
+{{else}}
+		<!--在没有图片的情况下显示-->
+	<li>
+	<div class="">
+		<img src="../images/default_header.png"/>
+	</div>
+</li>
+{{/if}}

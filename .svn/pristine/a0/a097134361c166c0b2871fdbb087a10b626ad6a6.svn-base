@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>登陆</title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/login.css" />
+		<style type="text/css">
+			.mui-grid-view.mui-grid-9 {
+				background-color: #f0eff4;
+			}
+			
+			.mui-grid-view.mui-grid-9 .mui-table-view-cell {
+				border: none;
+			}
+			
+			.mui-grid-view.mui-grid-9 {
+				border: none;
+			}
+			input {
+				margin-top: -5px !important;
+				line-height: 20px !important; 
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav nav">
+			<h1 class="mui-title">登录</h1>
+		</header>
+		<section class="mui-content padding-content">
+			<div class="shuru-box">
+				<div class="username-box">
+					<label for="username" class="username background"></label>
+					<input type="tel" name="mobile" id="mobile" value="" class="shuru" placeholder="手机号" />
+				</div>
+				<div class="username-box">
+					<label for="password" class="password background"></label>
+					<input type="password" name="password" id="password" value="" class="shuru" placeholder="密码" />
+				</div>
+			</div>
+			<div id='login' class="nav login-margin">
+				登录
+			</div>
+			<div class="forgot-password">
+				<span data-href='../tpl/find_password.html'>忘记密码</span>
+				<span data-href='../tpl/reg.html' class="color_028ce6">没有账号</span>
+			</div>
+			<div class="third-party">
+				<p>使用其它账号登录</p>
+				<div class="third-party-icon">
+					<ul class="mui-table-view mui-grid-view mui-grid-9 transparent" id='oauth_login'>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3" id="wechat"><span class="WeChat background"></span></li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3" id="QQ"><span class="QQ background"></span></li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3" id="sina"><span class="weibo background"></span></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</body>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/cache.js"></script>
+	<script src="../js/zs.js"></script>
+	<script src="../js/login.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">
+		new zs.Init('Login');
+	</script>
+
+</html>

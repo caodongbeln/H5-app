@@ -1,0 +1,59 @@
+<div class="perfect-data-header">
+	<img data-src="{{cover}}" src="../images/defaut_avatar.png" id="head_portrait" />
+</div>
+<div class="perfect-data-input">
+	<span id="person-sex">
+				{{if gender==0}}
+				<input type="button" value="男" class="select-person-sex" data-value="0"/>
+				<input type="button" value="女" data-value="1"/>
+				{{else if gender==1}}
+				<input type="button" value="男" data-value="0"/>
+				<input type="button" value="女" class="select-person-sex" data-value="1"/>
+				{{else}}
+				<input type="button" value="男" data-value="0"/>
+				<input type="button" value="女" data-value="1"/>
+				{{/if}}
+			</span>
+	<!--点击选择性别,样式居中显示-->
+	<!--<span class="selected-sex">
+				<input type="button" value="女" disabled="disabled" />
+			</span>-->
+</div>
+<div class="perfect-data-input">
+	<input type="text" placeholder="昵称" class="nickname" value="{{username}}" />
+</div>
+<div class="perfect-data-choose">
+	<ul>
+		<li style="position: relative;">出生日期
+			<a class="mui-pull-right mui-icon mui-icon-arrowright"></a>
+			<button id='demo4' data-options='{"type":"date"}' class="btn mui-btn mui-btn-block" style="position: absolute;width: 100%;height: 100%;background-color: transparent;top: 0;left: 0;z-index: 100;border: none;"></button> {{if birth==0||birth==null||birth==''}}
+			<div id="result" style="float: right;z-index: 222;"></div>
+			{{else}}
+			<div id="result" style="float: right;z-index: 222;">{{birth}}</div>
+			{{/if}}
+		</li>
+		<li id="nationality" style="position: relative;" data-href='chooseCountry.html' data-view='chooseCountry'>国籍
+			<a class="mui-pull-right mui-icon mui-icon-arrowright"></a>
+			{{if country==undefined ||country==null||country==''}} 
+			<div id="country" style="float: right;height: 100%;"></div>
+			{{else}}
+			<div id="country" style="float: right;height: 100%;">{{country}}</div>
+			{{/if}}
+		</li>
+	</ul>
+</div>
+<div class="perfect-data-choose perfect-data-lang" id="languageCount">
+	<!--点击添加添加语种,显示语言行-->
+	<ul class="mui-table-view mui-grid-view mui-grid-9" id="LanguageBar">
+		<li class="mui-table-view-cell mui-media mui-col-xs-4">
+			<input type="button" value="外语种类" id='showUserPicker' /><img src="../images/add-introduce.png" class="foreigner-cate" />
+		</li>
+		<li class="mui-table-view-cell mui-media mui-col-xs-4">
+			<input type="button" value="口语水平" id="LanguageLevel" /><img src="../images/add-introduce.png" class="foreigner-cate" />
+		</li>
+		<li class="mui-table-view-cell mui-media mui-col-xs-4">
+			<input type="button" name="guide" id="guide" value="+&nbsp;添加语种" class="perfect-special-choose" />
+		</li>
+	</ul>
+</div>
+

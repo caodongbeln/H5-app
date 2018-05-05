@@ -1,0 +1,36 @@
+<div id="scroll2" class="mui-scroll-wrapper">
+	<div class="mui-scroll money-radio">
+		<ul class="mui-table-view mui-table-view-radio" id="gold_len">
+			{{each list}}
+			<li class="mui-table-view-cell money-radio {{if $index == 0}}mui-selected{{/if}}" value="{{$value.price}}" id="{{$value.id}}">
+				<a class="mui-navigate-right">
+					<i id="num">{{$value.num}}</i>金币<span><i>{{$value.price}}</i>元</span>
+					<!--如果存在优惠价显示-->
+					<s>￥<i id="origial_price">{{$value.original_price}}</i></s>
+				</a>
+			</li>
+			{{/each}}
+		</ul>
+		<h5 class="mui-content-padded">选择支付方式</h5>
+		<ul class="mui-table-view mui-table-view-radio pay" id="pay">
+			<li class="mui-table-view-cell money-radio" id="wxpay">
+				<img src="../images/WeChat.png" class="mui-pull-left absolute wexin">
+				<a class="mui-navigate-right">
+					微信
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-selected money-radio" id="alipay">
+				<img src="../images/zhibobao.png" class="mui-pull-left absolute wexin">
+				<a class="mui-navigate-right">
+					支付宝
+				</a>
+			</li>
+		</ul>
+		<div class="account">
+			支付总计<span class="mui-pull-right">￥<i id="price">{{list[0].price}}</i>元</span>
+		</div>
+		<div class="padding-content">
+			<button type="button" class="mui-btn btn-color mui-btn-block" id="go_pay">确认支付</button>
+		</div>
+	</div>
+</div>

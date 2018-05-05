@@ -1,0 +1,17 @@
+{{if list != null}} 
+{{each list}}
+<li class="mui-table-view-cell mui-media" data-id='{{$value.id}}' data-href='editNotice.html' data-view='editNotice'>
+	<a class="">
+		<img class="mui-media-object mui-pull-left" src="../images/cover.png" data-src='{{}}' data-css='a50'>
+		<div class="mui-media-body">
+			<span>{{$value.title}}</span>
+			<p class='mui-ellipsis'>{{$value.receiverCount}}个好友接收通知</p>
+		</div>
+	</a>
+</li>
+{{/each}} 
+{{else}}
+<div class="no-result">
+	暂无任何通知！
+</div>
+{{/if}} 

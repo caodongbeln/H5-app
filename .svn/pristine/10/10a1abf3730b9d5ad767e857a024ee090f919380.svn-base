@@ -1,0 +1,11 @@
+<div class="people_num_head_portrait {{if !strategy_peopleInfo}}none{{/if}}">
+	<p class="people_num">已加入{{strategy_peopleInfo_num}}人</p>
+	<div class="head_portrait_box">
+		<ul class="head_portrait">
+			{{each strategy_peopleInfo}}
+			<li data-username = "{{$value.username}}" data-uid = "{{$value.uid}}"><img src="../images/cover.png" data-src = '{{$value.cover}}' data-css='a50'/></li>
+			{{/each}}
+		</ul>
+	</div>
+
+</div>

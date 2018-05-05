@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的资料</title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/alert_zujimi.css" />
+		<link rel="stylesheet" type="text/css" href="../css/big_img.css" />
+		<link rel="stylesheet" type="text/css" href="../css/The_personal_data.css" />
+		<link rel="stylesheet" type="text/css" href="../css/yincanggundongtiao.css"/>
+		<style type="text/css">
+			.shouyedituxianshi {
+				padding: 6px 10px;
+			}
+			
+			.personal-margin-top {
+				background-color: #efeff4;
+				padding-top: 10px;
+			}
+			
+			.personal-margin-top li {
+				background-color: #FFFFFF;
+			}
+			
+			select {
+				padding-left: 70px !important;
+				margin-top: 0px !important;
+				border-top: 0px !important;
+				border-radius: 0px !important;
+				width: 100% !important;
+				border-bottom: 1px solid #f0eff4 !important;
+				margin-bottom: 0px !important;
+				color: #333 !important;
+			}
+			.sex {
+				display: inline-block;
+				width: 65px !important;
+				display: inline-block;
+				border-bottom: 1px solid #f0eff4;
+				float: left;
+				height: 42px;
+				font-size: 14px;
+				color: #999;
+				text-align: center;
+				line-height: 40px;
+				padding-left: 10px;
+				background: #FFFFFF !important;
+				position: absolute;
+				z-index: 1;
+			}
+			
+			.kaiguan .mui-switch-handle {
+				margin-left: -25px;
+			}
+			#General_lighting {
+				background-color:#FFFFFF;
+			}
+			#General_lighting img {
+				width: 50px !important;
+				height: 50px !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav nav">
+			<span class="back  background mui-action-back"></span>
+			<h1 class="mui-title">我的资料</h1>
+			<span id="save" class="mui-pull-right send-dynamic">保存</span>
+		</header>
+		<div class="mui-content" id="personContent">
+			<!--生活照部分-->
+			<!--
+            	作者：949961306@qq.com
+            	时间：2016-06-02
+            	描述：名称备注部分
+            	
+          -->
+			<div class="General_lighting_box" id="personHeader">
+
+			</div>
+			<!--我的资料页面不显示@2016-06-21-->
+			<!--<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media shouyedituxianshi">
+					<a href="javascript:;">
+						<div class="mui-switch mui-switch-blue mui-pull-right" id="seLshow">
+							<div class="mui-switch-handle"></div>
+						</div>
+						<div class="mui-media-body color_333 font_14">
+							首页地图显示
+							<p class='mui-ellipsis font_12'>打开后,对方也可以看到你的位置</p>
+						</div>
+					</a>
+				</li>
+			</ul>-->
+			<div id="personInfo">
+
+			</div>
+		</div>
+		<script src="../js/jquery-2.1.1.min.js"></script>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/cache.js"></script>
+		<script src="../js/zs.js"></script>
+		<script src="../js/user_info.js"></script>
+		<script src="../js/mui.zoom.js"></script>
+		<script src="../js/mui.previewimage.js"></script>
+		<script src="../template/personal.min.js"></script>
+		<script src="../js/personal.js"></script>
+		<script type="text/javascript">
+			new zs.Init('Person');
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,59 @@
+.feedback textarea {
+	width: 100%;
+	/*margin-left: 3.1%;*/
+	height: 210px;
+	padding-top: 5px;
+	padding-left: 7.5px;
+	font-size: 14px;
+	background: #FFFFFF;
+	margin-top: 10px;
+	margin-bottom: 17.5px;
+	border: 0px;
+	color: #666;
+	border-radius: 0px !important;
+}
+.number-word {
+	position: relative;
+	margin-top:-50px;
+	margin-left:85%;
+	font-size: 12px;
+	color: #999999;
+}
+.feedback .mui-btn {
+	position: absolute;
+	margin-top: 18px;
+	width: 94%;
+	left: 3.1%;
+	height: 44px;
+	background-color: #028ce6;
+	font-size:18px;
+	border-radius: 0px;
+	color: #fff;
+	border: 0px;
+}
+
+
+/*设置页面*/
+.set li {
+	height: 44px;
+	background-color:#fff ;
+	margin-bottom: 1px;
+	line-height: 44px;
+	font-size: 14px;
+	color: #666;
+	padding-left: 10px;
+}
+.set li span {
+	display: inline-block;
+	width: 8px;
+	height: 15px;
+	background-image:url(../images/right.png) ;
+	background-size:8px 15px;
+	background-repeat:no-repeat ;
+	margin-top: 14.5px;
+	margin-right: 10px;
+}
+.mui-switch {
+	margin-top: 11px;
+	margin-right: 10px;
+}

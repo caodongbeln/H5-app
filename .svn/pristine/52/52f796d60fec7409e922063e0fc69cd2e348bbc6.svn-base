@@ -1,0 +1,40 @@
+{{if list != ''}} {{each list}}
+<li class="mui-table-view-cell mui-media">
+	<a href="javascript:;">
+		{{if $value.id== 1}}
+			<img class="mui-media-object mui-pull-left" src="../images/qiandaohong.png" style="vertical-align: middle;">
+		{{else if $value.id == 2}}
+			<img class="mui-media-object mui-pull-left" src="../images/fenxianglan.png">
+		{{/if}}		
+		<div class="mui-media-body">
+			<p>{{$value.title}}</p>
+			<p class="mui-ellipsis color">{{$value.desc}}</p>
+		</div>
+		<!--
+                            	作者：949961306@qq.com
+                            	时间：2016-05-31
+                            	描述：浮动的已完成或者前往的div
+                            -->
+		{{if $value.id== 1}}
+			{{if $value.status == 1}}
+				<div class="fuceng-yiwancheng">
+					已签到
+				</div>
+			{{else}}
+				<div class="fuceng-yiwancheng fuceng-qianwang" id='qiandao' data-id='{{$value.id}}'>
+					签到
+				</div>	
+			{{/if}}	
+		{{else if $value.id == 2}}
+			<div class="fuceng-yiwancheng fuceng-qianwang" data-share data-share-title data-share-content data-share-href>
+				分享
+			</div>
+		{{/if}}	
+		
+	</a>
+</li>
+{{/each}} {{else}}
+<div class="no-results">
+	暂无任何任务
+</div>
+{{/if}}

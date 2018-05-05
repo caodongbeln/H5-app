@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>优惠券</title>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/coupon.css"/>
+    <style type="text/css">
+    	a[class='coupon-title']:active{
+    		background-color: #EDFAFF;
+    	}
+
+    </style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav nav">
+		<span class="back mui-action-back background"></span>
+		<h1 class="mui-title">优惠券</h1>
+		<span class="mui-pull-right send-dynamic" data-id="2" data-href='article.html' data-view='article'>使用帮助</span>
+	</header>
+	<div class="mui-content">
+		<ul class="menu" style="margin-bottom: -10px !important;">
+			<li  class="menu-selected" value="1">未使用</li>
+			<li value="3">已过期</li>
+			<li value="2">已使用</li>
+		</ul>		
+		<ul class="coupon" id="couponContent" style="padding-bottom: 20px !important;">
+		
+		</ul>
+	</div>
+	<script src="../js/jquery-2.1.1.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/cache.js"></script>
+	<script src="../js/zs.js"></script>
+	<script src="../template/coupon.min.js"></script>
+	<script src="../js/coupon.js"></script>
+	<script type="text/javascript">
+		new zs.Init('Coupon');
+	</script>
+</body>
+</html>

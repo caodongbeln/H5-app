@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>添加提醒</title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/addNotification.css" />
+		<style type="text/css">
+			.mui-switch {
+				position: absolute;
+				top: 50%;
+				right: 15px;
+				-webkit-transform: translateY(-50%);
+				transform: translateY(-50%);
+			}
+			.mui-switch .mui-switch-handle{
+				top: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav nav">
+			<span class="back mui-action-back background"></span>
+			<h1 class="mui-title">添加提醒</h1>
+			<span id="send-dynamic" class="mui-pull-right send-dynamic">保存</span>
+		</header>
+		<div class="mui-content">
+			<div class="shurukuang">
+				<input type="text" name="" id="" value="" placeholder="我通知好友到达（离开）提醒" />
+			</div>
+			<ul class="mui-table-view">
+				<li class="padding-content border-bottom mui-table-view-cell" style="color: #666;">
+					<img src="../images/anytime.png" class="mui-pull-left anytime" />
+					<div class="anytime-jieshao" id='demo1' data-options='{}'>
+						任何时间
+					</div>
+				</li>
+				<li class="padding-content mui-table-view-cell">
+					<img src="../images/leave-location.png" class="mui-pull-left anytime" />
+					<!--<input type="text" name="" id="" value="" placeholder="到达（离开的位置）" class="weizhi" disabled/>-->
+					<b class="font_14 color_666">到达（离开的位置）</b>
+				</li>
+			</ul>
+			<ul class="mui-table-view notification personal-margin-top">
+				<!--所有好友显示-->
+				<!--<li class="padding-content mui-table-view-cell">
+					<img src="../images/add-outline.png" class="mui-pull-left anytime" />
+					所有好友
+				</li>-->
+				<!--选中好友显示-->
+				<li class="padding-content mui-table-view-cell">
+					<img src="../images/add-friends-red.png" class="mui-pull-left anytime" />
+					提醒触发人
+					<div class="mui-pull-right"><img src="../images/life-photo-2.png"/></div>
+				</li>
+				<li class="padding-content mui-table-view-cell">
+					<img src="../images/add-allfriends_03.png" class="mui-pull-left anytime" />
+					提醒接收人
+					<div class="mui-pull-right"><img src="../images/life-photo-2.png"/></div>
+				</li>
+				<li class="padding-content releative">
+					<img src="../images/qiyong.png" class="mui-pull-left anytime" /> 启用通知
+					<div class="mui-switch mui-switch-blue">
+						<div class="mui-switch-handle"></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/mui.picker.min.js"></script>
+			<script>
+			(function($) {
+				$.init();
+				var result = $('#demo1')[0];
+				var btns = $('.anytime-jieshao');
+				btns.each(function(i, btn) {
+					btn.addEventListener('tap', function() {
+						var optionsJson = this.getAttribute('data-options') || '{}';
+						var options = JSON.parse(optionsJson);
+						var id = this.getAttribute('id');
+						/*
+						 * 首次显示时实例化组件
+						 * 示例为了简洁，将 options 放在了按钮的 dom 上
+						 * 也可以直接通过代码声明 optinos 用于实例化 DtPicker
+						 */
+						var picker = new $.DtPicker(options);
+						picker.show(function(rs) {
+							/*
+							 * rs.value 拼合后的 value
+							 * rs.text 拼合后的 text
+							 * rs.y 年，可以通过 rs.y.vaue 和 rs.y.text 获取值和文本
+							 * rs.m 月，用法同年
+							 * rs.d 日，用法同年
+							 * rs.h 时，用法同年
+							 * rs.i 分（minutes 的第二个字母），用法同年
+							 */
+							result.innerHTML = rs.text;
+							/* 
+							 * 返回 false 可以阻止选择框的关闭
+							 * return false;
+							 */
+							/*
+							 * 释放组件资源，释放后将将不能再操作组件
+							 * 通常情况下，不需要示放组件，new DtPicker(options) 后，可以一直使用。
+							 * 当前示例，因为内容较多，如不进行资原释放，在某些设备上会较慢。
+							 * 所以每次用完便立即调用 dispose 进行释放，下次用时再创建新实例。
+							 */
+							picker.dispose();
+						});
+					}, false);
+				});
+			})(mui);
+		</script>
+</html>

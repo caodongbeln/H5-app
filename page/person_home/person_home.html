@@ -1,0 +1,244 @@
+<span>
+			<img src="../images/default2x1.png" class="person-home-img" data-src= '{{back_cover}}'/>
+		</span>
+<div class="person-home-name basic-color">
+	<p>{{username}}</p>
+	{{if gender == 0}} 男,{{age}}岁,常住{{country}}{{city}} {{else if gender==1}} 女,{{age}}岁,常住{{country}}{{city}} {{else}}
+	<p>{{age}}岁,常住{{country}}{{city}}
+		<p>
+			{{/if}}
+			<p>{{foreign_language}}
+				<p>
+</div>
+<div class="person-home-certification">
+	<ul class="mui-table-view mui-grid-view mui-grid-9">
+		<li class="mui-table-view-cell mui-media mui-col-xs-3">
+			<img src="../images/name.png" />
+			<span>
+						实名认证
+					<p>{{real_name_verified}}</p>
+					</span>
+		</li>
+		<span class="height-line"></span>
+		<li class="mui-table-view-cell mui-media mui-col-xs-3">
+			<img src="../images/phone.png" class="phone-img" />
+			<span>
+						手机号
+					<p>{{is_mobile_verified}}</p>
+					</span>
+		</li>
+		<span class="height-line"></span>
+		<li class="mui-table-view-cell mui-media mui-col-xs-3">
+			<img src="../images/weixin.png" class="weixin-img" />
+			<span>
+						微信
+					<p>{{is_weixin_verified}}</p>
+					</span>
+		</li>
+		<span class="height-line"></span>
+		<li class="mui-table-view-cell mui-media mui-col-xs-3">
+			<img src="../images/facebook.png" class="fecebook-img" />
+			<span>
+						Facebook
+					<p>{{is_facebook_verified}}</p>
+					</span>
+		</li>
+	</ul>
+</div>
+<!--<div class="person-home-voice">
+	<div>
+		自我介绍
+		<!--没有录音介绍时，不显示--
+		<span>
+					<img src="../images/voice-person.png"/>  
+					<a>1.6s</a>
+				</span>
+	</div>
+</div>-->
+<!--
+	作者：949961306@qq.com
+	时间：2016-04-06
+	描述：录音
+-->
+<div id='audio_container'></div>
+
+{{if intro==null || intro==undefined || intro == ''}}
+<div class="person-home-introuce basic-color">
+	<a> 暂无内容！</a>
+
+</div>
+<div class="person-home-btn person-btn-self" >
+		<input type="button" value="" style="border-bottom: none;"/>
+	</div>
+{{else}}
+<div class="person-home-introuce basic-color">
+
+	{{intro}}
+</div>
+<!--
+	作者：949961306@qq.com
+	时间：2016-04-06
+	描述：本人查看显示
+-->
+<div class="person-home-btn person-btn-self" id="person-btn-self" style="display: none;">
+		<input type="button" value="全文" />
+	</div>
+	<!--
+    	作者：949961306@qq.com
+    	时间：2016-04-06
+    	描述：他人查看显示
+    -->
+<div class="person-home-btn person-btn-self" id="person-btn-other" style="display: none;">
+		<input type="button" value="全文" />
+		<input type="button" value="翻译" />
+	</div>
+{{/if}}
+
+<!--其他人查看-->
+<!--<div class="person-home-btn">-->
+<!--暂无内容时不显示-->
+<!--<input type="button" value="全文" />-->
+<!--<input type="button" value="翻译" />-->
+<!--</div>-->
+<!--本人查看-->
+
+	
+	<div class="person-home-title">
+		更多个人资料
+	</div>
+<div id="self_look" style="display: none;">
+	{{if identity==null || identity==undefined || identity =='' }}
+		<div class="person-home-info">
+		职业<a class="mui-pull-right">未填</a>
+		</div>
+	{{else}}
+		<div class="person-home-info">
+		职业<a class="mui-pull-right">{{identity}}</a>
+		</div>
+	{{/if}}
+	
+	{{if education==null || education==undefined || education =='' }}
+		<div class="person-home-info">
+		学历<a class="mui-pull-right">未填</a>
+	</div>
+	{{else}}
+		<div class="person-home-info">
+		学历<a class="mui-pull-right">{{education}}</a>
+	</div>
+	{{/if}}
+	
+	{{if marital==null || marital==undefined || marital =='' }}
+		<div class="person-home-info">
+		情感<a class="mui-pull-right">未填</a>
+	</div>
+	{{else}}
+		<div class="person-home-info">
+		情感<a class="mui-pull-right">{{marital}}</a>
+	</div>
+	{{/if}}
+	
+	{{if faith==null || faith==undefined || faith =='' }}
+		<div class="person-home-info">
+		宗教信仰<a class="mui-pull-right">未填</a>
+	</div>
+	{{else}}
+		<div class="person-home-info">
+		宗教信仰<a class="mui-pull-right">{{faith}}</a>
+	</div>
+	{{/if}}
+	
+	{{if constellation==null || constellation==undefined || constellation =='' }}  
+		<div class="person-home-info">
+		星座<a class="mui-pull-right">未填</a>
+	</div>
+	{{else}}
+		<div class="person-home-info">
+		星座<a class="mui-pull-right">{{constellation}}</a>
+	</div>
+	{{/if}}
+	
+</div>
+
+<div id="other_look" style="display: none;">
+	{{if gender==0}}
+	<div class="person-home-info" style="text-align: center;">
+		女,{{country}}人
+	</div>
+	{{else if gender==1}}
+		<div class="person-home-info"  style="text-align: center;">
+		男,{{country}}人
+	</div>
+	{{else if gender==2}}
+		<div class="person-home-info"  style="text-align: center;">
+		性别保密,{{country}}人
+	</div>
+	{{/if}}
+	<div class="person-home-info"  style="text-align: center;">
+		{{education}}，{{identity}}
+	</div>
+	<div class="person-home-info"  style="text-align: center;">
+		常住地{{city}}，{{faith}}
+	</div>
+</div>
+
+<div class="person-info-hobby basic-color">
+	兴趣爱好 {{if hobby_thr==null || hobby_thr==undefined || hobby_thr==''}}
+	<p>暂无选择</p>
+	{{else}}
+	<p>{{hobby_thr}}</p>
+	{{/if}}
+</div>
+<div class="person-home-title">
+	活跃度
+</div>
+<div class="person-home-active preson-count">
+	免费向导次数
+	<p>接受过{{live_guide_time}}次,提供过{{free_guide_time}}次 <b style="font-weight: 400;color: #66CC99;" id="strategy" data-href='strategy_detail.html' data-view='strategy_detail' data-id='{{id}}'>（查看向导方案）</b></p>
+</div>
+<div class="person-home-active preson-count">
+	免费住宿次数
+	<p>接受过{{live_house_time}}次,提供过{{free_house_time}}次<b style="font-weight: 400;color: #66CC99;" id="home_detail" data-href='home_detail.html' data-view='home_detail' data-id='{{id}}'>（查看住宿攻略）</b></p>
+</div>
+<div class="person-home-active preson-count">
+	结伴同行
+	<p>本地出游{{nonlocal_travel_num}}次,异地出游{{nonlocal_travel_num}}次</p>
+</div>
+<div class="person-home-active preson-count">
+	本地活动次数
+	<p>组织发起{{organization_activity}}次,参与活动{{in_activity}}次</p>
+</div>
+
+<div class="person-btn-group" style="position: fixed;bottom: 0;width: 100%;border: none;">
+	<!--本人-->
+	{{ if is_ower == 1 }}
+	<ul class="mui-table-view mui-grid-view mui-grid-9 myself-btn" id="change_info" style="border-top: 1px solid #66cc99;" data-href = "perfect_data_index.html" data-id='perfect_data_index'>
+		<li class="mui-table-view-cell mui-media mui-col-xs-12" value='{{id}}'>
+			<input type="button" value="修   改" />
+		</li>
+	</ul>
+	{{else if is_ower ==2 }}
+	<ul class="mui-table-view mui-grid-view mui-grid-9 another-pass-btn" id="already_concerned" style="border-top: 1px solid #66cc99;">
+		<li class="mui-table-view-cell mui-media mui-col-xs-4 focus-on-done" id='guanzhu' value='{{id}}' is_follow='1' data-login='1' style="border-right: 1px solid #f0f0f0 !important;">
+			<img src="../images/done.png" /><label>取消关注</label>
+		</li>
+		<li class="mui-table-view-cell mui-media mui-col-xs-4" id='ping'  value='{{id}}' type='1' data-login='1' style="border-right: 1px solid #f0f0f0 !important;" data-ping=''>
+			<input type="button" value="评价"  />
+		</li>
+		<li class="mui-table-view-cell mui-media mui-col-xs-4" data-login='1'>
+			<input type="button" value="私聊" />
+		</li>
+	</ul>
+	{{else}}
+	<!--没过申请/邀请、或任意此意申请/邀请都还没被通过、或任意一次申请/邀请都被拒绝的用户-->
+	<ul class="mui-table-view mui-grid-view mui-grid-9 another-unpass-btn" id="follow" style="border-top: 1px solid #66cc99;">
+		<li class="mui-table-view-cell mui-media mui-col-xs-6" value='{{id}}' id='guanzhu' data-login='1' is_follow='0'>
+			<input type="button" value="+关注" />
+		</li>
+		<span></span>
+		<li class="mui-table-view-cell mui-media mui-col-xs-6" data-login='1'>
+			<input type="button" value="私聊" />
+		</li>
+	</ul>
+	<!--有过申请/邀请已被通过的用户-->
+	{{/if}}
+</div>

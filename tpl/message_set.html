@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>消息设置</title>
+    <script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav nav">
+		<span class="back mui-action-back background" id="submit" ></span>	
+		<h1 class="mui-title">消息设置</h1>
+		<style type="text/css">
+			ul li {
+				height: 44px;
+				background-color:#fff;
+				margin-bottom: 1px;
+				font-size: 14px;
+				padding-left: 10px;
+				line-height: 44px;
+				color: #999;
+			}
+			.mui-switch {
+				margin-top: 11px;
+    			margin-right: 10px;
+			}
+		</style>
+	</header>
+	<div class="mui-content">
+		<ul id="messageSet">
+			
+		</ul>
+		<ul style="margin-top: 10px;" id="messageFooter">
+		</ul>
+	</div>
+	<script src="../js/jquery-2.1.1.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/cache.js"></script>
+	<script src="../js/zs.js"></script>
+	<script src="../template/message_set.min.js"></script>
+	<script src="../js/message_set.js"></script>
+	<script type="text/javascript">
+		new zs.Init('MessageSet');
+	</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>去结算</title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/go_pay.css" />
+		<link rel="stylesheet" href="../css/Notification_list.css" />
+		<style type="text/css">
+			.graphic-list-count {
+				display: inline-block;
+				float: right;
+				margin-right: 10px;
+			}
+			
+			.mui-numbox {
+				height: 22px;
+				border-radius: 0px;
+			}
+			
+			.mui-numbox-btn-minus {
+				padding-right: 5px !important;
+			}
+			
+			.number-days {
+				height: 22px;
+				margin-top: -11px;
+			}
+			
+			.mui-input-numbox {
+				text-align: center;
+			}
+			
+			.mui-numbox-btn-plus {
+				padding-right: 5px !important;
+			}
+			
+			.graphic-list-count span {
+				color: #666 !important;
+			}
+			
+			button {
+				border: none;
+			}
+			
+			.mui-table-view-cell {
+				padding: 0;
+				padding-left: 10px;
+			}
+			
+			.mui-active {
+				background-color: transparent !important;
+			}
+			
+			.none {
+				display: none !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav nav">
+			<span class="back mui-action-back background"></span>
+			<h1 class="mui-title" id="toolName"></h1> 
+		</header>
+		<div class="mui-content" id="">
+			<div id="payContent"></div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/jquery-2.1.1.min.js"></script>
+		<script src="../js/cache.js"></script>
+		<script src="../js/zs.js"></script>
+		<script src="../template/pay.min.js"></script>
+		<script src="../js/go_pay.js"></script>
+		<script type="text/javascript">
+			new zs.Init('Gopay');
+		</script>
+	</body>
+
+</html>

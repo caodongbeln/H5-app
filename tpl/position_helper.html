@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>位置关系助手</title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/Notification_list.css" />
+		<link rel="stylesheet" type="text/css" href="../css/list_img.css" />
+		<style type="text/css">
+			.mui-table-view-cell>a:not(.mui-btn) {
+				padding: 7px 10px;
+			}
+			
+			.tongyiandjujue{
+				right: 10px;
+				top: 22px;
+				z-index: 1000;
+			}
+			.tongyiandjujue i{
+				line-height: 16px;
+				text-align: center;
+				font-size: 14px;
+				display: inline-block;
+				
+			}
+			.tongyiandjujue-backgroud-color028ce6{
+				background-color: #028CE6;
+				padding: 6px 12px;
+			}
+			.tongyiandjujue-backgroud-color999 {
+				background-color: #999;
+			}
+			
+			.tongyiandjujue-backgroud-colorfff {
+				background-color: #fff;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav nav">
+			<span class="back mui-action-back background"></span>
+			<h1 class="mui-title">公开位置提醒助手</h1>
+		</header>
+		<div class="mui-content">
+			<ul id= 'friends' class="mui-table-view">
+				
+			</ul>
+		</div>
+	</body>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/cache.js"></script>
+	<script src="../js/zs.js"></script>
+	<script src="../template/position_helper.min.js" type="text/javascript" charset="utf-8"></script>	
+	<script src="../js/position_helper.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">
+		new zs.Init('Position_helper');
+	</script>
+
+</html>

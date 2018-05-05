@@ -1,0 +1,10 @@
+<div class="xiaotouxiang-big-box {{if say_likeInfo == null}}none{{/if}} border-top">
+		<i class="dianzan-xiao background"></i>
+		<div class="xiaotouxiang-box">
+			<ul class="xiaolouxiang-ji" id="smallHeadPortrait{{id}}" style="">
+				{{if say_likeInfo == null }} {{else}} {{each say_likeInfo as smallheadPortrait hh}}
+				<li data-username ='' data-uid = "{{uid}}"><img src="../images/cover.png" data-src="{{smallheadPortrait.cover}}" /></li>
+				{{/each}} {{/if}}
+			</ul>
+		</div>
+	</div>

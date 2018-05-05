@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>陌生人</title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/Notification_list.css" />
+		<link rel="stylesheet" type="text/css" href="../css/list_img.css" />
+		<style type="text/css">
+			.mui-media-body p {
+				margin-top: 16px;
+			}
+		</style>
+	</head>
+
+	<body>				
+			<!--下拉刷新容器-->
+			<div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!--数据列表-->
+					<ul class="mui-table-view" id='stranger_list'>
+			
+					</ul>
+				</div>
+			</div>						
+	</body>
+	<script src="../js/jquery-2.1.1.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/cache.js"></script>
+	<script src="../js/functions.js"></script>
+	<script src="../js/zs.js"></script>
+	<script src="../template/stranger.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/stranger_refresh.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		new zs.Init('Strangerrefresh');
+	</script>
+
+</html>

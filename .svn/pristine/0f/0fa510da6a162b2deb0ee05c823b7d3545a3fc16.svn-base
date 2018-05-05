@@ -1,0 +1,33 @@
+
+<nav class="mui-bar mui-bar-tab menu">
+	<a id="defaultTab" class="mui-tab-item {{if nav=='index'}}mui-active{{/if}}" data-href="../tpl/index.html" data-id="index">
+		<span class="tatayou_icon {{if nav=='index'}} active {{/if}}"></span>
+		<span class="mui-tab-label small_font">她他游</span>
+	</a>
+	<a class="mui-tab-item {{if nav=='find'}}mui-active{{/if}}" data-href="../tpl/discovery.html" data-id="discovery">
+		<span class="discover_icon {{if nav=='find'}} active {{/if}}"></span>
+		<span class="mui-tab-label small_font"><label class="i18n" name="faxian"></label></span>
+	</a>
+	<a class="mui-tab-item" id='add_plan'>
+		<span class="jiahao"></span>
+	</a>
+	<a class="mui-tab-item {{if nav=='msg'}}mui-active{{/if}}" data-href="../tpl/message_notification.html" data-login="true" data-id="message_notification">
+		<span class="message_icon {{if nav=='msg'}} active {{/if}}"></span>
+		<span class="mui-tab-label small_font"><label class="i18n" name="xiaoxi"></label></span>
+	</a>
+	<a class="mui-tab-item {{if nav=='my'}}mui-active{{/if}}" data-href="../tpl/person_center.html" data-login="true" data-id="person_center">
+		<span class="mine_icon {{if nav=='my'}} active {{/if}}"></span>
+		<span class="mui-tab-label small_font">我</span>
+	</a>
+
+</nav>
+<div class="flyout-content">
+	<div class="flyout-wrap"> 
+		<a class="flyout-btn" href="#" title="Toggle"><span>Flyout Menu Toggle</span></a> 
+		<ul class="flyout flyout-init">
+			<li data-href='publish_travel_plan.html' data-view='publish_travel_plan' data-login='true' data-extras='{"travel_cate":1}'><a href="#"><span>找免费向导</span></a></li>
+			<li data-href='publish_travel_plan.html' data-view='publish_travel_plan' data-login='true' data-extras='{"travel_cate":2}'><a href="#"><span>找免费住宿</span></a></li>
+			<li data-href='publish_travel_plan.html' data-view='publish_travel_plan' data-login='true' data-extras='{"travel_cate":3}'><a href="#"><span>找结伴</span></a></li>
+		</ul>
+	</div>
+</div>

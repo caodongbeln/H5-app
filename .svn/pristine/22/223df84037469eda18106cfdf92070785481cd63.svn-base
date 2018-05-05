@@ -1,0 +1,315 @@
+.mui-bar {
+	background: #FFFFFF;
+}
+.mui-bar .mui-title {
+	color: #000000;
+}
+.mui-bar a {
+	background-image: url(../images/return.png);
+}
+.list-content-img img {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.visitor-name {
+	position: absolute;
+    width: 100%;
+    margin-top: -50px;
+    font-size: 15px;
+    color: #ffffff;
+    padding-left: 10px;
+    text-align: right;
+	padding-right: 10px;
+}
+.visitor-name span {
+	width: 18px;
+	height: 11px;
+	display: inline-block;
+	margin-left: 5px;
+}
+.visitor-name span img {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.visitor-target{
+	font-size: 12px;
+    position: absolute;
+    color: #ffffff;
+    margin-top: -27px;
+    padding-left: 10px;
+    text-align: right;
+	padding-right: 10px;
+	width: 100%;
+}
+.visitor-target img {
+    width: 9px;
+    height: 12px;
+    display: inline-block;
+    position: ABSOLUTE;
+    top: 4px;
+    margin-left: -8px;
+}
+.visitor-target  a {
+	color: #FFFFFF;
+	margin-left: 5px;;
+}
+.list-visitor-info {
+	height: 25px;
+	font-size: 11px;
+	background: #FFFFFF;
+	line-height: 25px;
+	margin: 0;
+	color: #666666;
+	padding-left: 10px;
+}
+.list-visitor-info span:nth-child(2) {
+	margin-left: 55px;
+}
+.home-person-header {
+	width: 50px;
+    height: 50px;
+    display: inline-block;
+    position: ABSOLUTE;
+    margin-top: -25px;
+}
+.home-person-header img {
+	border-radius: 30px;
+    border: 1px solid #ffffff
+}
+.list-visitor-info ul {
+	list-style: none;
+	height: 11px;
+	float: right;
+	height: 25px;
+	margin-top: 0px;
+}
+.list-visitor-info ul li {
+	width: 11px;
+	height: 11px;
+	float: left;
+}
+.visitor-info-img {
+	margin-top: 7px;
+}
+.visitor-info-count {
+	width: 20px !important;
+    padding-left: 5px;
+    line-height: 27px;
+    padding-right: 25px;
+}
+.house-type {
+	height: 40px;
+    width: 23%;
+    display: inline-block;
+    margin-left: 35%;
+    text-align: right;
+    line-height: 40px;
+    font-size: 14px;
+    color: #666666;
+}
+.house-type img {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    position: ABSOLUTE;
+    margin-top: 14px;
+    margin-left: -15px;
+}
+.house-location img{
+	width: 10px !important;
+}
+.house-space {
+	text-align: center;
+	height: 40px;
+	background: #FFFFFF;
+	font-size: 14px;
+	color: #999999;
+	line-height: 40px;
+}
+.house-space .lang {
+	position: ABSOLUTE;
+    margin-left: -25px;
+    margin-top: -1px;
+}
+.house-space span {
+	right: 10px;
+    position: absolute;
+}
+.house-space span a {
+	color: #999999;
+	line-height: 40px;
+}
+.house-space span .mui-switch{
+	height: 23px;
+	width: 45px;
+	margin-top: 10px;
+	border: 1px solid #DDDDDD !important;
+}
+.house-space span .mui-switch .mui-switch-handle{
+	height: 22px;
+	width: 25px;
+}
+.house-space .mui-numbox {
+	width: 100%;
+	height: 100%;
+	border-radius: 0px !important;
+	border: 0px !important;
+	background: #FFFFFF !important;
+}
+.house-space .mui-numbox .mui-numbox-input{
+	width: 43% !important;
+	font-size: 14px;
+	border-left: 1px solid #e5e5e5 !important;
+    border-right: 1px solid #e5e5e5 !important;
+}
+.house-space .mui-numbox span {
+	position: absolute;
+    right: 44%;
+}
+.house-space .mui-numbox button{
+	width: 33%;
+	border-radius: 0px !important;
+	color: #999999;
+	background: #FFFFFF !important;
+	border:0px !important;
+	font-size: 24px;
+}
+.house-space .mui-numbox button:first-child {
+	font-size: 22px;
+}
+.selected {
+	color: #66CC99 !important;
+}
+.sex-selected {
+	border-bottom: 1px solid #66CC99 !important;
+}
+.sex-selected input {
+	color: #66CC99 !important;
+	/*border-bottom: 1px solid #66CC99 !important;*/
+}
+.house-space ul {
+	height: 40px;
+	border-top: 1px !important;
+}
+.house-space .house-basic {
+	width: 100% !important;
+	height: 100%;
+	text-align: center;
+}
+.house-type-cate ul li {
+	width: 33.33333333%;
+}
+.house-type-house img {
+	width: 10px !important;
+}
+.house-space ul li{
+	background: #FFFFFF !important;
+    height: 40px;
+	line-height: 40px !important;
+	font-size: 14px !important;
+	padding: 0px !important;
+	line-height: 40px;
+	color: #999999 !important;
+}
+.house-space ul li input {
+	width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    border: 0px !important;
+    color: #999999;
+}
+/*.house-space ul li{
+	padding:11px 0px !important;
+}*/
+.visitor-require {
+	height: 64px !important;
+	width: 31% !important;
+	margin-left: 30% !important;
+	line-height: 64px;
+}
+.visitor-require img {
+	margin-top: 26px !important;
+}
+.specail-house-require {
+	margin-bottom: 1px;
+	text-align: left;
+	padding-left: 10px;
+	color: #666666;
+}
+.home-detail-style {
+	text-align: center !important;
+	color: #999999;
+}
+.house-btn-group {
+	margin-top: 20px;
+	border-top: 1px solid #66CC99;
+	background: #FFFFFF;
+}
+.house-btn-group span {
+    width: 1px;
+    height: 40px;
+    margin-top: 0px;
+    border-left: 1px solid #E5E5E5;
+    display: inline-block;
+    margin-bottom: -5px !important;
+}
+.house-btn-sure {
+	width: 100% !important;
+	height: 40px;
+	/*margin-left: 1%;*/
+	position: fixed;
+    bottom: 0px;
+}
+.house-btn-sure input {
+	width: 100% !important;
+	border: 0px !important;
+    border-top: 1px solid #66cc99 !important;
+    color: #66cc99;
+    border-radius: 0px;
+    height: 100%;
+    font-size: 15px;
+}
+.house-btn-group input{
+	width: 48.5% !important;
+    height: 40px !important;
+    border: 0px !important;
+    /*border-top: 1px  solid #66cc99 !important;*/
+    color: #66cc99;
+    border-radius: 0px;
+}
+.house-add-img {
+	margin-bottom: 55px;
+}
+.house-add-img span {
+	height: 65px;
+	width: 65px;
+	display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.house-add-img span img {
+	width: 100%;
+	height: 100%;
+}
+.change-home-btn {
+	width: 100%;
+	border: 0px !important;
+	border-radius: 0px !important;
+	border-top: 1px solid #66cc99 !important;
+	font-size: 15px !important;
+	color: #66CC99 !important;
+	height: 40px;
+	margin-top: 20px;
+}
+.home-introuce-sex {
+	padding-left: 0px !important;
+}
+.mui-icon-location {
+	font-size: 14px;
+    position: absolute;
+    margin-top: 4px;
+    margin-left: -9px !important;
+}

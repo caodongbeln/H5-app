@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/login.css" />
+		<style type="text/css">
+			.mui-grid-view.mui-grid-9 {
+				background-color: #f0eff4;
+			}
+			
+			.mui-grid-view.mui-grid-9 .mui-table-view-cell {
+				border: none;
+			}
+			
+			.mui-grid-view.mui-grid-9 {
+				border: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav nav">
+			<span class="back mui-action-back background"></span>
+			<h1 class="mui-title">修改密码</h1>
+		</header>
+		<section class="mui-content padding-content">
+			<div class="shuru-box">
+				<div class="username-box">
+					<label for="password" class="password background"></label>
+					<input type="password" name="password" id="old_password" value="" class="shuru" placeholder="旧密码" />
+				</div>
+				<div class="username-box">
+					<label for="password" class="password background"></label>
+					<input type="password" name="password" id="password" value="" class="shuru" placeholder="新密码" />
+				</div>
+				<div class="username-box">
+					<label for="password" class="password background"></label>
+					<input type="password" name="password"  id="re_password" value="" class="shuru" placeholder="确认密码" />
+				</div>
+			</div>
+			<div id='sure' class="nav login-margin">
+				确定
+			</div>
+		</section>
+	</body>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/cache.js"></script>
+	<script src="../js/zs.js"></script>
+	<script src="../js/change_pass.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		new zs.Init('ChangePass');
+	</script>
+
+</html>

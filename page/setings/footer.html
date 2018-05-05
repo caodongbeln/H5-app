@@ -1,0 +1,6 @@
+{{each navs}}
+<a class="mui-tab-item {{if active==$value.id}} mui-active {{/if}}" data-href="{{$value.url}}">
+	<span class="{{$value.icon}} background"></span>
+	<span class="mui-tab-label">{{$value.title}}</span>
+</a>
+{{/each}}

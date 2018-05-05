@@ -1,0 +1,57 @@
+{{each list}}
+<ul class="mui-table-view">
+	{{if $value.targetId !== "20"}}
+		<li class="mui-table-view-cell mui-media"
+			{{if $value.latestMessage.messageDirection == 1}}				
+			  	title = "{{$value.latestMessage.content.extra.fid_username}}"
+			 {{else}}
+			 	title = "{{$value.latestMessage.content.extra.username}}"
+			 {{/if}} 
+			 	targetId="{{$value.targetId}}" 
+			 	conversationType="{{$value.conversationType}}"
+				{{if $value.targetId == 21 }}
+					href='position_helper.html' data-view='position_helper' 	
+				{{else if $value.targetId == 22}}
+					href='任务列表.html' data-view='任务列表' 	
+				{{else if $value.targetId == 23}}
+					href='location_remind.html' data-view='location_remind' 	
+				{{else if $value.targetId == 24}}
+					href='location_notice.html' data-view='location_notice' 	
+				{{else}}
+					href='chat.html' data-view='chat' 	
+				{{/if}} >
+			<a class="">
+				<div class="mui-media-object mui-pull-left releative">
+					{{if $value.latestMessage.messageDirection == 1}}	
+						<img src="../images/cover.png" data-src="{{$value.latestMessage.content.extra.fid_cover}}" data-css='a50'>
+					{{else}}
+						<img src="../images/cover{{$value.targetId}}.png">
+					{{/if}}
+					{{if $value.unreadMessageCount > 0}}
+						<i class="weidu-hongdian absolute color-fff">{{$value.unreadMessageCount}}</i>
+					{{/if}}						
+				</div>
+				<div class="mui-media-body">
+					<span>{{if $value.targetId == 21 }}
+							位置关系助手						
+						{{else if $value.targetId == 22}}
+							任务助手
+						{{else if $value.targetId == 23}}
+							提醒助手
+						{{else if $value.targetId == 24}}
+							通知助手
+						{{else}}
+							{{if $value.latestMessage.messageDirection == 1}}	
+								{{$value.latestMessage.content.extra.fid_username}} 
+							{{else}}
+								{{$value.latestMessage.content.extra.username}} 
+							{{/if}}							
+						{{/if}}
+					</span>
+					<p class='mui-ellipsis'>{{$value.latestMessage.content.content}}</p>											
+				</div>
+			</a>
+		</li>
+	{{/if}}
+</ul>
+{{/each}}

@@ -1,0 +1,16 @@
+<script src="../js/mui.min.js"></script>
+<li>声音
+	<div class="mui-switch mui-switch-blue mui-pull-right {{if info.talksound == 1}}mui-active{{/if}}" id="voice">
+		<div class="mui-switch-handle"></div>
+	</div>
+</li>
+<li>震动
+	<div class="mui-switch mui-switch-blue mui-pull-right {{if info.talkvibrate == 1}}mui-active{{/if}}" id="talkvibrate">
+		<div class="mui-switch-handle"></div>
+	</div>
+</li>
+<!--<li>群震动
+	<div class="mui-switch mui-switch-blue mui-pull-right {{if info.group_talvibrate == 1}}mui-active{{/if}}" id="group_talvibrate">
+		<div class="mui-switch-handle"></div>
+	</div>
+</li>-->

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>通讯录好友</title>		
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/Notification_list.css" />
+		<link rel="stylesheet" href="../css/list_img.css" />
+		<style type="text/css">
+			.mui-media-body i {
+				font-size: 12px;
+			}
+			
+			.sousuoanniu {
+				width: 36px;
+				height: 100%;
+				background-color: #79bded !important;
+				display: inline-block;
+				line-height: 34px;
+				margin-top: 2px;
+				text-align: center;
+			}
+			
+			.fuceng-yiwancheng {
+				position: absolute;
+				top: 0;
+				right: 10px;
+				color: #999;
+				font-size: 12px;
+				top: 28%;
+			}
+			
+			.fuceng-qianwang {
+				background-color: #028ce6;
+				padding: 5px 8px;
+				color: #fff;
+				/*top: ;*/
+			}
+			html,body,.mui-content,.mui-table-view{
+				width: 100%;
+				height: 100%;
+			}
+			.mui-table-view{
+				background-color: #fff;
+				overflow-y: auto;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav nav">
+			<span class="back mui-action-back background"></span>
+			<h1 class="mui-title">手机通讯录</h1>
+		</header>
+		<div class="mui-content">
+
+			<!--
+            	作者：949961306@qq.com
+            	时间：2016-06-15
+            	描述：搜索框部分
+            -->
+			<div class="padding-content">
+				<span class="sousuoanniu mui-pull-right font_14 color-fff" >
+					搜索
+				</span>
+				<div style="padding-right: 40px;width: 100%;margin-top: 10px;margin-bottom: 4px;">
+					<div class="mui-input-row mui-search" style="margin-top: 3px;background-color: #FFF;">
+						<input id='search' type="search" class="mui-input-clear" placeholder="请输入手机号" style="background-color: #fff;">
+					</div>
+				</div>
+			</div>
+
+			<ul class="mui-table-view" id="contacts_list">
+			
+			</ul>
+			<!--在没有好友的情况下显示-->
+			<!--<div class="no-results">
+				暂无任何好友
+				<p><input type="button" id="add" value="添加" /></p>
+			</div>-->
+		</div>
+	</body>
+	<script src="../js/jquery-2.1.1.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/cache.js"></script>	
+	<script src="../js/zs.js"></script>	
+	<script src="../template/contacts.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/contact_list.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		new zs.Init('Contactslist');
+	</script>
+</html>

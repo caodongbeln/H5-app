@@ -1,0 +1,102 @@
+<style type="text/css">
+	@media only screen and (max-width: 320px) {
+		#pay {
+			padding-bottom: 50px;
+		}
+		#canUser {
+			font-size: 10px;
+			background:#e60012;
+			color: #fff;
+			
+		}
+		#userContent {
+			background-image:url(../images/pull_right.png); 
+			background-size:9px 15px;
+			text-align: left;
+			background-position:100%;
+		}
+	}
+</style>
+<div class="cate">
+	<img src="../images/default_img.png" data-src="{{info.icon}}" data-herf="{{info.icon}}" />
+	<div>
+		{{info.name}}
+		<p>{{info.desc}}</p>
+		<div class="date">
+			<span style="text-align: left; background-image:none !important;color: #999 !important;line-height: 13px !important;margin-top: 1px !important;">有效期:</span>
+			<span class="selected" id="week_price" type='0' style="line-height: 13px">{{if info.id == 3}}1h{{else}}周{{/if}}</span>
+			<span id="month_price" type="1"  style="line-height: 13px">{{if info.id == 3}}3h{{else}}月{{/if}}</span>
+			<span id="season_price" type='2'  style="line-height: 13px">{{if info.id == 3}}5h{{else}}季{{/if}}</span>
+			<span id="year_price" type="3"  style="line-height: 13px">{{if info.id == 3}}7h{{else}}年{{/if}}</span>
+		</div>
+		<div>
+			<div class="week_price">
+				<div class="glod"><a>金币</a><i id="week_discount">{{info.week_price}}</i><s style="display: none;"><a>金币</a><b id="cost">{{info.week_price}}</b></s></div>
+			</div>
+			<div class="month_price none">
+				<div class="glod"><a>金币</a><i id="month_discount">{{info.month_price}}</i><s><a>金币</a><b id="cost">{{info.month_price_original}}</b></s><span>优惠</span></div>
+			</div>
+			<div class="season_price none">
+				<div class="glod"><a>金币</a><i id="season_discount">{{info.season_price}}</i><s><a>金币</a><b id="cost">{{info.season_price_original}}</b></s><span>优惠</span></div>
+			</div>
+			<div class="year_price none">
+				<div class="glod"><a>金币</a><i id="year_discount">{{info.year_price}}</i><s><a>金币</a><b id="cost">{{info.year_price_original}}</b></s><span>优惠</span></div>
+			</div>
+		</div>
+	</div>
+</div>
+<ul class="change-num" style="margin-top: 9px;margin-bottom: 9px;">
+	<li>购买数量
+		<div class="graphic-list-count" style="margin-right: 0px;width: 130px;">
+			<div class="list-content-days" style="margin-left: 10px !important">
+				<div class='mui-numbox' data-numbox-min="0" data-numbox-step="1" style="border: 0px !important">
+					<button class="mui-btn mui-numbox-btn-minus" id="btnReduce" type="button" style="border: 1px solid #bbb !important;background-color:#fff !important;">
+						<span>-</span>
+					</button>
+					<!--<div class="number-days">-->
+					<input class="mui-input-numbox" id="toolNum" value='1' disabled="disabled" style="vertical-align: top;padding-right:15px !important;border: 1px solid #bbb !important;border-left: 0px !important;border-right: 0px !important;font-size: 12px !important;" />
+					<!--</div>-->
+					<button class="mui-btn mui-numbox-btn-plus enable" type="button" id="btnPlus" style="border: 0px !important;width: 55px !important;background-color:#fff !important;">
+						<span style="text-align:center;padding-top:2px;font-size:12px !important;width: 45px !important;border: 1px solid #bbb !important;display: inline-block;margin-left: -5px;border-left-style:none;border-radius:2px !important ;height: 22px !important;    border-bottom-left-radius: 0px !important;    border-top-left-radius: 0px !important;">+</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</li>
+</ul>
+<ul class="pay_coupon">
+	<li id="sel_coupon">
+		<span style="margin-left: 0px;">优惠券</span>
+		<!--<span id="canUser" style="position:absolute;margin-top:15px !important;line-height: 15px;left: 50px !important;"></span>-->
+		<div class="mui-pull-right" id="userContent">
+		</div>
+	</li>
+</ul>
+<ul>
+	<li>总额<span class="mui-pull-right" id="total">{{info.week_price}}</span></li>
+	<li>优惠券抵扣<span class="mui-pull-right" id="coupon_discount">
+	<li>自有金币抵扣<span class="mui-pull-right" id="gold_discount"></span></li>
+	<li class="count">应付<span class="mui-pull-right" id="payable"></span></li>
+</ul>
+<div id="pay" class="none">
+	<h5 class="mui-content-padded">选择支付方式</h5>
+	<ul class="mui-table-view mui-table-view-radio pay" id="dcontent">
+		<li class="mui-table-view-cell money-radio" id="wxpay" value="2">
+			<img src="../images/WeChat.png" style="width: 22px;height: 22px;margin-top: 10px;" class="mui-pull-left absolute">
+			<a class="mui-navigate-right">
+			微信
+		</a>
+		</li>
+		<li class="mui-table-view-cell mui-selected money-radio" id="alipay" value="1">
+			<img src="../images/zhibobao.png" style="width: 22px;height: 22px;margin-top: 10px;" class="mui-pull-left absolute">
+			<a class="mui-navigate-right">
+			支付宝
+		</a>
+		</li>
+	</ul>
+</div>
+<div class="pay_button">
+	<i id="pay_count" style="margin-right: 15px;"></i> 
+	应付:￥<i id="money"></i>
+	<button class="mui-pull-right" id="go_pay">去结算</button>
+</div>

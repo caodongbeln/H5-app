@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>联系人</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">		
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/Notification_list.css" />
+		<link rel="stylesheet" href="../css/list_img.css" />
+		<link rel="stylesheet" type="text/css" href="../css/message.css" />
+		<style type="text/css">
+			.mui-segmented-control.mui-segmented-control-inverted{
+				height: 44px;
+			}
+			.mui-media-body p{
+				line-height: 12px;
+			}
+			.mui-scroll-wrapper,.mui-slider{
+				overflow: visible;
+			}
+			.mui-media-object img{
+				width: 100%;
+			}
+			.mui-control-content {
+				background-color: #f0eff4;
+				min-height: 200px;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div id="slider" class="mui-slider">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<a class="mui-control-item mui-active"style="border-top-right-radius: 0px !important;border-bottom-right-radius: 0px !important;" id="msg">消息</a>
+					<a class="mui-control-item" style="border-top-left-radius: 0px !important;border-bottom-left-radius: 0px !important;" id="friend">好友</a>
+					<span href="friend_choose_list.html" class="background jiahaobaise" id ="add" data_from="friend_choose_list"></span>
+				</div>
+			</div>
+		</div>
+		<nav id='nav' class="mui-bar mui-bar-tab nav-footer"></nav>
+	</body>
+	<script src="../js/jquery-2.1.1.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/cache.js"></script>
+	<script src="../js/zd.js"></script>
+	<script src="../js/zs.js"></script>	
+	<script src="../template/contacts.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/contacts.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		new zs.Init('Contacts');
+	</script>
+</html>

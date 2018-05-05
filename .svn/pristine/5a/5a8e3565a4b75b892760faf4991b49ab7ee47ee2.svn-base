@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>发布活动页</title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/The_personal_data.css" />
+		<link rel="stylesheet" type="text/css" href="../css/Release_the_dynamic.css" />
+		<link rel="stylesheet" type="text/css" href="../css/post_activity.css" />
+		<link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css" />
+		<style>
+			html,
+			body,
+			.mui-content {
+				height: 0px;
+				margin: 0px;
+			}
+			
+			h5.mui-content-padded {
+				margin-left: 3px;
+				margin-top: 20px !important;
+			}
+			
+			h5.mui-content-padded:first-child {
+				margin-top: 12px !important;
+			}
+			
+			.mui-btn {
+				font-size: 16px;
+				padding: 8px;
+				margin: 3px;
+			}
+			
+			.ui-alert {
+				text-align: center;
+				padding: 20px 10px;
+				font-size: 16px;
+			}
+			
+			* {
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+			}
+			
+			.activity-time {
+				height: 44px;
+				border-bottom: 1px solid #dedfe0;
+				padding: 11px 6px;
+			}
+			.riqixingming-span-time{
+				min-width: 102px;
+				/*border: 1px solid red;*/
+				display: inline-block;
+				min-height: 12px;
+				vertical-align: bottom;
+			}
+			.mui-table-view-cell{
+				padding: 11px 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav nav">
+			<span class="back mui-action-back background"></span>
+			<h1 class="mui-title">发布活动</h1>
+			<span id="send" class="mui-pull-right send-dynamic">发送</span>
+		</header>
+		<div class="mui-content">
+
+			<div class="General_lighting_box">
+				<ul class="General_lighting" id="General_lighting">
+
+					<li id="last">
+						<div class="">
+							<img src="../images/add-people.png" />
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<ul class="mui-table-view riqixingming personal-margin-top">
+				<li class="mui-table-view-cell font_14 color_999 releative border-bottom" id="activity-title-box">活动标题<span id="activity-title" class="color_333 riqixingming-span"></span>
+				</li>
+				<li class="activity-time font_14 color_999 border-bottom releative" style="padding-left: 10px;">活动时间<span class="color_333 riqixingming-span riqixingming-span-time" data-options='{}'></span> &nbsp;至<span class="color_333 riqixingming-span riqixingming-span-time" data-options='{}'></span></li>
+				<li class="mui-table-view-cell font_14 color_999 border-bottom releative" data-href="choose_position.html" data-view="choose_position">活动地点<span class="color_333 riqixingming-span" id="location"></span><i class="personal-location-icon absolute"><img src="../images/location-icon.png"/></i></li>
+				<li class="mui-table-view-cell font_14 color_999 border-bottom releative" id="showUserPicker">活动类型<span class="color_333 riqixingming-span" id = 'userResult'></span></li>
+			</ul>
+
+			<ul class="mui-table-view personal-margin-top">
+				<li class="mui-table-view-cell" data-href='whoCanSee.html' data-view='whoCanSee'>
+					<span class="gongkai background"></span>
+					<span>谁可以看</span>
+					<b class="shifougongkai" id="wocansee" data-privacy = '0'>公开</b>
+				</li>
+			</ul>
+			<div class="releative">
+				<textarea placeholder="请输入该活动的详情信息" id="activity_detail" maxlength="300"></textarea>
+				<span class="number-word absolute" id="number-word"><span id="count">0</span>/200</span>
+			</div>
+		</div>
+	</body>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/cache.js"></script>
+	<script src="../js/zs.js"></script>
+	<script src="../js/mui.picker.min.js"></script>
+	<script src="../js/mui.poppicker.js"></script>
+	<script src="../js/post_activity.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">
+		new zs.Init('PostActivity');
+	</script>
+
+</html>

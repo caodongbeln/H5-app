@@ -1,0 +1,28 @@
+<style type="text/css">
+	li:active {
+		background: #EDFAFF !important;
+	}
+	li a:active {
+		background: #EDFAFF !important;
+	}
+</style>
+<div id="scroll1" class="mui-scroll-wrapper">
+	<div class="mui-scroll">
+		<ul class="mui-table-view">
+			{{each list}}
+			<li class="mui-table-view-cell mui-media" data-href="pay.html" data-id="{{$value.id}}">
+				<a href="javascript:;" class="mui-navigate-right">
+					<div class="mui-media-object mui-pull-left releative">
+						<img src="../images/default_img.png" data-src="{{$value.icon}}" style="width: 42px !important;height: 42px;">
+						<!--<i class="weidu-hongdian absolute color-fff background_color_ec5888">月</i>-->
+					</div>
+					<div class="mui-media-body" style="padding-top: 2px;">
+						<p><span id="" class="color_333" style="margin-left: 0px;">{{$value.name}}</span></p>
+						<p class="mui-ellipsis mui-ellipsis-xiankuan" style="height: 17px !important">{{$value.desc}}</p>
+					</div>
+				</a>
+			</li>
+			{{/each}}
+		</ul>
+	</div>
+</div>

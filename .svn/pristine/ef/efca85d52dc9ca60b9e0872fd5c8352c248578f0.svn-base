@@ -1,0 +1,13 @@
+<!--录制后-->
+<div class="perfect-voice-del">
+	<ul class="mui-table-view mui-grid-view mui-grid-9">
+		<li class="mui-table-view-cell mui-media mui-col-xs-8">
+			<img id="audio_switch_ico_play_started" src="../images/play-one.gif" /> <a id='audio_length' class="person-voice-time">{{length}}</a>
+			<p id="audio_title">{{title}}</p>
+		</li>
+		<li class="mui-table-view-cell mui-media mui-col-xs-4">
+			<img id='audio_opt_del' src="../images/del.png" style='display: none;' />
+			<p id="audio_opt_title" style='display: none;'>{{op}}</p>
+		</li>
+	</ul>
+</div>

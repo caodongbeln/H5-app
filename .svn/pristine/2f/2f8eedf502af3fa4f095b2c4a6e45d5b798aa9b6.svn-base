@@ -1,0 +1,518 @@
+<div>
+	<ul class="mui-table-view padding-content">
+		<li class="mui-table-view-cell mui-media">
+			<!--<a class="" style="padding: 10px 6px 4px 15px;">-->
+			<img class="mui-media-object mui-pull-left" data-src="{{info.cover}}" data-css='a50' src="../images/cover.png">
+			<div class="mui-media-body">
+				<span>{{info.username}}</span>
+				<p class='mui-ellipsis'>手机：{{info.mobile}}</p>
+				<a href="#topPopover" class="mui-content-padded">
+					<img src="../images/benrenerweima.png" class="benrenerweima" />
+				</a>
+
+			</div>
+			<!--</a>-->
+		</li>
+	</ul>
+	<!--
+    	作者：949961306@qq.com
+    	时间：2016-05-30
+    	描述：
+    -->
+	<ul class="mui-table-view setting-caifu">
+		<li class="mui-table-view-cell caifufenlei">
+			<div class="border-right">
+				<span class="jinbi background"></span>
+				<span>{{info.gold}}</span>
+			</div>
+
+		</li>
+		<li class="mui-table-view-cell caifufenlei" data-href="../tpl/remind_list.html">
+			<div class="border-right">
+				<span class="lingsheng background"></span>
+				<span>12</span>
+			</div>
+		</li>
+
+		<li class="mui-table-view-cell caifufenlei" data-href="../tpl/coupon.html">
+			<div class="border-right">
+				<span class="youhuiquan background"></span>
+				<span>优惠券</span>
+			</div>
+		</li>
+		<li class="mui-table-view-cell caifufenlei" data-href="../tpl/notification_list.html">
+			<div>
+				<span class="yangshengqi background"></span>
+				<span>54</span>
+			</div>
+		</li>
+	</ul>
+
+</div>
+<!--
+            	作者：949961306@qq.com
+            	时间：2016-05-30
+            	描述：我的动态 活动部分
+            -->
+<div class="xiabanbufen-box">
+	<ul class="mui-table-view setting-caifu xiabanbufen">
+		<li class="mui-table-view-cell" data-href="../tpl/my_dynamic.html">
+			<a href="#" class="mui-navigate-right releative">
+				<span class="dongtai background"></span>
+				<span>我的动态</span>
+				<span class="zuixindongtai mui-pull-right releative"><img src="../images/lixiaxia.png"/><i class="absolute hongdian background"></i></span>
+			</a>
+		</li>
+		<li class="mui-table-view-cell" data-href="../tpl/my_activity.html">
+			<a class="mui-navigate-right">
+				<span class="huodong background"></span>
+				<span>我的活动</span>
+			</a>
+		</li>
+	</ul>
+
+	<ul class="mui-table-view setting-caifu xiabanbufen">
+		<li class="mui-table-view-cell" data-href="../tpl/my_prop.html">
+			<a class="mui-navigate-right" id="my_prop" href="my_prop.html">
+				<span class="daoju background"></span>
+				<span>我的道具</span>
+			</a>
+		</li>
+		<li class="mui-table-view-cell" data-href="../tpl/shop.html">
+			<a class="mui-navigate-right">
+				<span class="shangdian background"></span>
+				<span>商店</span>
+			</a>
+		</li>
+	</ul>
+
+	<ul class="mui-table-view setting-caifu xiabanbufen">
+		<li class="mui-table-view-cell" data-href="../tpl/saw_me.html">
+			<a class="mui-navigate-right">
+				<span class="shuikanguowo background"></span>
+				<span>谁看过我</span>
+			</a>
+		</li>
+		<li class="mui-table-view-cell" data-href = "../tpl/yinsi.html">
+			<a class="mui-navigate-right">
+				<span class="yinsishezhi background"></span>
+				<span>隐私设置</span>
+			</a>
+		</li>
+	</ul>
+
+	<ul class="mui-table-view setting-caifu xiabanbufen">
+		<li class="mui-table-view-cell" data-href = "../tpl/today_task.html">
+			<a class="mui-navigate-right">
+				<span class="jinrirenwu background"></span>
+				<span>今日任务</span>
+			</a>
+		</li>
+	</ul>
+</div>
+<div id="topPopover" class="mui-popover" style="height: 379px;width: 255px !important;border-radius: 2px !important;">
+	<div class="mui-scroll-wrapper" style="height: 379px;margin-top: 0px;">
+		<div class="qrcode mui-scroll">
+			<div class="info">
+				<img src="../images/dianzantouxiang-xiao.png" />
+				<div>
+					<span>梦女孩</span><br /> 北京&nbsp;朝阳
+				</div>
+			</div>
+			<img src="../images/qrcode.png" />
+			<p>扫一扫上面的二维码图案,加我微信</p>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*!
+ * =====================================================
+ * zs v1.0.0 ()
+ * =====================================================
+ */
+!
+function(mui, zs) {
+	zs.SetPage = zs.UserPage.extend({
+		initPage: function() {
+			zs.template('nav', 'footer', {
+				navs: zs.data.nav,
+				active:'settings'
+			}, 'append');
+			var cls = this;
+			var params = {
+				uid: zs.User.isLogin()
+			}
+			zs.Api.post('user', 'info',params, function(home) {
+				zs.template('setContent', 'set_content', {
+					info: home.data
+				}, 'append');
+//			zs.d('+++++++++++++++++'  + );		
+				
+			})
+		},
+		initEvent: function() {},
+	});
+}(mui, zs);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mui-table-view {
+	background-color: transparent;
+}
+
+.mui-table-view:after {
+	height: 0;
+}
+
+.mui-table-view-cell {
+	padding: 11px 0px;
+	padding-top: 10px;
+	height: 70px;
+	border: 0px !important;
+}
+
+.padding-content {
+	margin-top: 0px !important;
+}
+
+.mui-table-view:before {
+	background-color: #f0eff4;
+}
+
+.mui-table-view-cell>a:not(.mui-btn) {
+	padding: 10px 10px 0;
+}
+
+.mui-navigate-right:after,
+.mui-push-left:after,
+.mui-push-right:after {
+	top: 60%;
+}
+
+.mui-navigate-right:after,
+.mui-push-right:after {
+	right: 10px;
+}
+
+.benrenerweima {
+	float: right;
+	width: 22px !important;
+	height: 22px;
+	position: absolute;
+	right: 0px;
+	top: 24px;
+}
+
+.setting-caifu {
+	display: table;
+	width: 100%;
+	border-top: 1px solid #F0EFF4 !important;
+}
+
+.setting-caifu li {
+	height: 44px !important;
+}
+
+.setting-caifu {
+	border-left: none;
+}
+
+.lingsheng,
+.jinbi,
+.youhuiquan,
+.yangshengqi {
+	display: inline-block;
+	vertical-align: top;
+	width: 22px;
+	height: 22px;
+	margin-top: 5px;
+}
+
+.lingsheng+span,
+.jinbi+span,
+.youhuiquan+span,
+.yangshengqi+span {
+	line-height: 34px;
+	font-size: 14px;
+}
+
+.jinbi {
+	background-image: url(../images/jinbi.png);
+}
+
+.caifufenlei {
+	float: left;
+	width: 25%;
+	padding-bottom: 5px !important;
+}
+
+.lingsheng {
+	background-image: url(../images/lingsheng.png);
+}
+
+.setting-caifu .mui-table-view-cell {
+	padding: 0 8px 0 15px;
+	/*padding-top: 17px;*/
+}
+
+.caifufenlei>div {
+	text-align: center;
+	margin-top: 5px;
+	height: 34px;
+	width: 100%;
+}
+
+.setting-caifu .caifufenlei {
+	padding: 0;
+	/*padding-top: 17px;*/
+}
+
+.youhuiquan {
+	background-image: url(../images/youhuiquan.png);
+}
+
+.yangshengqi {
+	width: 24px;
+	height: 19px;
+	background-image: url(../images/yangshengqi.png);
+}
+
+.xiabanbufen li {
+	height: 44px;
+	/*padding-top: 10px;*/
+}
+
+.dongtai,
+.huodong,
+.daoju,
+.shangdian,
+.shuikanguowo,
+.yinsishezhi,
+.jinrirenwu {
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	/*padding-top: 10px;*/
+	/*margin-top: 11.5px;*/
+	vertical-align: middle;
+}
+
+.dongtai+span,
+.huodong+span,
+.daoju+span,
+.shangdian+span,
+.shuikanguowo+span,
+.yinsishezhi+span,
+.jinrirenwu+span {
+	line-height: 44px;
+	font-size: 14px;
+}
+
+.dongtai {
+	background-image: url(../images/dongtai.png);
+}
+
+.huodong {
+	background-image: url(../images/huodong.png);
+}
+
+.daoju {
+	background-image: url(../images/daoju.png);
+}
+
+.shangdian {
+	background-image: url(../images/shangdian.png);
+}
+
+.shuikanguowo {
+	background-image: url(../images/shuikanguowo.png);
+}
+
+.yinsishezhi {
+	background-image: url(../images/yinsishezhi.png);
+}
+
+.jinrirenwu {
+	background-image: url(../images/jinrirenwu.png);
+}
+
+.xiabanbufen-box {
+	background-color: #f0eff4;
+}
+
+.xiabanbufen-box:before {
+	content: '';
+	display: table;
+	width: 0;
+	height: 0;
+}
+
+.xiabanbufen {
+	background-color: #fff;
+	margin-top: 10px;
+	border-top: none !important;
+}
+
+
+/*最新动态的头像和红点*/
+
+.zuixindongtai {
+	width: 30px;
+	/*height: 30px;*/
+	margin-top: 8px;
+	margin-right: 25px;
+}
+
+.zuixindongtai>img {
+	width: 100%;
+}
+
+.hongdian {
+	right: 0;
+	top: 0;
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	background-image: url(../images/hongdian.png);
+}
+
+.hongdian img {
+	width: 100%;
+}
+
+.set {
+	background-image: url(../images/set.png);
+	background-repeat: no-repeat;
+	background-size: 22px;
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	margin-top: 11px;
+	margin-right: 10px;
+}
+
+
+/*二维码弹出框*/
+
+.qrcode {
+	background-color: #fff;
+	width: 255px;
+	height: 379px;
+}
+
+.qrcode p {
+	font-size: 12px;
+	text-align: center;
+}
+
+.qrcode .info {
+	height: 58px;
+	margin-top: 30px;
+}
+
+.qrcode .info img {
+	width: 58px;
+	height: 58px;
+	float: left;
+	margin-left: 22px;
+	margin-right: 12px;
+	margin-top: 0px !important;
+}
+
+.qrcode .info div {
+	display: inline-block;
+	color: #999;
+	font-size: 12px;
+	margin-top: 10px;
+}
+
+.qrcode .info div span {
+    color: #666;
+    background-image: url(../images/person_header.png);
+    background-repeat: no-repeat;
+    background-size: 14px;
+    width: 100px;
+    height: 14px;
+    display: inline-block;
+    line-height: 14px;
+    background-position: 50%;
+}
+
+.qrcode img {
+	margin-top: 14px;
+	margin-left: 22px;
+	width: 212px;
+}
+
+#topPopover {
+	top: 76px !important;
+	left: 15% !important;
+}
+
+@media only screen and (max-width: 320px) {
+	#topPopover {
+		left: 10.15625% !important;
+	}
+}
+
+@media only screen and(min-width: 320px) and (max-width: 375px) {
+	#topPopover {
+		left: 18.75% !important;
+	}
+}
+
+@media only screen and (min-width: 375px) and (max-width: 414px) {
+	#topPopover {
+		left: 19.202899% !important;
+	}
+}
+@media only screen and (min-width: 414px) and (max-width: 768px) {
+	#topPopover {
+		left: 33% !important;
+	}
+}
+.xiabanbufen-box ul li {
+	border: 1px solid #f0eff4 !important;
+}
+.xiabanbufen-box ul li:last-child {
+	border: 0px !important;
+}

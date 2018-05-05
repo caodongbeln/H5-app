@@ -1,0 +1,25 @@
+{{if list != ''}} {{each list}}
+<li class="mui-table-view-cell mui-media" data-id="{{$value.fid}}">
+	<a class="">
+		<label for="checkbox{{$index}}">
+			<img class="mui-media-object mui-pull-left" src="../images/cover.png" data-src="{{$value.user.cover}}" data-css='a50'>
+			<div class="mui-media-body">
+				<span>
+					<i>{{$value.user.username}}</i>
+					<i class="distance" id="distance_{{$index}}">距离{{$value.distance}}</i>
+					<i>{{$value.atime}}</i>
+				</span>
+				<p class='mui-ellipsis'>{{$value.user_location.address}}</p>
+			</div>
+		</label>
+		<div class="absolute checkbox checkbox-mask" id="checkbox-mask{{$value.fid}}" value='{{$value.fid}}'></div> 
+		<input type="checkbox" username ='{{$value.user.username}}' name="user_id" value="{{$value.fid}}" id="checkbox{{$value.fid}}" class="absolute checkbox none" />
+	</a>
+</li>
+{{/each}} {{else}}
+<!--在没有好友的情况下显示-->
+<div class="no-results">
+	暂无任何好友
+	<p><input type="button" id="add" value="添加" /></p>
+</div>
+{{/if}}

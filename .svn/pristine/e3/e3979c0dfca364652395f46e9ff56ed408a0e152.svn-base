@@ -1,0 +1,59 @@
+{{each list}}
+{{if $value.uid==uid}}
+<li class="mui-table-view-cell mui-media">
+	<a class="">
+		<img class="mui-media-object mui-pull-left" src="../../images/cover.png" data-src='{{$value.user.cover}}'>
+		<div class="mui-media-body">
+			<span>{{$value.username}}</span>
+			<p class='mui-ellipsis'>已申请看对方位置</p>
+		</div>
+	</a>
+	<!--
+                    	作者：949961306@qq.com
+                    	时间：2016-06-21
+                    	描述：各种按钮
+                    -->
+    {{if $value.relation==2}}
+	<div class="tongyiandjujue color_999 absolute">
+		<i>等待同意</i>
+	</div>
+	{{else if $value.relation==1}}
+	<div class="tongyiandjujue color_999 absolute">
+		<i>已同意</i>
+	</div>
+	{{else if $value.relation==1}}
+	<div class="tongyiandjujue color_999 absolute">
+		<i>已拒绝</i>
+	</div>
+	{{/if}}
+</li>
+{{else $value.fid==uid }}
+<li class="mui-table-view-cell mui-media">
+	<a class="">
+		<img class="mui-media-object mui-pull-left" src="../../images/cover.png" data-src='{{$value.user.cover}}'>
+		<div class="mui-media-body">
+			<span>{{$value.username}}</span>
+			<p class='mui-ellipsis'>TA申请查看你的位置</p>
+		</div>
+	</a>
+	<!--
+                    	作者：949961306@qq.com
+                    	时间：2016-06-21
+                    	描述：各种按钮
+                    -->
+    {{if $value.relation==2}}
+	<div class="tongyiandjujue color_999 absolute">
+		<i data-id='{{$value.uid}}' class='tongyiandjujue-backgroud-color028ce6 color-fff'>同意</i>
+	</div>
+	{{else if $value.relation==1}}
+	<div class="tongyiandjujue color_999 absolute">
+		{{include './allow'}}
+	</div>
+	{{else if $value.relation==0}}
+	<div class="tongyiandjujue color_999 absolute">
+		{{include './disallow'}}
+	</div>
+	{{/if}}
+</li>
+{{/if}}
+{{/each}}

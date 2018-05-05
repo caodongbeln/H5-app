@@ -1,0 +1,18 @@
+p{
+	margin-bottom: 0;
+}
+.time-box{
+	text-align: center;
+}
+.time{
+	background-color: #999;
+	padding: 0 3px;
+}
+.nofication{
+	background-color: #fff;
+	/*height: 44px;*/
+	/*padding-top: 5px;*/
+}
+.timeandnofication{
+	padding: 0px 10px;
+}

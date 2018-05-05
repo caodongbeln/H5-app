@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>发送动态页</title>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/The_personal_data.css" />
+    <link rel="stylesheet" type="text/css" href="../css/Release_the_dynamic.css"/>
+    <style type="text/css">
+    	.mui-table-view-cell{
+    		padding: 11px 10px;
+    	}
+    </style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav nav">
+			<span class="back mui-action-back background"></span>
+			<h1 class="mui-title">发送动态</h1>
+			<span id="send" class="mui-pull-right send-dynamic">发送</span>
+		</header>
+	<div class="mui-content" style="padding-top: 16px">
+		<textarea name="" rows="" cols="" placeholder="这一刻的想法" id="msg-text"></textarea>
+		<p class="huitiao default-background-color"></p>
+		<div class="General_lighting_box">
+				<ul class="General_lighting" id="General_lighting">
+					<li id="last">
+						<div>
+							<img src="../images/add-people.png" />
+						</div>
+					</li>
+				</ul>
+			</div>
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell" data-href="choose_position.html" data-view="choose_position">
+				<span class="location background"></span>
+				<span id="location"></span>
+			</li>
+			<li class="mui-table-view-cell" data-href = 'whoCanSee.html' data-view = 'whoCanSee'>
+				<span class="gongkai background"></span>
+				<span>谁可以看</span>
+				<b class="shifougongkai" id="wocansee" data-privacy = '0'>公开</b>
+			</li>
+			
+		</ul>
+	</div>
+	
+</body>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/cache.js"></script>
+	<script src="../js/zs.js"></script>
+	<script src="../js/release_the_dynamic.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">
+		new zs.Init('ReleaseTheDynamic');
+	</script>
+</html>

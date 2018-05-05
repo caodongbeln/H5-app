@@ -1,0 +1,119 @@
+body {
+	background: #f6f6f6;
+	color: #999999;
+}
+.mui-bar {
+	background: #4a5c74;
+}
+.mui-bar a,.mui-title {
+	color: #FFFFFF;
+}
+.local-content-cate {
+	height: 45px;
+	font-size: 15px;
+}
+.local-content-cate ul {
+	background: #FFFFFF !important;
+	height: 45px;
+}
+.local-content-cate ul li {
+	height: 45px;
+	padding: 0 !important;
+	width: 33.13% !important;
+	border: 0px !important;
+}
+.local-content-cate input {
+	width: 100%;
+	height: 100%;
+	border: 0px;
+	border-radius: 0px;
+	color: #999999;
+	font-size: 15px;
+}
+.local-content-cate span {
+	width: 1px;
+    height: 25px;
+    margin-top: 8px;
+    display: inline-block;
+    border-left: 1px solid #999999;
+}
+.selected {
+	border-bottom: 1px solid #66CC99 !important;
+	color: #66cc99 !important;
+}
+.local-activity-count {
+	height: 23px;
+    padding: 0px 10px;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.local-activity-count span {
+	float: right;
+}
+.activity-detail-cate {
+	margin-bottom: 20px;
+}
+.activity-detail-cate ul li {
+	height: 43px;
+	padding: 0 !important;
+	width: 33% !important;
+	border: 0px !important;
+	margin-right: 1px !important;
+	margin-top: 1.5px !important;
+}
+.activity-detail-cate input {
+	width: 100%;
+	height: 100%;
+	border: 0px;
+	border-radius: 0px;
+	color: #999999;
+	font-size: 14px;
+}
+
+.local-activity-img {
+	/*height: 188px;*/
+}
+.local-activity-img img {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.local-activity-demand {
+	width: 60%;
+	text-align: right;
+	padding-right: 10px;
+	position: absolute;
+	margin-top: -45px;
+	margin-left: 40%;
+	font-size: 15px;
+	color: #fff;
+	height: 30px;
+	line-height: 20px;
+}
+
+.local-activity-head {
+	height: 50px;
+	width: 50px;
+	border-radius: 30px;
+	position: absolute;
+	margin-top: -25px;
+	overflow: hidden;
+	margin-left: 10px;
+	border:1px solid #FFFFFF;
+}
+
+.activity-person-info {
+	height: 25px;
+	font-size: 11px;
+	padding-left: 60px;
+	line-height: 25px;
+	margin: 0;
+	color: #666666;
+}
+
+.activity-person-info span {
+	float: left;
+	line-height: 25px;
+	padding-left: 10px
+}

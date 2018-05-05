@@ -1,0 +1,60 @@
+<!--生活照部分-->
+<div class="General_lighting_box">
+	<ul class="General_lighting">
+		{{each uInfo.back_cover}}
+			<li>
+				<div class="">
+					<img src="../images/default_header.png" data-src="{{$value}}" data-preview-src="" data-preview-group="{{$index}}" />
+				</div>
+			</li>
+		{{/each}}
+	</ul>
+</div>
+<!--
+            	作者：949961306@qq.com
+            	时间：2016-06-02
+            	描述：名称备注部分
+            -->
+
+<ul class="mui-table-view riqixingming personal-margin-top">
+	<li class="mui-table-view-cell font_14 color_999 releative border-bottom">昵 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称
+		<span id="uName" class="color_333 riqixingming-span">{{uInfo.username}}</span>
+		<span id="changeName" class="color_333 xiugaibeizhu absolute" style="display: none;">修改备注</span>
+	</li>
+</ul>
+<ul class="personal-margin-top background-color-white Personal-signature" style="margin-top: -10px !important;">
+	<li class="font_14 color_999">个人签名</li>
+	<li class="font_14 color_999"><textarea name="" rows="" cols="" placeholder="没有填写个性签名" disabled="disabled">{{uInfo.mood}}</textarea></li>
+</ul>
+<ul class="mui-table-view riqixingming" style="margin-top: 1px !important;">
+	<li class="mui-table-view-cell font_14 color_999 releative border-bottom">ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号
+		<span id="uName" class="color_333 riqixingming-span">{{uInfo.id}}</span>
+	</li>
+</ul>
+<ul class="mui-table-view riqixingming personal-margin-top">
+	<li class="mui-table-view-cell font_14 color_999 border-bottom">性 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别<span class="color_333 riqixingming-span">{{if uInfo.gender == 0}}女{{else}}男{{/if}}</span></li>
+	<li class="mui-table-view-cell font_14 color_999 border-bottom">出生日期<span class="color_333 riqixingming-span">{{if uInfo.birth == null}}未设置{{else}}{{uInfo.birth}}{{/if}}</span></li>
+	<!--<li class="mui-table-view-cell font_14 color_999 border-bottom">手 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机<span class="color_333 riqixingming-span">{{mobile}}</span></li>-->
+</ul>
+<ul class="mui-table-view riqixingming personal-margin-top">
+	<li class="mui-table-view-cell font_14 color_999 releative border-bottom">工作单位<span id="" class="color_333 riqixingming-span">{{if uInfo.work_unit}}{{uInfo.work_unit}}{{else}}未设置{{/if}}</span>
+	</li>
+	<li class="mui-table-view-cell font_14 color_999 border-bottom releative">工作地点<span class="color_333 riqixingming-span">{{if uInfo.work_addr}}{{uInfo.work_addr}}{{else}}未设置{{/if}}</span></li>
+	<li class="mui-table-view-cell font_14 color_999 border-bottom releative">生活地点<span class="color_333 riqixingming-span">{{if uInfo.living_addr}}{{uInfo.living_addr}}{{else}}未设置{{/if}}</span></li>
+	<li class="mui-table-view-cell font_14 color_999 border-bottom releative">常出没地<span class="color_333 riqixingming-span">{{if uInfo.often_addr}}{{uInfo.often_addr}}{{else}}未设置{{/if}}</span></li>
+</ul>
+<!--
+            	作者：949961306@qq.com
+            	时间：2016-06-02
+            	描述：兴趣爱好
+            -->
+<div class="Interests_and_hobbies ">
+	<p class="padding-content padding-content" style="padding-top: 10px;">兴趣爱好</p>
+	<ul class="mui-table-view riqixingming personal-margin-top">
+		<li class="mui-table-view-cell font_14 color_999 releative border-bottom">电 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;影<input type="text" placeholder="没有填写喜欢的电影" class="enjoy-input color_333" disabled="disabled" {{if uInfo.hobby !=null}}value="{{uInfo.hobby.movie}}" {{/if}} />
+		</li>
+		<li class="mui-table-view-cell font_14 color_999 border-bottom">书 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;籍<input type="text" placeholder="没有填写喜欢的书籍" class="enjoy-input color_333" disabled="disabled" {{if uInfo.hobby !=null}} value="{{uInfo.hobby.book}}" {{/if}} /></li>
+		<li class="mui-table-view-cell font_14 color_999 border-bottom">音 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;乐<input type="text" placeholder="没有填写喜欢的音乐" class="enjoy-input color_333" disabled="disabled" {{if uInfo.hobby !=null}} value="{{uInfo.hobby.music}}" {{/if}}/></li>
+	</ul>
+</div>
+<button type="button" id='button' class="mui-btn btn-color mui-btn-block fixed-bottom-0">加好友</button>

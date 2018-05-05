@@ -1,0 +1,48 @@
+<ul class="mui-table-view padding-content">
+	<li class="mui-table-view-cell mui-media">
+		<!--<a class="" style="padding: 10px 6px 4px 15px;">-->
+		<img class="mui-media-object mui-pull-left" data-src='{{user.cover}}' data-css='a50' src="../images/wanghongmei.png">
+		<div class="mui-media-body">
+			<span>{{user.username}}</span>
+			<p class='mui-ellipsis'>手机：{{user.mobile}}</p>
+			<a href="#topPopover" class="mui-content-padded">
+				<img src="../images/benrenerweima.png" class="benrenerweima" />
+			</a>
+
+		</div>
+		<!--</a>-->
+	</li>
+</ul>
+<!--
+                	作者：949961306@qq.com
+                	时间：2016-05-30
+                	描述：
+                -->
+<ul class="mui-table-view setting-caifu">
+	<li class="mui-table-view-cell caifufenlei">
+		<div class="border-right">
+			<span class="jinbi background"></span>
+			<span>{{user.gold}}</span>
+		</div>
+
+	</li>
+	<li class="mui-table-view-cell caifufenlei">
+		<div class="border-right">
+			<span class="lingsheng background"></span>
+			<span>0</span>
+		</div>
+	</li>
+
+	<li class="mui-table-view-cell caifufenlei">
+		<div class="border-right">
+			<span class="youhuiquan background"></span>
+			<span>0</span>
+		</div>
+	</li>
+	<li class="mui-table-view-cell caifufenlei">
+		<div>
+			<span class="yangshengqi background"></span>
+			<span>0</span>
+		</div>
+	</li>
+</ul>

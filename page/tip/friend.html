@@ -1,0 +1,29 @@
+<div class="click-head-protrait-box padding-content self_friend">
+	<div class="click-head-protrait releative">
+		<img src="../images/sanjiao.png" alt="" style="width: 30.5px;height: 32px;left: 0px;bottom: 0;" class="absolute" />
+		<img src="../images/dingwei-beijing.png" class="dingwei-beijing absolute" />
+		<div class="click-head-protrait-son absolute">
+			<i id='close_btn' class="absolute close-index background"></i>
+			<p class="dongtai-index font_12"><span class="me-username mui-ellipsis" style="display:inline-block;max-width: 80px !important; text-align: left;position: absolute;">{{friend.username}}</span><span class="wenben color_999" style="margin-left: 75px;max-width:180px;text-overflow: ellipsis;">{{friend.user.mood}}</span><span class="color_666" style="margin-left:20px !important">{{loc.atime}}</span></p>
+			<ul class="mui-table-view mui-grid-view mui-grid-9 transparent dianjiul border-none">
+				<!--<li class="mui-table-view-cell mui-media mui-col-xs-3 sangexuanxiang border-none" data-id='{{friend.fid}}' data-href='chat.html' data-view='chat' data-extras='{{chat_seting}}'>
+					<div class="sangexuanxiang-div background gerenqianming"></div>
+				</li>-->
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 sangexuanxiang border-none"  
+							data-tools='true'
+						data-tid='1' data-auth='true' data-id='{{friend.fid}}' data-href='footprint.html' data-view='footprint'>
+					<div class="sangexuanxiang-div background zuji{{if friend.relation!=1}}-disabled{{/if}}"></div>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 sangexuanxiang border-none" 
+						data-tools='true'
+					data-tid='2' data-auth='true' data-id='{{friend.fid}}' data-href='remind_list.html' data-view='remind_list'>
+					<div class="sangexuanxiang-div background naoling{{if friend.relation!=1}}-disabled{{/if}}"></div>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 sangexuanxiang border-none" data-extras='{"dynamicid":{{friend.id}},"dynamicname":"{{friend.username}}"}' data-id='{{friend.fid}}' data-href='friend_detail.html' data-view='friend_detail'>
+					<div class="sangexuanxiang-div background jilu"></div>
+				</li>
+			</ul>
+		</div>
+		<p class="color_999 dizhi absolute">{{if friend.relation!=1}}你无权查看对方位置{{/if}}{{if loc}}{{loc.address}}{{/if}}<span id='distance' class="mui-pull-right color_666"></span></p>
+	</div>
+</div>

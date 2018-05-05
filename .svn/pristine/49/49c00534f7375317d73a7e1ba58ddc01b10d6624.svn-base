@@ -1,0 +1,3 @@
+{{each list}}
+<img src="../images/cover.png" data-src="{{$value.user.cover}}" data-css='a50'/>
+{{/each}}

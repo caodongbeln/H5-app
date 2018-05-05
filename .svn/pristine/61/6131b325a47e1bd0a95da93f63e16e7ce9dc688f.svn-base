@@ -1,0 +1,22 @@
+<div class="click-head-protrait-box padding-content">
+	<div class="click-head-protrait releative">
+		<img src="../images/sanjiao.png" alt="" style="width: 30.5px;height: 32px;left: 0px;bottom: 0;" class="absolute" />
+		<img src="../images/dingwei-beijing.png" class="dingwei-beijing absolute" />
+		<div class="click-head-protrait-son absolute">
+			<i id='close_btn' class="absolute close-index background"></i>
+			<p class="dongtai-index font_12"><span class="me-username">我</span><span class="wenben color_999">{{user.mood}}</span><span class="#666">{{user.add_time}}</span></p>
+			<ul class="mui-table-view mui-grid-view mui-grid-9 transparent dianjiul border-none">
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 sangexuanxiang border-none" data-id='{{user.id}}' data-href='footprint.html' data-view='footprint'>
+					<div class="sangexuanxiang-div background zuji"></div>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 sangexuanxiang border-none" data-href='remind_list.html' data-view='remind_list'>
+					<div class="sangexuanxiang-div background naoling"></div>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 sangexuanxiang border-none" data-href='personal.html' data-view='personal'>
+					<div class="sangexuanxiang-div background jilu"></div>
+				</li>
+			</ul>
+		</div>
+		<p class="color_999 dizhi absolute">{{loc.addresses}}<span class="mui-pull-right color_666">{{if loc.coords}}误差{{loc.coords.accuracy}}米{{/if}}</span></p>
+	</div>
+</div>

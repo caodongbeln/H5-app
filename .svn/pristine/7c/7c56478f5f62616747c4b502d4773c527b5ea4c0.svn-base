@@ -1,0 +1,111 @@
+.mui-bar{
+	background-color: #fff;
+}
+.mui-content,body{
+	background-color: #F6F6F6;
+}
+/*清除按钮*/
+
+.back_x {
+	width: 15px;
+	height: 15px;
+	display: block;
+	background-image: url(../images/back_green.png);
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	/*margin-top: 14px;*/
+	position: absolute;
+	top:15px;
+	right: 10px;	
+}
+.mui-title{
+	color: rgb(102,204,153);
+}
+.mui-bar{
+	background-color: #fff;
+	box-shadow: 0 0px 0px ;
+	/*border-bottom: 1px solid #dbdbdb;*/
+	height: 45px;
+}
+.mui-bar-nav{
+	-webkit-box-shadow: 0 0px 0px ;
+    box-shadow: 0 0px 0px ;
+}
+.image img{
+	width: 100%;
+	display: block;
+}
+.image{
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+.mui-table-view{
+	background-color: #f0f0f0;
+}
+.mui-table-view-cell {
+	line-height: 51px;
+	border: 1px solid #F0F0F0;
+	color: rgb(153, 153, 153);
+	height: 51px;
+	padding: 0 10px;
+	background-color: #fff;	
+}
+.mui-table-view-cell i{
+	display: inline-block;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position:center;
+}
+.mui-table-view .mui-table-view-cell:first-child i{
+	background-image: url(../images/miaoshu.png);
+	width: 12px;
+	height: 12px;
+}
+.mui-table-view .mui-table-view-cell:first-child{
+	margin-bottom: 10px;
+}
+.mui-table-view .mui-table-view-cell:last-child i{
+	background-image: url(../images/dingwei_green.png);
+	width: 8.5px;
+	height: 12px;
+}
+::-webkit-input-placeholder {
+	/* WebKit browsers */
+	color: rgb(180,180,180);
+}
+
+:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	color: rgb(180,180,180);
+}
+
+::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	color: rgb(180,180,180);
+}
+
+:-ms-input-placeholder {
+	/* Internet Explorer 10+ */
+	color: rgb(180,180,180);
+}
+input[type=text]{
+	width: 90%;
+	font-size: 14px;
+	padding: 0;
+	border: none;
+}
+.mui-btn-block{
+	position: fixed;
+	bottom: 0;
+	/*margin-top: 172px;*/
+	width: 100%;
+	height: 40px;
+	padding: 0;
+	margin-bottom: 0;
+	line-height: 40px;
+	color: rgb(102,204,153);
+	border: none;
+	border-top: 1px solid rgb(102,204,153);
+}

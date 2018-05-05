@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>选择位置</title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/Notification_list.css" />
+		<link rel="stylesheet" type="text/css" href="../css/list_img.css" />
+		<link rel="stylesheet" type="text/css" href="../css/new_friend.css" />
+		<style type="text/css">
+			.new-friend-top {
+				line-height: 30px;
+				height: 30px;
+				padding-left: 10px;
+			}
+			
+			p {
+				margin-bottom: 0;
+			}
+			
+			.scale {
+				width: 200px;
+				height: 24px;
+				background-color: #fff;
+				color: #028CE6;
+				border: 1px solid #d2d2d2;
+				display: table;
+				border-radius: 4px;
+			}
+			
+			.scale span {
+				width: 25%;
+				height: 100%;
+				float: left;
+				text-align: center;
+				font-size: 14px;
+				line-height: 24px;
+				box-sizing: border-box;
+			}
+			
+			.spanBorderRight {
+				border-right: 1px solid #aaaaaa;
+			}
+			
+			.floating_layer {
+				line-height: 30px;
+				background-color: #FFF;
+				width: 202px;
+				padding: 0 10px;
+				border-radius: 15px;
+			}
+			
+			.floating_layer span {
+				width: 50%;
+				display: inline-block;
+				text-align: center;
+			}
+			
+			.floating_layer i {
+				width: 22px;
+				height: 22px;
+				display: inline-block;
+				vertical-align: middle;
+			}
+			
+			.jinru {
+				background-image: url(../images/jinruandtuichu_03.png);
+			}
+			
+			.likai {
+				background-image: url(../images/likai_03.png);
+			}
+			
+			.mui-table-view-cell {
+				padding: 3px 10px;
+			}
+			
+			.mui-ellipsis.color_333 {
+				color: #333 !important;
+			}
+			
+			.mui-ellipsis.font_14 {
+				font-size: 14px;
+			}
+			
+			.mui-icon-search:before {
+				left: 26%;
+			}
+			
+			#map3 {
+				height: 40%;
+				width: 100%;
+			}
+			
+			.mui-table-view {
+				overflow-y: scroll;
+				width: 100%;
+				max-height: 60%;
+			}
+			
+			.mui-content,
+			html,
+			body {
+				height: 100%;
+				overflow: hidden;
+			}
+			
+			.mui-table-view-radio .mui-table-view-cell>a:not(.mui-btn) {
+				margin-right: 0;
+				padding: 0;
+			}
+			
+			.mui-table-view-cell>a:not(.mui-btn) {
+				margin: 0;
+			}
+			
+			.mui-table-view-radio .mui-table-view-cell {
+				padding-right: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav nav">
+			<span class="back mui-action-back background"></span>
+			<span id="ok" class="mui-pull-right send-dynamic">确定</span>
+			<h1 class="mui-title">选择位置</h1>
+		</header>
+		<div class="mui-content" id='body'>
+			<!--div id='map'></div-->
+			<!--
+            	作者：949961306@qq.com
+            	时间：2016-06-15
+            	描述：搜索框部分
+            -->
+			<div class="padding-content" style="height:35px !important;margin-bottom: 5px !important;">
+				<span class="sousuoanniu mui-pull-right font_14 color-fff" id="search">
+					搜索
+				</span>
+				<div style="padding-right: 40px;width: 100%;">
+					<div class="mui-input-row mui-search" style="margin-top: 3px;">
+						<input type="search" id='key' class="mui-input-clear" placeholder="请输入搜索关键字">
+					</div>
+				</div>
+			</div>
+			<div class="" id="map3" style="z-index: 100 !important;"></div>
+			<ul class="mui-table-view mui-table-view-radio" id='pois'>
+			</ul>
+		</div>
+	</body>
+	<script src="../js/jquery-2.1.1.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/cache.js"></script>
+	<script src="../js/zs.js"></script>
+	<script src="../template/position.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/choose_position.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">
+		new zs.Init('Choose_position');
+	</script>
+
+</html>

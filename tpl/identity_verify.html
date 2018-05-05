@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>身份验证</title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/identity.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav nav">
+			<span class="back mui-action-back background"></span>
+			<h1 class="mui-title">身份验证</h1>
+			<span id="send-dynamic" class="mui-pull-right send-dynamic" style="padding-left: 10px;">发送</span>
+		</header>
+		<div class="mui-content">
+			<div class="identity-change">
+				备注
+				<div class="mui-input-row mui-plus-visible">
+					<input type="text" class="mui-input-clear" placeholder="请输入备注名称" id='username'>
+				</div>
+			</div>
+			<ul class="mui-table-view" style="display: inline-block;width: 100%;">
+				<li class="mui-table-view-cell mui-media shouyedituxianshi" style="width: 80%;float: left">
+					<a href="javascript:;">
+						<div class="mui-media-body">
+							要看对方的位置
+							<p class='mui-ellipsis font_12'>打开后，对方也可以看你的位置哦！</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-media shouyedituxianshi" style="width: 19%;height:62px;">
+					<div class="mui-switch mui-switch-blue mui-pull-right mui-active" id='switch' switch='1' style="margin-top: 21px;">
+						<div class="mui-switch-handle"></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+	</body>
+	<script src="../js/jquery-2.1.1.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/cache.js"></script>
+	<script src="../js/zs.js"></script>
+	<script src="../js/identity_verify.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		new zs.Init('Identityverify');
+	</script>
+
+</html>

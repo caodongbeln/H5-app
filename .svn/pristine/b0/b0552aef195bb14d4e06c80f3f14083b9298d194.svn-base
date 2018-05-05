@@ -1,0 +1,161 @@
+ul li {
+	background: #fff;
+	height: 44px;
+	color: #999;
+	font-size: 14px;
+	line-height: 44px;
+	padding-left: 10px;
+	margin-bottom: 1px;
+}
+ul li span {
+	margin-left: 10px;
+	color: #999;
+}
+.time span {
+	color: #666 !important;
+}
+ul li .right {
+	width: 8px !important;
+	height: 15px !important;
+	background-image:url(../images/right.png) !important;
+	background-size:100% !important;
+	margin-top: 14.5px;
+	margin-right: 10px;
+	background-position: 0px !important;
+}
+ul li .mui-pull-right {
+    margin-right: 10px;
+    background-image: url(../images/glod.png);
+    background-size: 22px;
+    height: 44px;
+    line-height: 44px;
+    background-repeat: no-repeat;
+    background-position: 0px 10px;
+    display: inline-block;
+    width: 65px;
+    text-align: right;
+}
+.count .mui-pull-right {
+	color: #f59901;
+}
+.pay_button {
+	background-color:#fff ;
+	height: 44px;
+	width: 100%;
+	background-image: url(../images/glod.png);
+	background-repeat: no-repeat;
+	background-size:22px ;
+	line-height: 44px;
+	color: #028ce6;
+	padding-left: 37px;
+	background-position:10px 11px ;
+	font-size: 14px;
+	position: fixed;
+    bottom: 0px;
+}
+.pay_button .mui-pull-right {
+	height: 100%;
+	width: 160px;
+	border-radius: 0px;
+	background-color:#028ce6;
+	color: #fff;
+}
+.cate {
+	background-color:#fff ;
+	height: 100px;
+}
+.cate img {
+	width: 50px;
+	height: 50px;
+	margin-left: 10px;
+	margin-top: 23px;
+}
+.cate>div {
+	width: 81%;
+	float: right;
+	height: 100%;
+	padding-top: 10px;
+	padding-left: 10px;
+	font-size: 14px;
+}
+.cate>div p {
+	color: #999;
+    font-size: 12px;
+    height: 12px;
+    line-height: 12px;
+    margin-top: 3px;
+}
+.cate>div .date {
+	font-size: 12px;
+	color: #999;
+	margin-top: -3px;
+	display: table;
+}
+.cate>div .date span:first-child {
+    border: 0px !important;
+    width: 52px !important;
+    margin-right: 7px !important;
+    line-height: 13px !important;
+}
+.cate>div .date span:last-child {
+	margin-right: 0px !important;
+}
+.cate>div .date span {
+	display: inline-block;
+	border: 1px solid #999;
+	color: #999;
+	text-align: center;
+	width: 27px;
+	height: 14px;
+	float: left;
+	line-height: 11px;
+	font-size: 12px;
+	margin-right: 21px;
+}
+/*.cate>div div span a {
+	display: inline-block;
+	color: red !important;
+	position: relative;
+	bottom: -2px;
+	
+}*/
+.selected {
+	border: 1px solid #028CE6 !important;
+	color: #028CE6 !important;
+	background-image:url(../images/selected.png);
+	background-repeat: no-repeat;
+	background-size:10px ;
+	background-position: 107% 2.5px;
+}
+.glod a{
+	font-size: 10px !important;
+	color: #f59901 !important;
+}
+.glod {
+	font-size: 14px !important;
+	display: inline-block;
+	color: #f59901 !important;
+	margin-top: 3px;
+	width: 81%;
+} 
+.glod s {
+	margin-left: 15px;
+	color: #999 !important;
+	font-size: 14px !important;
+}
+.glod s a {
+	font-size: 10px !important;
+	color: #999 !important;
+}
+.glod span {
+    text-align: center;
+    width: 27px;
+    height: 14px;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 11px;
+    margin-top: 5px;
+    margin-left: 30px;
+    border: 1px solid #028CE6;
+    color: #028CE6 !important;
+}

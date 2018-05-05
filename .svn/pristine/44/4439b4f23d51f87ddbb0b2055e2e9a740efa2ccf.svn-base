@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/feedback.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav nav">
+			<span class="back mui-action-back background"></span>
+			<h1 class="mui-title">意见反馈</h1>
+		</header>
+		<div class="mui-content feedback padding-content">
+			<textarea placeholder="请输入您的建议！" id="feedback" maxlength="300"></textarea>
+			<div class="number-word"><span id="count">0</span>/200</div>
+			<input type="button" class="mui-btn" value="提 交" id="submit"/>
+		</div>
+	</body>
+	<script src="../js/jquery-2.1.1.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/cache.js"></script>
+	<script src="../js/zs.js"></script>
+	<script src="../js/feedback.js"></script>
+	<script type="text/javascript">
+		new zs.Init('Feedback');
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(document).keyup(function() {
+				var count = $("#feedback").val();
+				var countLength = count.length;
+				$("#count").text(countLength);
+				if(countLength>200) {
+					alert('只限制200字体~')
+				}
+			});
+		});
+	</script>
+
+</html>

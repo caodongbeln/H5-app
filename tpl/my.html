@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的</title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/common.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/Notification_list.css" />
+		<link rel="stylesheet" type="text/css" href="../css/list_img.css" />
+		<link rel="stylesheet" href="../css/settings.css" />
+		<link rel="stylesheet" type="text/css" href="../css/yincanggundongtiao.css"/>
+		<style type="text/css">
+			.mui-media-body p {
+				margin-top: 3px;
+			}
+			
+			.mui-media-body span {
+				margin-top: 2px;
+			}
+			
+			.mui-navigate-right:after,
+			.mui-push-left:after,
+			.mui-push-right:after {
+				font-size: 24px;
+			}
+			
+			.mui-popover-arrow {
+				display: none;
+			}
+			
+			.set {
+				width: 100px;
+				background-position: 100%;
+				height: 100%;
+				margin-top: 0px;
+			}
+			
+			.mui-content-padded {
+				position: absolute !important;
+				right: 0px;
+				top: 10px;
+				z-index: 1000;
+				width: 100px;
+				height: 50px;
+			}
+			
+			.topPopover {
+				background-color: transparent !important;
+			}
+			
+			.xiabanbufen-box .mui-table-view-cell {
+				border-bottom: 1px solid #f0eff4 !important;
+			}
+			
+			/*@media only screen and (max-width:320px) {
+				.mui-content {
+					padding-bottom: 60px
+				}
+			}*/
+			
+			#topPopover {
+				top: 76px !important;
+			}
+			@media only screen and (max-width: 360px) {
+				.mui-scroll-wrapper {
+					left: 16% !important;
+				}
+			}
+			@media only screen and (max-width: 320px) {
+				.mui-scroll-wrapper {
+					margin-left: -6% !important;
+				}
+			}
+			@media only screen and(min-width: 320px) and (max-width: 375px) {
+				.mui-scroll-wrapper {
+					left: 18.75% !important;
+				}
+			}
+			
+			@media only screen and (min-width: 375px) and (max-width: 414px) {
+				.mui-scroll-wrapper {
+					left: 19.202899% !important;
+				}
+			}
+			
+			@media only screen and (min-width: 414px) and (max-width: 768px) {
+				.mui-scroll-wrapper {
+					left: 33% !important;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav nav">
+			<h1 class="mui-title">我的</h1>
+			<span class="set mui-pull-right" data-href='settings.html' data-view='settings' style="margin-right: 0px;background-position-x:70px ;"></span>
+		</header>
+		<div class="mui-content">
+			<div id="myContent" class="" style="background: #FFFFFF;"></div>
+           
+           
+		</div>
+		<nav id='nav' class="mui-bar mui-bar-tab nav-footer"></nav>
+	</body>
+	<script src="../js/jquery-2.1.1.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/cache.js"></script>
+	<script src="../js/zs.js"></script>
+	<script src="../template/my.min.js"></script>
+	<script src="../js/my.js"></script>
+	<script type="text/javascript">
+		new zs.Init('My');
+	</script>
+</html>

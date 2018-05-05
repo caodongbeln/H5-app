@@ -1,0 +1,116 @@
+<div class="General_lighting_box">
+	<ul class="General_lighting">
+		<li>
+			<div class="">
+				<img src="../images/life-photo1.png" />
+			</div>
+		</li>
+		<li>
+			<div class="">
+				<img src="../images/life-photo-2.png" />
+			</div>
+		</li>
+		<li>
+			<div id="" class="">
+				<img src="../images/life-photo-3.png" />
+			</div>
+		</li>
+		<li>
+			<div class="">
+				<img src="../images/life-photo-4.png" />
+			</div>
+		</li>
+		<li>
+			<div class="">
+				<img src="../images/life-photo1.png" />
+			</div>
+		</li>
+		<li>
+			<div class="">
+				<img src="../images/life-photo-2.png" />
+			</div>
+		</li>
+		<li>
+			<div class="">
+				<img src="../images/life-photo-3.png" />
+			</div>
+		</li>
+		<li>
+			<div class="">
+				<img src="../images/life-photo-4.png" />
+			</div>
+		</li>
+		<li>
+			<div class="">
+				<img src="../images/add-people.png" />
+			</div>
+		</li>
+		<li>
+			<div class="">
+				<img src="../images/11.png" />
+			</div>
+		</li>
+	</ul>
+</div>
+<!--
+            	作者：949961306@qq.com
+            	时间：2016-06-02
+            	描述：名称备注部分
+            -->
+<ul class="mui-table-view riqixingming personal-margin-top">
+	<li class="mui-table-view-cell font_14 color_999 releative border-bottom">昵 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称<span id="" class="color_333 riqixingming-span">梦女孩</span>
+		<span id="" class="color_333 xiugaibeizhu absolute">修改昵称</span>
+	</li>
+	<li class="mui-table-view-cell font_14 color_999 border-bottom">性 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别<span class="color_333 riqixingming-span">女</span>
+	</li>
+	<li class="mui-table-view-cell font_14 color_999 border-bottom">出生日期<span class="color_333 riqixingming-span">1993-12-4</span></li>
+	<li class="mui-table-view-cell font_14 color_999 border-bottom">手 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机<span class="color_333 riqixingming-span">15101357560</span></li>
+</ul>
+<!--
+            	作者：949961306@qq.com
+            	时间：2016-06-02
+            	描述：工作单位,地点等....
+            -->
+<ul class="mui-table-view riqixingming personal-margin-top">
+	<li class="mui-table-view-cell font_14 color_999 releative border-bottom">工作单位<span id="" class="color_333 riqixingming-span">北京星蓝科技有限公司</span>
+	</li>
+	<li class="mui-table-view-cell font_14 color_999 border-bottom releative">工作地点<span class="color_333 riqixingming-span">北京朝阳区十里河</span><i class="personal-location-icon absolute"><img src="../images/location-icon.png"/></i></li>
+	<li class="mui-table-view-cell font_14 color_999 border-bottom releative">生活地点<span class="color_333 riqixingming-span">北京朝阳区十里河</span><i class="personal-location-icon absolute"><img src="../images/location-icon.png"/></i></li>
+	<li class="mui-table-view-cell font_14 color_999 border-bottom releative">常出没地<span class="color_333 riqixingming-span">北京朝阳区十里河</span><i class="personal-location-icon absolute"><img src="../images/location-icon.png"/></i></li>
+</ul>
+<!--
+            	作者：949961306@qq.com
+            	时间：2016-06-02
+            	描述：兴趣爱好
+            -->
+<div class="Interests_and_hobbies personal-margin-top">
+	<p class="padding-content border-bottom">兴趣爱好</p>
+	<ul class="mui-table-view riqixingming">
+		<li class="mui-table-view-cell font_14 color_999 releative border-bottom">电 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;影<input type="text" placeholder="请输入您最喜欢的电影哦" class="enjoy-input color_333" />
+		</li>
+		<li class="mui-table-view-cell font_14 color_999 border-bottom">书 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;籍<input type="text" placeholder="请输入您最喜欢的书籍哦" class="enjoy-input color_333" /></li>
+		<li class="mui-table-view-cell font_14 color_999 border-bottom">音 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;乐<input type="text" placeholder="请输入您最喜欢的音乐哦" class="enjoy-input color_333" /></li>
+	</ul>
+</div>
+
+<!--
+            	作者：949961306@qq.com
+            	时间：2016-06-02
+            	描述：个人签名
+            -->
+<ul class="personal-margin-top background-color-white Personal-signature">
+	<li class="font_14 color_999">个人签名</li>
+	<li class="font_14 color_999"><textarea name="" rows="" cols="" placeholder="有什么想和你朋友说的么？"></textarea></li>
+</ul>
+
+<!--
+            	作者：949961306@qq.com
+            	时间：2016-06-02
+            	描述：关联应用
+            -->
+<ul class="Associated-application personal-margin-top background-color-white">
+	<li class="font_14 color_999">关联应用</li>
+	<li class="font_14 color_999"><i class="Associated-application-icon-sina background"></i><span class="color_333 Associated-application-name font_12">新浪微博</span></li>
+	<li class="font_14 color_999"><i class="Associated-application-icon-ternea background"></i><span class="color_333 Associated-application-name font_12">腾讯微博</span></li>
+	<li class="font_14 color_999"><i class="Associated-application-icon-renren background"></i><span class="color_333 Associated-application-name font_12"> &nbsp;人人网</span></li>
+</ul>

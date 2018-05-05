@@ -1,0 +1,22 @@
+.mui-content{
+	color: #666;
+}
+
+.user-name{
+	display: block;
+}
+.group_setting_li_padding{
+	padding: 5.5px 10px;
+}
+.group_setting_li_padding a{
+	padding: 5.5px 14px !important;
+}
+.mui-table-view-cell>.mui-switch{
+	right: 10px;	
+}
+.mui-navigate-right:after, .mui-push-left:after, .mui-push-right:after{
+	font-size: 22px;
+}
+.mui-navigate-right:after, .mui-push-right:after{
+	right: 10px;
+}

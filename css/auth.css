@@ -1,0 +1,214 @@
+/*邮箱登录*/
+.login-welcome {
+	font-size: 25px;
+	text-align: center;
+	color: #666666;
+	margin-top: 33px;
+	padding: 0px 10px;
+}
+.login-welcome p {
+	font-size: 15px;
+	padding-top: 32px;
+	padding-bottom: 44px;
+}
+.login-type {
+	height: 52px;
+	background: #FFFFFF !important;
+	width: 96%  !important;
+	margin-left: 2% !important;
+}
+.login-type li {
+    height: 52px;
+    padding: 0px !important;
+    width: 49.8% !important;
+    border: 0px !important;
+}
+.login-type li input {
+	width: 100%;
+    height: 100%;
+    border: 0px;
+    border-radius: 0px;
+    color: #999999;
+    font-size: 15px;
+}
+.login-type  span {
+	width: 1px;
+    height: 30px;
+    margin-top: 10px;
+    display: inline-block;
+    border-left: 1px solid #e5e5e5;
+}
+.selected {
+	border-bottom: 1px solid #66CC99 !important;
+	color: #66cc99 !important;
+}
+.login-input {
+	margin-top: 5px;
+	padding: 0px 10px;
+}
+.login-input input{
+	height: 52px;
+	border: 0px;
+}
+.login-btn {
+	width: 96%;
+    margin-left: 2%;
+    border: 0px !important;
+    background: #66cc99 !important;
+    border-radius: 0px !important;
+    color: #ffffff !important;
+    height: 40px;
+    margin-top: 10px;
+}
+.login-account-password {
+	width: 40%;
+	margin-left: 30%;
+	height: 20px;
+	margin-top: 20px;
+	margin-bottom: 80px;
+	background: #f6f6f6;
+}
+.login-account-password span {
+	width: 48%;
+	height: 20px;
+	line-height: 20px;
+	display: inline-block;
+	color: #66CC99;
+	font-size: 14px;
+	text-align: right;
+	padding-right: 5px;
+}
+.login-account-password span:first-child {
+	border-right: 1px solid #66cc99;
+	text-align: left !important;
+}
+.margin {
+	width:96% !important;
+	margin-left: 2% !important;
+	
+}
+
+
+/*手机号登录*/
+.login-selected-country {
+	height: 52px;
+	background: #FFFFFF;
+	font-size: 14px;
+	color: #666666;
+	/*margin-top: 5px;*/
+	line-height: 52px;
+	padding: 0px 10px;
+}
+.login-selected-country div {
+	margin-right: -6px;
+}
+.login-selected-country span,a {
+	color: #b4b4b4;
+}
+.login-selected-country a {
+	float: right;
+	line-height: 52px;
+}
+.login-phone-number {
+	height: 52px;
+	background: #FFFFFF;
+	margin-top: 1px;
+	font-size: 14px;
+}
+.login-phone-number span {
+	width: 24.5%;
+	height: 52px;
+    color: #666666;
+    position: absolute;
+    line-height: 52px;
+    text-align: Center;
+    border-right: 1px solid #E5E5E5;
+}
+.login-phone-number input {
+	display: inline-block;
+	width: 75.5%;
+	height: 52px;
+	margin-left: 24.5%;
+	border: 0px;
+	font-size: 14px;
+	color: #B4B4B4;
+}
+.phone-password {
+	width: 100% !important;
+	margin-left: 0px !important;
+}
+.Third-party-login {
+	height: 40px;
+	position: fixed;
+	bottom: 20px;
+}
+.Third-party-login input {
+	width:42%;
+	border: 1px solid #66CC99;
+	color: #66CC99;
+	border-radius: 0px;
+	height: 40px;
+}
+.Third-party-login input:first-child {
+	margin-right: 14.45%;
+}
+
+
+/*手机号注册*/
+.register-phone-number {
+	height: 52px;
+	background: #FFFFFF;
+	margin-top: 1px;
+	font-size: 14px;
+}
+.register-phone-number span {
+	width: 35.5%;
+	height: 52px;
+    color: #666666;
+    position: absolute;
+    line-height: 52px;
+    text-align: Center;
+    /*border-left: 1px solid #999999;*/
+}
+.register-phone-number input {
+	display: inline-block;
+	width: 63.5%;
+	height: 52px;
+	/*margin-right: 24.5%;*/
+	border: 0px;
+	font-size: 14px;
+	color: #B4B4B4;
+}
+.register-phone-number span input {
+	width:100%;
+	height: 100%;
+	border: 0px;
+	border-radius: 0px;
+	font-size: 14px;
+	color: #666666;
+	text-align: right;
+}
+.register-account-password {
+	width: 96%;
+	margin-left: 2%;
+	height: 20px;
+	margin-top: 20px;
+}
+.register-account-password span {
+	width: 49.23%;
+	height: 20px;
+	line-height: 20px;
+	display: inline-block;
+	color: #66CC99;
+	font-size: 14px;
+	text-align: right;
+	padding-bottom: 80px;
+}
+.register-account-password span:first-child {
+	text-align: left !important;
+	color: #999999;
+}
+.register-account-password span:first-child a {
+	color: #66CC99;
+}
+

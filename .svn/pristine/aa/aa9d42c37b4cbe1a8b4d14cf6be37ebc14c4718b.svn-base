@@ -1,0 +1,53 @@
+<style type="text/css">
+	.Associated-application-name {
+		height:20px;
+		display:inline-block;
+		margin-top:5px;
+		line-height:20px;
+		color: #999;	
+	}
+</style>
+<!--
+            	作者：949961306@qq.com
+            	时间：2016-06-02
+            	描述：工作单位,地点等....
+            -->
+<ul class="mui-table-view riqixingming personal-margin-top">
+	<li class="mui-table-view-cell font_14 color_999 releative border-bottom">工作单位<span id="" class="color_333 riqixingming-span">{{if uInfo.work_unit}}{{uInfo.work_unit}}{{else}}未设置{{/if}}</span>
+	</li>
+	<li class="mui-table-view-cell font_14 color_999 border-bottom releative">工作地点<span class="color_333 riqixingming-span">{{if uInfo.work_addr}}{{uInfo.work_addr}}{{else}}未设置{{/if}}</span></li>
+	<li class="mui-table-view-cell font_14 color_999 border-bottom releative">生活地点<span class="color_333 riqixingming-span">{{if uInfo.living_addr}}{{uInfo.living_addr}}{{else}}未设置{{/if}}</span></li>
+	<li class="mui-table-view-cell font_14 color_999 border-bottom releative">常出没地<span class="color_333 riqixingming-span">{{if uInfo.often_addr}}{{uInfo.often_addr}}{{else}}未设置{{/if}}</span></li>
+</ul>
+<!--
+            	作者：949961306@qq.com
+            	时间：2016-06-02
+            	描述：兴趣爱好
+            -->
+            
+<div class="Interests_and_hobbies" style="padding-bottom: 10px !important;">
+	<p class="padding-content padding-content" style="padding-top: 10px;">兴趣爱好</p>
+	<ul class="mui-table-view riqixingming personal-margin-top">
+		<li class="mui-table-view-cell font_14 color_999 releative border-bottom">电 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;影<input type="text" placeholder="没有填写喜欢的电影" class="enjoy-input color_333" disabled="disabled" {{if uInfo.hobby != null}}value="{{uInfo.hobby.movie}}"{{/if}} />
+		</li>
+		<li class="mui-table-view-cell font_14 color_999 border-bottom">书 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;籍<input type="text" placeholder="没有填写喜欢的书籍" class="enjoy-input color_333" disabled="disabled" {{if uInfo.hobby != null}} value="{{uInfo.hobby.book}}"{{/if}} /></li>
+		<li class="mui-table-view-cell font_14 color_999 border-bottom">音 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;乐<input type="text" placeholder="没有填写喜欢的音乐" class="enjoy-input color_333"  disabled="disabled" {{if uInfo.hobby != null}} value="{{uInfo.hobby.music}}"{{/if}}/></li>
+	</ul>
+</div>
+
+<!--
+            	作者：949961306@qq.com
+            	时间：2016-06-02
+            	描述：关联应用
+            -->
+<!--<ul class="Associated-application personal-margin-top background-color-white">
+	<li class="font_14 color_999">关联应用</li>
+	<li class="font_14 color_999"><i class="Associated-application-icon-sina background"></i><span class="color_333 Associated-application-name font_12">新浪微博</span></li>
+	<li class="font_14 color_999"><i class="Associated-application-icon-ternea background"></i><span class="color_333 Associated-application-name font_12">腾讯微博</span></li> 
+	<!--<li class="font_14 color_999"><i class="Associated-application-icon-renren background"></i><span class="color_333 Associated-application-name font_12"> &nbsp;人人网</span></li>-->
+<!--</ul>-->
+<!--
+            	作者：949961306@qq.com
+            	时间：2016-06-02
+            	描述：个人签名
+           -->

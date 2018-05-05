@@ -1,0 +1,11 @@
+{{each navs}}
+
+<a class="mui-tab-item {{if active==$value.id}} mui-active {{/if}}" data-href="{{$value.url}}" data-login="true">
+	<span class="{{$value.icon}} background releative"> 
+		{{if $value.id == "msg" && total_unread > 0}}			
+			<i class="weidu-hongdian weidu-hongdian-index absolute color-fff" id='{{$value.id}}'>{{total_unread}}</i>			
+		{{/if}}
+	</span>
+	<span class="mui-tab-label">{{$value.title}}</span>
+</a>
+{{/each}}

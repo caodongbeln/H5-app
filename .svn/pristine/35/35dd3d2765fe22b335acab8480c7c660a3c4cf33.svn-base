@@ -1,0 +1,11 @@
+{{each list}}
+<li class="mui-table-view-cell mui-media" data-extras="{{$value.name}}" data-point="{{$value.point}}" data-address="{{$value.address}}"> 
+	<a class="mui-navigate-right">
+		<div class="mui-media-body">
+			<p class='mui-ellipsis font_14 line-height-22 color_333'>{{$value.name}}</p>
+			<p class='mui-ellipsis font_12 line-height-14'>{{$value.address}}</p>
+		</div>
+	</a>
+
+</li>
+{{/each}}

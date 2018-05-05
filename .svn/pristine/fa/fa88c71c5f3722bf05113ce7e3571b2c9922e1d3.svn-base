@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>设置位置关系</title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/setting_location_guanxi.css" />
+		<style type="text/css">
+			.sanhangtan .mui-table-view-cell {
+				padding: 0;
+			}
+			
+			.sanhangtan .sanhangtan-title {
+				padding-top: 13px;
+				padding-bottom: 13px;
+				line-height: 18px;
+			}
+			
+			.mui-table-view-cell>a:not(.mui-btn) {
+				white-space: normal;
+			}
+			.mui-table-view-cell>a:not(.mui-btn).mui-active,
+			.mui-table-view-cell.mui-active,
+			.mui-grid-view.mui-grid-9 .mui-table-view-cell.mui-active {
+				background-color: #fff;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav nav">
+			<span class="back mui-action-back background"></span>
+			<h1 class="mui-title">设置位置关系</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media shouyedituxianshi releative" style="transform-style:preserve-3d">
+					<a href="javascript:;">
+						<div class="mui-switch mui-switch-blue mui-pull-right" id="mySwitch">
+							<div class="mui-switch-handle"></div>
+						</div>
+						<div class="mui-media-body color_333 font_14">
+							不让他（她）看我的位置
+							<p class='mui-ellipsis font_12'>打开后,你也无法查看对方位置</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<!--
+            	作者：949961306@qq.com
+            	时间：2016-06-13
+            	描述：底部弹框
+            -->
+			<div id="picture" class="mui-popover mui-popover-action mui-popover-bottom">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<a href="#" style="color: #666;">操作后，你也无法查看对方位置，确认继续么？</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a href="#" id="sure" style="color: #333;font-weight: bold;">确认继续</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a href="#" id="userProp" style="color: #333;font-weight: bold;">使用道具继续查看他（她）的位置</a>
+					</li>
+				</ul>
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<a href="#picture"><b style="color: #333;font-weight: bold;">取消</b></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script src="../js/jquery-2.1.1.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/cache.js"></script>
+	<script src="../js/zs.js"></script>
+	<script src="../js/location_relation.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		new zs.Init('Relation');
+	</script>
+</html>

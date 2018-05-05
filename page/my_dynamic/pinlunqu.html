@@ -1,0 +1,30 @@
+	<div class="simplify-dynamic {{if commentscount == 0}}none{{/if}} border-top">
+		<!--
+                	作者：949961306@qq.com
+                	时间：2016-06-16
+                	描述：评论区（大于5条）追加span
+                -->
+		{{if commentscount == 0}} 
+		<div class="pinglunqu releative" id="pinlunqu{{id}}" style="padding: 3px 0;">
+			
+		</div>
+		{{else if commentscount<4}} 
+			<div class="pinglunqu releative" id="pinlunqu{{id}}" style="padding: 3px 0;"> 
+			{{each say_commentInfo as html jj}}
+			<p class="font_12 color_666"><span class="color_028ce6" data-username = "" data-uid = "{{uid}}">{{html.username}}: </span> <span style="display: inline-block;max-width: 80%;vertical-align: top;">{{html.msg}}</span></p>
+			{{/each}}
+			<span class="all-pinglun-zhankai absolute color_028ce6 font_14 none">展开全部</span>
+			<span class="all-pinglun-shouqi absolute color_028ce6 font_14 none">收起</span>
+	</div>
+	{{else if commentscount >= 4}}
+	<div class="pinglunqu releative" id="pinlunqu{{id}}" style="padding: 3px 0;">
+		{{each say_commentInfo as html jj}} {{if jj <=4}} 
+			<p class="font_12 color_666"><span class="color_028ce6"  data-username = "" data-uid = "{{uid}}">{{html.username}}: </span> <span style="display: inline-block;max-width: 80%;vertical-align: top;">{{html.msg}}</span></p>
+			{{else if jj >4}}
+			<p class="font_12 color_666 none" data-hidden=''><span class="color_028ce6" data-username = "" data-uid = "{{uid}}">{{html.username}}</span>{{html.msg}}</p>
+			{{/if}} {{/each}}
+			<span class="all-pinglun-zhankai absolute color_028ce6 font_14">展开全部</span>
+			<span class="all-pinglun-shouqi absolute color_028ce6 font_14 none">收起</span>
+	</div>
+	{{/if}}
+</div>

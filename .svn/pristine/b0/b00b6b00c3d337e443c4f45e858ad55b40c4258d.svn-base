@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/path.css" />
+	</head>
+
+	<body bgcolor="#007AFF">
+		<a class="flyout-btn" href="#" title="Toggle"><span>Toggle</span></a>
+		<div class="flyout-content">
+			<div class="flyout-wrap">
+				
+				<ul class="flyout flyout-init">
+					<li><a href="#"><span>找免费向导</span></a></li>
+					<li><a href="#"><span>找免费住宿</span></a></li>
+					<li><a href="#"><span>找结伴</span></a></li>
+					<!--<li><a href="#"><span>4</span></a></li>
+					<li><a href="#"><span>5</span></a></li>
+					<li><a href="#"><span>6</span></a></li>-->
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script src="../js/jquery-2.1.1.min.js"></script>
+	<script src="../js/path2.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/cache.min.js"></script> 
+	<script src="../js/zs.js"></script>
+	<script>
+		mui.plusReady(function() {
+			mui.each(document.querySelectorAll("img"), function(i, item) {			
+				var url=item.getAttribute('data');
+				if(!zs.File)zs.File = new zs.fileClass('image');
+				zs.File.get(url,function(uri){
+					item.src=uri;
+				});
+			});
+		});
+	</script>
+	<!--<script type="text/javascript">
+		$('.flyout-btn').click(function(){
+			$('.flyout-content').toggleClass('flyout-content-height');
+		})
+	</script>-->
+</html>

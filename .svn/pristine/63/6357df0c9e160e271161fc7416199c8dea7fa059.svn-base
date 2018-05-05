@@ -1,0 +1,24 @@
+
+	<div class="person-home-title" data-page='' type='1' data-id='{{id}}' count='{{count}}'>
+				评论<span>共{{count}}条评论</span>
+			</div>
+			<ul class="mui-table-view person-home-evaluate">
+			{{if count =='' || count == undefined || count == null || count == 0}}
+					<li class="no-evaluate">暂无评价！！！</li>
+				{{else}}
+									
+					{{each list}}
+					<!--有评论内容时,显示内容-->
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;">
+							<img class="mui-media-object mui-pull-left" src="{{$value.user_info.cover}}">
+							<div class="mui-media-body">
+								{{$value.user_info.username}}<span class="mui-pull-right">{{$value.add_time}}</span>
+								<p class='mui-ellipsis'>{{$value.user_info.age}}岁,{{$value.native_lang_name}}母语,{{$value.foreign_language_name}}</p>
+							</div>
+						</a>
+						<div class="content">{{$value.info}}</div>
+					</li>
+					{{/each}}
+				{{/if}}
+				</ul>

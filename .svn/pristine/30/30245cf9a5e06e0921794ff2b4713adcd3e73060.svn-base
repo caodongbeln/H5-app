@@ -1,0 +1,33 @@
+.mui-table-view-cell>a:not(.mui-btn){
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+	color: #666666;
+}
+input[type=text] {
+	width: 60%;
+	height: 20px;
+	/*border: none;*/
+	border-radius: 0;
+	margin-bottom: 0;
+	padding:10px ;
+}
+label{
+	color: #999;
+	font-size: 15px;
+}
+.phone {
+	vertical-align: text-bottom;
+	margin-left: 3px;
+	border: 1px solid transparent !important;
+	border-left: 1px solid rgba(0,0,0,.2) !important;
+	color: #666;
+}
+.codes{
+	border: 1px solid transparent !important;
+}
+.codes+span{
+	float: right;
+	font-size: 15px;
+	color: #66CC99;
+}

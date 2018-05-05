@@ -1,0 +1,63 @@
+p {
+	margin-bottom: 0;
+}
+.nav{
+	z-index: 400;
+}
+.mui-content{
+	margin-bottom: 60px;
+}
+.location_people {
+	background-color: #fff;
+}
+
+.activity-location {
+	top: 10px;
+	right: 10px;
+}
+
+.location_activity {
+	padding: 0;
+}
+
+.people_num {
+	text-align: center;
+}
+
+.head_portrait_box {
+	text-align: center;
+}
+
+.head_portrait {
+	/*width: 100%;*/
+	/*text-align: center;*/
+	display: table;
+	margin: 0 auto;
+}
+
+.head_portrait li {
+	float: left;
+	width: 40px;
+	height: 40px;
+	padding: 0 1px;
+}
+
+.head_portrait li img {
+	width: 100%;
+}
+
+.activity-title {
+	text-align: center;
+}
+.activity-content{
+	padding: 0 10px;
+	text-indent: 2em;
+}
+.mui-btn-block{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.quanwen{
+	display: table;
+	width: 100%;
+}

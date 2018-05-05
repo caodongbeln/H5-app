@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>联系人</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/Notification_list.css" />
+		<link rel="stylesheet" href="../css/list_img.css" />
+		<link rel="stylesheet" type="text/css" href="../css/message.css" />
+		<style type="text/css">
+			.mui-segmented-control.mui-segmented-control-inverted{
+				height: 44px;
+			}
+			.mui-media-body p{
+				line-height: 12px;
+			}
+			.mui-scroll-wrapper,.mui-slider{
+				overflow: visible;
+			}
+			.mui-media-object img{
+				width: 100%;
+			}
+			.mui-control-content {
+				background-color: #f0eff4;
+				min-height: 200px;
+			}
+			
+		</style>
+	</head>
+
+	<body>			
+		<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll" id='contacts1'>
+							<!--	<ul class="mui-table-view">
+									<li class="mui-table-view-cell mui-media">
+										<a class="">
+											<img class="mui-media-object mui-pull-left" src="../images/renwuzhushou.png">
+											<div class="mui-media-body">
+												<span>任务助手</span>
+												<p class='mui-ellipsis'>北京朝阳有优惠券出现哦，赶紧抢，抢！</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a class="">
+											<img class="mui-media-object mui-pull-left" src="../images/mami.png">
+											<div class="mui-media-body">
+												<span>妈咪</span>
+												<p class='mui-ellipsis'>儿童节快乐</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a class="">
+											<img class="mui-media-object mui-pull-left" src="../images/tongzhizhushou.png">
+											<div class="mui-media-body">
+												<span>通知助手</span>
+												<p class='mui-ellipsis'>已通知好友，离开朝阳门地铁站</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a class="">
+											<img class="mui-media-object mui-pull-left" src="../images/weizhitixingzhu shou.png">
+											<div class="mui-media-body">
+												<span>位置提醒助手</span>
+												<p class='mui-ellipsis'>小凳子已离开弘善家园了</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a class="">
+											<img class="mui-media-object mui-pull-left" src="../images/gongkaiweizhitixing.png">
+											<div class="mui-media-body">
+												<span>公开位置提醒助手</span>
+												<p class='mui-ellipsis'>好友请求公开对方的位置</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a class="">
+											<div class="mui-media-object mui-pull-left"></div>
+											<div class="mui-media-body">
+												<span>周沫逗比群</span>
+												<p class='mui-ellipsis'>你的未来我分配到底啦</p>
+											</div>
+										</a>
+									</li>
+								</ul>-->
+							</div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div id="scroll2" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view" id='new_friend'>
+									<!--<li class="mui-table-view-cell mui-media">
+										<a class="">
+											<img class="mui-media-object mui-pull-left" src="../images/addFriend.png">
+											<div class="mui-media-body">
+												<span>新的朋友</span>
+												<p class='mui-ellipsis'>有4个好友申请等待通过</p>
+											</div>
+										</a>
+									</li>-->
+								</ul>
+								<ul class="mui-table-view" id="friend_list">
+									<!--<li class="mui-table-view-cell mui-media">
+										<a class="">
+											<img class="mui-media-object mui-pull-left" src="../images/lixiaxia.png">
+											<div class="mui-media-body">
+												<span><i>刘悦</i><i>距离12千米</i><i>10分钟前</i></span>
+												<p class='mui-ellipsis'>我在藏也藏不住的餐厅等你我在藏也藏不住的餐厅等你我在藏也藏不住的餐厅等你我在藏也藏不住的餐厅等你我在藏也藏不住的餐厅等你</p>
+											</div>
+										</a>
+									</li>-->
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+	</body>
+	<script src="../js/jquery-2.1.1.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/cache.js"></script>	
+	<script src="../js/zs.js"></script>	
+	<script src="../template/contacts.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/contacts_refresh.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		new zs.Init('Contactsrefresh');
+	</script>
+
+</html>

@@ -1,0 +1,48 @@
+{{if list !=null }}
+{{each list}}
+<li class="mui-table-view-cell mui-media">
+	{{if $value.mark == 1}}
+	<a class="">
+		<img class="mui-media-object mui-pull-left" src="../images/cover.png" data-src="{{$value.fid_cover}}" data-css='a50'>
+		<div class="mui-media-body">
+			<span class="line-height-14 margin-top-0">{{$value.fid_username}}</span>
+			<p class="mui-ellipsis font_12 line-height-22" style="color: #666;">您请求加{{$value.fid_username}}为好友 {{if $value.status == 1 }}
+				<b class="mui-pull-right line-height-22 color_999">验证通过</b> {{else}}
+				<b class="mui-pull-right line-height-22 color_999">等待验证</b> {{/if}}
+			</p>
+			<p class='mui-ellipsis font_12 line-height-14'>
+				{{if $value.source == 2 }} 附近的人： {{else if $value.source == 1}} 二维码扫码： {{else}} 手机通讯录： {{/if}} {{$value.fid_username}}
+			</p>
+		</div>
+	</a>
+
+	{{else}}
+	<a class="">
+		<img class="mui-media-object mui-pull-left" src="../images/cover.png" data-src="{{$value.fid_cover}}" data-css='a50'>
+		<div class="mui-media-body">
+			<span class="line-height-14 margin-top-0">{{$value.fid_username}}</span>
+			<p class="mui-ellipsis font_12 line-height-22" style="color: #666;">{{$value.fid_username}}请求加你为好友
+				{{if $value.status == 1 }}
+				<b class="mui-pull-right line-height-22 color_999">已同意</b> 
+				{{else if $value.status == 2}}
+					<b class="mui-pull-right line-height-22 color_999">已拒绝</b>
+				{{else if $value.status == 3}}
+					<b class="mui-pull-right line-height-22 color_999">已过期</b> 	
+				{{else}}
+				<b class="xuanxiang-tongyi mui-pull-right color-fff line-height-12" data-id='{{$value.id}}' data-source='{{$value.source}}' style="padding-top: 5px;padding-bottom: 7px;">同意</b>
+				{{/if}}
+			</p>
+			<p class='mui-ellipsis font_12 line-height-14'>
+				{{$value.request}}
+			</p>
+		</div>
+	</a>
+	{{/if}}
+</li>
+{{/each}}
+{{else}}
+<div class="no-result font_14" style="font-size: 14px !important;">
+	暂无任何好友
+	<p><input type="button" id="add" value="去添加" style="background-color: #f1592b;border: none;font-size: 18px;color: #FFF;margin-top: 10px;padding-left: 20px;padding-right: 20px;" class="color-fff" data-href = 'add_friend.html' data-view = "add_friend"/></p>
+</div>
+{{/if}}

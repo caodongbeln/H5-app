@@ -1,0 +1,54 @@
+{{if list != ''}} {{each list}} 
+{{if $value.toolsInfo != null && $value.toolsInfo.id == toolsId && $value.tools_type == cate_type}}
+<li class="mui-table-view-cell" style="height: 125px;" data-id="{{$value.id}}" data-gid = "{{$value.toolsInfo.id}}" data-cid='{{$value.id}}'>
+	<a class="mui-navigate-right" style="padding: 0px !important;">
+		<div>
+			道具
+		</div>
+		<div data-id='{{$value.id}}'  id="selCoupon">
+			<div>
+				<img data-src="{{$value.toolsInfo.icon}}" /> 
+			</div>
+			<div>
+				<i id="coupon_name">{{$value.toolsInfo.name}}(<b>{{if $value.tools_type == '1'}}周{{else if $value.tools_type == '2'}}月{{else if $value.tools_type == '3'}}季{{else}}年{{/if}}</b>)</i>
+				<br /><span>
+				{{$value.toolsInfo.desc}}
+			</span>
+			</div>
+			<div style="margin-top: 15px;">
+				{{$value.couponInfo.btime}}至{{$value.couponInfo.etime}}
+			</div>
+		</div>
+		<div></div>
+	</a>
+</li>
+{{else}}
+{{if $value.couponInfo.num != 0}}
+<li class="mui-table-view-cell" style="height: 125px;" data-cid='{{$value.id}}'>
+	<a class="mui-navigate-right" style="padding: 0px !important;">
+		<div>金币</div>
+		<div id="selCoupon" data-cid='{{$value.cid}}'>
+			<div>
+				<img src="../images/duobao.png" /> 
+			</div>
+			<div>
+				<i id="coupon_name" class="num">{{$value.couponInfo.num}}</i>金币
+				<br /><span>
+			{{$value.couponInfo.desc}}
+			</span>
+			</div>
+			<div style="margin-top: 10px;">
+				有效期: {{$value.couponInfo.btime}}至{{$value.couponInfo.etime}}
+			</div>
+		</div>
+		<div></div>
+	</a>
+</li>
+{{/if}}
+
+{{/if}}
+{{/each}} {{else}}
+<div class="no-results" style="background-color:transparent !important;">
+	没有可用的优惠券哦~
+</div>
+{{/if}}

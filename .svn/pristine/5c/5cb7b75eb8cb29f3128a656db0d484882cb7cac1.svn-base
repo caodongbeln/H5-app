@@ -1,0 +1,50 @@
+<div class="shurukuang">
+	<input type="text" name="" id="title" value="{{if item}}{{item.title}}{{/if}}" placeholder="我通知好友到达（离开）提醒" />
+</div>
+<ul>
+	<li class="padding-content border-bottom" style="color: #666; display: none;">
+		<img src="../images/anytime.png" class="mui-pull-left anytime" />
+		<div class="anytime-jieshao" id='demo1' data-options=''>
+			任何时间
+		</div>
+	</li>
+	<li class="padding-content mui-table-view-cell" name="" data-href='choose_position.html' data-view='choose_position'>
+		<img src="../images/leave-location.png" class="mui-pull-left anytime" />
+		<b class="font_14 color_666" id="addr">
+			{{if item && item.type==0}}
+			到达/离开{{item.addr}}
+			{{else if item && item.type==1}}
+			到达{{item.addr}}
+			{{else if item && item.type==2}}
+			离开{{item.addr}}
+			{{else}}
+			到达/离开的位置
+			{{/if}}
+		</b>
+	</li>
+</ul>
+<ul class="mui-table-view notification">
+	<li class="padding-content mui-table-view-cell" id="select_uid" >
+		<img src="../images/add-friends-red.png" class="mui-pull-left anytime" />提醒触发人
+		<div class="mui-pull-right" id='remind_uid'>
+			{{if item && item.triggered_user}}
+			<img src="../images/cover.png" data-src="{{item.triggered_user.cover}}" data-css='a50'/> {{/if}}
+		</div>
+	</li>
+	<li class="padding-content mui-table-view-cell" id="select_sid">
+		<img src="../images/add-allfriends_03.png" class="mui-pull-left anytime" /> 提醒接收人
+		<div class="mui-pull-right" id='remind_sid'>
+			{{each item.trigger_user}}			
+				<img src="../images/cover.png" data-src="{{$value.cover}}" data-css='a50'/>
+			{{/each}} 
+
+		</div>
+	</li>
+	<li class="padding-content mui-table-view-cell" style="border: 1px solid #f0eff4;">
+		<img src="../images/qiyong.png" class="mui-pull-left anytime" /> 启用提醒
+
+		<div class="mui-switch mui-switch-blue  {{if item && item.status==1}}mui-active{{/if}}" id="switch2">
+			<div class="mui-switch-handle"></div>
+		</div>
+	</li>
+</ul>

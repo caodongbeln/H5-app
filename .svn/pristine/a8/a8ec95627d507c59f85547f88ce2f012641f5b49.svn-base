@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>设置</title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/feedback.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav nav">
+			<span class="back mui-action-back background" id="back"></span>
+			<h1 class="mui-title">设置</h1>
+			<span class="mui-pull-right send-dynamic" data-id="1" data-href='article.html' data-view='article' style="width: 100px;margin-right: 0px;text-align: right;padding-right: 10px;">帮助</span>
+		</header>
+		<div class="mui-content">
+			<ul class="set">
+				<li data-href='personal.html' data-view='personal'>我的资料<span class="mui-pull-right"></span></li>
+				<li data-href='message_set.html' data-view='message_set'>消息设置<span class="mui-pull-right"></span></li>
+				<li data-href='privacy.html' data-view='privacy'>隐私设置<span class="mui-pull-right"></span></li>
+				<li id='update'>软件升级<span class="mui-pull-right"></span></li>
+				<li data-href='feedback.html' data-view='feedback'>意见反馈<span class="mui-pull-right"></span></li>
+				<li data-href='change_pass.html' data-view='change_pass'>修改密码<span class="mui-pull-right"></span></li>
+				<li data-href='contact_us.html' data-view='contact_us'>联系我们<span class="mui-pull-right"></span></li>
+				<!--暂时关闭@2016/06/21-->
+				<!--<li data-href='contact_us.html' data-view='contact_us'>关于<span class="mui-pull-right"></span></li>-->
+			</ul>
+			<div class="padding-content">
+				<button id='logout' type="button" class="mui-btn btn-color mui-btn-block">退出系统</button>
+			</div>
+		</div>
+	</body>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/cache.js"></script>
+	<script src="../js/zs.js"></script>
+	<script src="../js/settings.js"></script>
+	<script type="text/javascript">
+		new zs.Init('Settings');
+	</script>
+
+</html>

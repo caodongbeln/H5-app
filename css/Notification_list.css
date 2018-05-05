@@ -1,0 +1,145 @@
+.mui-table-view-cell{
+	border-top:1px solid #DEDFE0 ;
+}
+.mui-table-view-cell img{
+	width: 50px;
+}
+.mui-content>.mui-table-view:first-child{
+	margin-top: 0;
+}
+.mui-table-view-cell {
+	padding: 12.5px 15px;
+}
+.mui-media-body span{
+	color: #333;
+	font-size: 14px;
+	display: block;
+	margin-top: -4px;
+}
+
+.mui-media-body p{
+	color: #999;
+	font-size: 12px;
+	margin-top: 16px;
+}
+.mui-table-view-cell>a:not(.mui-btn){
+	padding: 8px 10px;
+}
+
+/*好友列表样式*/
+.mui-media-body i {
+	color: #999;
+	font-size: 14px;
+	font-style: normal;
+}
+.mui-media-body i:first-child {
+	color: #333;
+	display: inline-block;
+	width: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 22px;
+    position: absolute;
+}
+.mui-media-body i:nth-child(2) {
+	margin-left: 85px;
+}
+.mui-media-body i:nth-child(3) {
+	margin-left: 8%;
+}
+
+/*道具样式*/
+.prop .mui-table-view-cell {
+	height: 70px !important;
+}
+.prop .mui-table-view-cell a {
+	height: 70px;
+	padding-left: 10px !important;
+}
+.prop .mui-table-view-cell>i{
+	background-image:url(../images/right.png);
+	display: block;
+	width: 9px;
+	height: 15px;
+	right: 10px;
+	top: 40%;
+}
+.mui-navigate-right:after, .mui-push-right:after {
+	background-size:9px 15px;
+}
+/*.prop li:nth-child(2) a img{
+	width: 35px !important;
+	height: 42px !important;
+	margin-top: 17.5px;
+    margin-left: 10px;
+}*/
+.prop .mui-table-view-cell a img {
+	width: 35px !important;
+	height: 42px !important;
+	margin-top: 13.5px;
+}
+.prop .mui-table-view-cell>a:not(.mui-btn) {
+	padding:0px
+}
+.prop .mui-media-body p:first-child {
+	margin-top: 22px !important;
+}
+.prop .mui-media-body p {
+	margin-top: 7px !important;
+}
+.prop .mui-navigate-right {
+	color: #666666 !important;
+	background-image:none !important;
+}
+.prop .mui-navigate-right span i {
+	color: #028ce6 !important;
+}
+.prop .mui-navigate-right span{
+	margin-left: 13px;
+}
+.prop .mui-navigate-right s {
+	color: #999999 !important;
+	margin-left: 55px;
+}
+.prop .money-radio {
+	height: 44px !important;
+	line-height: 44px;
+}
+.prop .money-radio a {
+	height: 44px !important;
+}
+.prop .money-radio a i {
+	font-style: normal;
+}
+.mui-content-padded {
+	height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    margin:0px
+}
+.pay li:first-child {
+	/*background-image:url(../images/WeChat.png);*/
+	background-repeat:no-repeat ;
+	background-size:22px;
+	background-position:11px 10px;
+}
+.pay .mui-table-view-cell a {
+	padding-left: 46px !important;
+}
+.pay li:last-child {
+	/*background-image:url(../images/zhibobao.png);*/
+	background-repeat:no-repeat ;
+	background-size:22px;
+	background-position:11px 10px;
+}
+.account {
+	height: 44px;
+	line-height: 44px;
+	color: #666666;
+	padding:0px 10px;
+	margin-top: 10px;
+	background-color:#ffffff ;
+}
+.account .mui-pull-right {
+	color:#028ce6 !important;
+}

@@ -1,0 +1,50 @@
+ {{each list}}
+<div class="simplify-dynamic-box personal-margin-top" style="display: table;" data-view="dynamic_detail" data-extras='{"dynamicid":{{$value.id}},"dynamicIndex":{{$index}},"index":{{$value.val}}}' data-href="dynamic_detail.html">
+	<div class="Head-portrait mui-pull-left" data-uid = '{{$value.uid}}'>
+		<img src="../images/cover.png" data-src="{{$value.userInfo.cover}}" data-css='a50' style="width: 50px;height: 50px;"/>
+	</div>
+	<div class="simplify-dynamic">
+		<p style="display: table;width: 100%;">
+			<span id="" class="username color_333">{{$value.userInfo.username}}</span>
+			<span id="" class="release-time mui-pull-right">{{$value.deal_time}}</span>
+		</p>
+		<p style="display: table;width: 100%;">
+			<span id="" class="distance-release font_12 distance-release{{$value.pagenum}}">{{$value.distance}}</span>
+			<span id="" class="positioning-release mui-ellipsis font_12">{{$value.addr}}</span>
+			<i id="" class="positioning-icon background mui-pull-right" data-href='../tpl/dynamic_position_map.html' data-view='dandu_map' data-extras='{"releasePosition":{{$value.releasePosition}}}'></i>
+		</p>
+		<p class="my-speak-content">{{$value.msg}}</p>
+		{{if $value.isarray == undefined}} {{else if $value.isarray == 1}}
+		<div class="picture-box">
+			<img src = '../images/default_back_cover.jpg' data-src="{{$value.imgs[0]}}" data-css = 'a240'/>
+		</div>
+		{{else if $value.isarray > 1}}
+		<div class="picture-box">
+			<ul class="mui-table-view mui-grid-view mui-grid-9 release-images-box myimg">
+				{{each $value.imgs as val ii}}
+				<li class="mui-table-view-cell mui-media mui-col-xs-4">
+					<div class="fabu-img-box">
+						<img src = '../images/default_back_cover.jpg' data-src="{{val}}" data-css = 'a70X60'/>
+					</div>
+					
+				</li>
+				{{/each}}
+			</ul>
+		</div>
+		{{/if}}
+	</div>
+	<p class="dianzan-talk-share">
+		<i id="" class="fenxiang-dianji-icon background" data-share="" data-fenxiang='{{$value.id}}'></i> 
+		<i id="dianzan-dianji{{$value.id}}" class="dianzan-dianji-icon{{if $value.is_like==1}}-active{{/if}} background" data-dianzan='{{$value.id}}' data-uid='{{$value.uid}}' data-index = '{{$index}}' data-val = '{{$value.val}}'></i>
+		<i id="" class="pinglun-dianji-icon background" data-pinlun='{{$value.id}}'></i>
+
+	</p>
+	<div id="dianzanqu{{$value.id}}">
+		{{include './headerPortrait' $value}}
+	</div>
+	<div id="pinlunqu{{$value.id}}">
+		{{include './pinlunqu' $value}}
+	</div>
+	
+</div>
+{{/each}}

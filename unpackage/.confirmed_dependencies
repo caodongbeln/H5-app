@@ -1,0 +1,414 @@
+{
+  "tpl/ads_transition.html": {
+    "resources": [
+      "js/zs.js",
+      "js/jquery-2.1.1.min.js",
+      "js/cache.js",
+      "js/mui.min.js",
+      "js/ads.js",
+      "images/pull_right.png"
+    ],
+    "refer": [
+      "tpl/login.html",
+      "tpl/index.html"
+    ]
+  },
+  "tpl/login.html": {
+    "resources": [
+      "css/login.css",
+      "css/common.css",
+      "images/QQ.png",
+      "js/login.js",
+      "css/mui.min.css",
+      "images/username-icon.png",
+      "images/WeChat.png",
+      "images/password-icon.png",
+      "images/weibo.png",
+      "js/zs.js",
+      "js/cache.js",
+      "js/mui.min.js"
+    ],
+    "refer": [
+      "tpl/index.html"
+    ]
+  },
+  "tpl/settings.html": {
+    "resources": [
+      "images/back.png",
+      "css/feedback.css",
+      "js/settings.js",
+      "images/right.png",
+      "js/zs.js",
+      "js/cache.js",
+      "js/mui.min.js",
+      "css/common.css",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "tpl/login.html"
+    ]
+  },
+  "tpl/friend_list.html": {
+    "resources": [
+      "images/cover.png",
+      "images/add-people.png",
+      "js/friend_list.js",
+      "template/friend_list.min.js",
+      "js/zs.js",
+      "js/jquery-2.1.1.min.js",
+      "js/cache.js",
+      "js/mui.min.js",
+      "css/common.css",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "tpl/add_friend.html"
+    ]
+  },
+  "tpl/surrounding_dynamic_dynamic.html": {
+    "resources": [
+      "css/my_dynamic.css",
+      "css/big_img.css",
+      "js/surrounding_dynamic_dynamic.js",
+      "css/dynamic_biaoqing_box.css",
+      "images/dianzanxiao.png",
+      "images/cover.png",
+      "images/default_back_cover.jpg",
+      "images/pinglun-icon-44.png",
+      "images/fenxiang-icon-44.png",
+      "images/location-orange.png",
+      "template/surrounding_dynamic.min.js",
+      "js/jquery-2.1.1.min.js",
+      "js/delArray.js",
+      "js/cache.js",
+      "js/functions.js",
+      "js/zs.js",
+      "css/common.css",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "images/dianzanxiao-active.png"
+    ],
+    "refer": []
+  },
+  "tpl/surrounding_dynamic_activity.html": {
+    "resources": [
+      "js/functions.js",
+      "css/activity.css",
+      "js/delArray.js",
+      "js/surrounding_dynamic_activity.js",
+      "images/dianzan_icon.png",
+      "images/pinglun.png",
+      "images/fenxiang-new.png",
+      "images/dianzan_icon_active.png",
+      "images/default_back_cover.jpg",
+      "images/location-orange.png",
+      "images/cover.png",
+      "template/surrounding_dynamic.min.js",
+      "js/zs.js",
+      "js/jquery-2.1.1.min.js",
+      "js/cache.js",
+      "js/mui.min.js",
+      "css/common.css",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "tpl/index.html": {
+    "resources": [
+      "tpl/friend_list.html",
+      "css/index.css",
+      "js/plus.location.js",
+      "js/jquery-2.1.1.min.js",
+      "template/index.min.js",
+      "images/right-icon.png",
+      "images/discovery.png",
+      "images/msg.png",
+      "js/zsimage.js",
+      "js/index.js",
+      "images/index-my_03.png",
+      "images/index.png",
+      "js/cache.js",
+      "js/zs.js",
+      "css/common.css",
+      "js/mui.min.js",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "tpl/settings.html",
+      "tpl/friend_list.html",
+      "tpl/surrounding_dynamic.html",
+      "tpl/contacts.html",
+      "tpl/my.html"
+    ]
+  },
+  "tpl/surrounding_dynamic.html": {
+    "resources": [
+      "template/surrounding_dynamic.min.js",
+      "tpl/surrounding_dynamic_dynamic.html",
+      "images/jiahao_baise.png",
+      "css/surrounding_dynamic.css",
+      "css/message.css",
+      "js/surrounding_dynamic.js",
+      "images/discovery.png",
+      "images/msg.png",
+      "images/index-my_03.png",
+      "images/index.png",
+      "js/jquery-2.1.1.min.js",
+      "js/cache.js",
+      "js/zs.js",
+      "css/common.css",
+      "js/mui.min.js",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "tpl/surrounding_dynamic_dynamic.html",
+      "tpl/surrounding_dynamic_activity.html",
+      "tpl/my.html"
+    ]
+  },
+  "tpl/my.html": {
+    "resources": [
+      "images/jinrirenwu.png",
+      "css/settings.css",
+      "images/daoju.png",
+      "images/female.png",
+      "fonts/mui.ttf",
+      "images/shuikanguowo.png",
+      "images/dongtai.png",
+      "images/benrenerweima.png",
+      "images/youhuiquan.png",
+      "images/huodong.png",
+      "images/shangdian.png",
+      "js/my.js",
+      "images/jinbi.png",
+      "images/set.png",
+      "images/lingsheng.png",
+      "images/yinsishezhi.png",
+      "template/my.min.js",
+      "js/jquery-2.1.1.min.js",
+      "js/cache.js",
+      "css/Notification_list.css",
+      "images/index-my_03.png",
+      "js/zs.js",
+      "js/mui.min.js",
+      "css/common.css",
+      "images/cover.png",
+      "css/list_img.css",
+      "images/discovery.png",
+      "css/yincanggundongtiao.css",
+      "images/index.png",
+      "css/mui.min.css",
+      "images/msg.png"
+    ],
+    "refer": [
+      "tpl/shop.html",
+      "tpl/my_prop.html",
+      "tpl/settings.html"
+    ]
+  },
+  "tpl/contacts.html": {
+    "resources": [
+      "template/contacts.min.js",
+      "js/jquery-2.1.1.min.js",
+      "js/cache.js",
+      "images/addFriend.png",
+      "images/gongkaiweizhitixing.png",
+      "images/jiahao_baise.png",
+      "images/discovery.png",
+      "css/list_img.css",
+      "css/Notification_list.css",
+      "images/weizhitixingzhu shou.png",
+      "css/yincanggundongtiao.css",
+      "images/index-my_03.png",
+      "images/index.png",
+      "js/functions.js",
+      "js/zs.js",
+      "js/mui.min.js",
+      "css/common.css",
+      "css/message.css",
+      "js/contacts.js",
+      "css/mui.min.css",
+      "images/msg.png",
+      "images/cover.png"
+    ],
+    "refer": [
+      "tpl/new_friend.html",
+      "tpl/friend_detail.html",
+      "tpl/my.html"
+    ]
+  },
+  "tpl/shop.html": {
+    "resources": [
+      "images/back.png",
+      "images/zhibobao.png",
+      "images/default_img.png",
+      "js/shop.js",
+      "images/WeChat.png",
+      "template/shop.min.js",
+      "css/common.css",
+      "css/message.css",
+      "css/mui.min.css",
+      "css/Notification_list.css",
+      "js/zs.js",
+      "js/jquery-2.1.1.min.js",
+      "js/cache.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf"
+    ],
+    "refer": []
+  },
+  "tpl/my_prop.html": {
+    "resources": [
+      "images/back.png",
+      "template/prop.min.js",
+      "js/zs.js",
+      "js/jquery-2.1.1.min.js",
+      "js/cache.js",
+      "js/mui.min.js",
+      "css/common.css",
+      "css/my_prop.css",
+      "css/mui.min.css",
+      "js/prop.js"
+    ],
+    "refer": []
+  },
+  "tpl/new_friend.html": {
+    "resources": [
+      "images/back.png",
+      "template/new_friend.min.js",
+      "js/zs.js",
+      "js/jquery-2.1.1.min.js",
+      "css/new_friend.css",
+      "js/cache.js",
+      "js/mui.min.js",
+      "css/common.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/list_img.css",
+      "css/Notification_list.css",
+      "js/new_friend.js",
+      "images/cover.png"
+    ],
+    "refer": []
+  },
+  "tpl/add_friend.html": {
+    "resources": [
+      "js/jquery-2.1.1.min.js",
+      "js/cache.js",
+      "fonts/mui.ttf",
+      "js/add_friend.js",
+      "css/Notification_list.css",
+      "css/whoCanSee.css",
+      "images/lansesaoyisao.png",
+      "images/back.png",
+      "images/hongselianxiren.png",
+      "js/zs.js",
+      "css/common.css",
+      "images/fujin.png",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/add_friend.css"
+    ],
+    "refer": []
+  },
+  "tpl/friend_detail.html": {
+    "resources": [
+      "css/big_img.css",
+      "js/jquery-2.1.1.min.js",
+      "js/cache.js",
+      "js/personal.js",
+      "css/The_personal_data.css",
+      "js/user_info.js",
+      "css/yincanggundongtiao.css",
+      "js/zs.js",
+      "js/mui.zoom.js",
+      "css/common.css",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "js/mui.previewimage.js",
+      "template/friend_detail.min.js",
+      "images/back.png",
+      "images/dianjitouxiang_07.png",
+      "images/right-icon.png",
+      "images/dianjitouxiang_12.png",
+      "images/no-jinzhi.png",
+      "images/location.png",
+      "images/default_header.png"
+    ],
+    "refer": [
+      "tpl/go_pay.html",
+      "tpl/footprint.html",
+      "tpl/remind_list.html"
+    ]
+  },
+  "tpl/go_pay.html": {
+    "resources": [
+      "js/jquery-2.1.1.min.js",
+      "js/go_pay.js",
+      "js/cache.js",
+      "images/glod.png",
+      "images/zhibobao.png",
+      "fonts/mui.ttf",
+      "images/selected.png",
+      "css/Notification_list.css",
+      "template/pay.min.js",
+      "css/go_pay.css",
+      "images/back.png",
+      "js/zs.js",
+      "css/common.css",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "images/default_img.png",
+      "images/WeChat.png"
+    ],
+    "refer": []
+  },
+  "tpl/footprint.html": {
+    "resources": [
+      "images/back.png",
+      "js/zs.js",
+      "js/jquery-2.1.1.min.js",
+      "js/cache.js",
+      "css/common.css",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/Positioning_footprint.css",
+      "js/footprint.js",
+      "tpl/print_tools.html"
+    ],
+    "refer": [
+      "tpl/print_tools.html"
+    ]
+  },
+  "tpl/remind_list.html": {
+    "resources": [
+      "images/back.png",
+      "js/functions.js",
+      "js/zs.js",
+      "js/jquery-2.1.1.min.js",
+      "js/zs.remind.js",
+      "js/cache.js",
+      "js/mui.min.js",
+      "css/common.css",
+      "images/jiahao_baise.png",
+      "css/mui.min.css",
+      "template/remind.min.js",
+      "css/list_img.css",
+      "css/Notification_list.css",
+      "js/remind_list.js"
+    ],
+    "refer": []
+  },
+  "tpl/print_tools.html": {
+    "resources": [
+      "images/Shape 3 copy.png",
+      "js/functions.js",
+      "template/print_tools.min.js",
+      "js/print_tools.js",
+      "images/Shape 3.png",
+      "images/kuaijin-right.png",
+      "images/Shape 4 copy.png"
+    ],
+    "refer": []
+  }
+}

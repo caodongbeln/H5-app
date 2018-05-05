@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/login.css" />
+		<link rel="stylesheet" type="text/css" href="../css/reg.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav nav mui-action-back">
+			<span class="back mui-action-back background"></span>
+			<h1 class="mui-title">注册</h1>
+		</header>
+		<section class="mui-content padding-content">
+			<div class="shuru-box">
+				<div class="username-box">
+					<label for="username" class="username background"></label>
+					<input type="text" name="mobile" id="mobile" value="" class="shuru" placeholder="你的手机号" />
+				</div>
+				<div class="sms-code-box">
+					<label for="sms-code" class="sms-code background"></label>
+					<input type="text" name="" id="sms_code" value="" class="shuru" placeholder="短信验证码" />
+				</div>
+				<span id='send_code' class="send-code">发送验证码</span>
+				<div class="username-box">
+					<label for="password" class="password background"></label>
+					<input type="password" name="password" id="password" value="" class="shuru" placeholder="密码" />
+				</div>
+			</div>
+			<div id='reg' class="nav login-margin">
+				注册
+			</div>
+		</section>
+	</body>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/cache.js"></script>
+	<script src="../js/zs.js"></script>
+	<script src="../js/reg.js" type="text/javascript" charset="utf-8"></script>
+
+	<script type="text/javascript" charset="utf-8">
+		new zs.Init('Reg');
+	</script>
+
+</html>

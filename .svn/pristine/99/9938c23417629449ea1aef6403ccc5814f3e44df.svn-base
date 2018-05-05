@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>联系我们</title>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/contact_us.css"/>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav nav">
+		<span class="back mui-action-back background"></span>	
+		<h1 class="mui-title">联系我们</h1>
+	</header>
+	<div class="mui-content">
+		<div class="contact-img">
+			<img src="../images/us.png"/>
+		</div>
+		<ul class="contact-ul">
+			<li>客服电话<span class="mui-pull-right">400-001-7829</span></li>
+			<li>新浪微博<span class="mui-pull-right" data-href="http://weibo.com/zujimi">http://weibo.com/zujimi</span></li>
+			<li>腾讯微博<span class="mui-pull-right" data-href="http://t.qq.com/zujimi">http://t.qq.com/zujimi</span></li>
+			<li style="padding-left: 42px;margin-top: 1px;">联系QQ客户<span class="mui-pull-right">257556381</span></li>
+		</ul>
+	</div>
+</body>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/cache.js"></script>
+	<script src="../js/zs.js"></script>
+	<script type="text/javascript">
+		new zs.Init('User');
+	</script>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>通知助手</title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/Notification_list.css" />
+		<link rel="stylesheet" href="../css/whoCanSee.css" />
+		<style type="text/css">
+			.mui-media-body p {
+				margin-top: 0;				
+			}
+			.mui-media-body span{
+				display: inline-block;
+				color: #666;
+			}
+			.mui-table-view-cell>a:not(.mui-btn) {
+				padding: 8px 14px;
+			}
+			
+			.mui-table-view .mui-media-object {
+				margin-top: 8px;
+			}
+			.mui-ellipsis{
+				line-height: 16px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav nav">
+			<span class="back mui-action-back background"></span>
+			<h1 class="mui-title">通知助手</h1>
+			<span id="" class="background setting--right-icon"></span>
+		</header>
+		<div class="mui-content" id="notice_content">
+			<ul class="mui-table-view mui-media" id="location_notice">
+				
+			</ul>
+		</div>
+		<script src="../js/jquery-2.1.1.min.js"></script>
+		<!-- 加载语言包文件 -->
+		<script src="../js/jquery.i18n.properties-min-1.0.9.js"></script>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/cache.js"></script>
+		<script src="../js/functions.js"></script>
+		<script src="../js/zs.js"></script>
+		<script src="../js/zs.notice.js"></script>
+		<script src="../template/location_notice.min.js"></script>
+		<script src="../js/location_notice.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8">
+			new zs.Init('Location_Notice');
+		</script>
+	</body>
+
+</html>

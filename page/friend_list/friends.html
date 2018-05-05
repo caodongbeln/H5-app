@@ -1,0 +1,20 @@
+<div class="touxiang-list">
+	<div id="friend-list-box">
+		<ul id="friend-list" style="width: 100%;">
+			<li data-id='{{uid}}'>
+				<img src="../images/cover.png" data-src='{{user.cover}}' data-css='a50' style="width: 50px;height: 50px;"/>
+				<p class="mui-ellipsis absolute">我</p>
+				<p>{{user}}</p>
+			</li>
+			{{each friends}} {{if $value.is_show == 1}}
+			<li class="background" data-id='{{$value.fid}}'/>
+			<img src="../images/cover.png" data-src='{{$value.user.cover}}' data-css='a50' style="width: 50px;height: 50px;"/>
+			<p class="mui-ellipsis absolute">{{$value.username}}</p>
+			</li>
+			{{/if}} {{/each}}
+			<li class="" data-href='add_friend.html' data-view='add_friend'>
+				<img src="../images/add-people.png"  style="width: 50px;height: 50px;"/>
+			</li>
+		</ul>
+	</div>
+</div>

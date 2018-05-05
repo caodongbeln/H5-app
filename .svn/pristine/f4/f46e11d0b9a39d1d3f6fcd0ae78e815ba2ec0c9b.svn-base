@@ -1,0 +1,21 @@
+{{each list}}
+<li class="mui-table-view-cell border-bottom" >
+	<a class="mui-slider-handle">
+		<img class="mui-media-object mui-pull-left" {{if $value.type==1 }} src="../images/daoda.png" {{else}}src="../images/likai_03.png" {{/if}}>
+		<div class="mui-media-body font_14">
+			<span>{{$value.remindInfo.username}}</span><span style="margin-left: 20px;">{{if $value.type == 1}}到达{{else}}离开{{/if}}</span><span style="margin-left: 20px;">{{$value.remindInfo.addr}}</span>
+			<p class='mui-ellipsis'>{{$value.ctime}}</p>
+		</div>
+	</a>
+	<div class="mui-slider-right">
+		<a class="mui-btn" data-id='{{$value.id}}' data-type='{{$value.type}}' data-rid='{{$value.rid}}' data-receiver='{{$value.receiver}}'>
+				{{if $value.type == 1}}
+						{{if $value.rid > 0}}
+							<img src="../images/edit-icon.png" />
+						{{/if}}
+				{{else}}
+					<img src="../images/Shielding-icon.png" />
+				{{/if}}</a>
+	</div>
+</li>
+{{/each}}

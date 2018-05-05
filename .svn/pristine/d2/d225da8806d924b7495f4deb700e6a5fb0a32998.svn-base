@@ -1,0 +1,99 @@
+{{each list}} {{if $value.objectName == "RC:ImgMsg"}} {{if $value.senderUserId !== UserId}}
+<div class="msg-item" style="">
+	<i class="msg-user" style="padding: 0;width: 50px !important;height: 50px !important;display: inline-block;"><img src="../images/cover.png" data-src="{{$value.content.extra.cover}}" style="width: 100%;"/></i>
+	<div class="msg-content">
+		<div class="msg-content-inner">
+			<img class="msg-content-image" src="../images/cover.png" data-src ='{{$value.content.content}}' data-css='a50' style="max-width: 100px;" />
+		</div>
+		<div class="msg-content-arrow"></div>
+	</div>
+	<div class="mui-item-clear"></div>
+</div>
+{{else}}
+<div class="msg-item" style="">
+	<i class="msg-user float-right" style="padding: 0;width: 50px !important;height: 50px !important;display: inline-block;"><img src="../images/cover.png" data-src="{{$value.content.extra.cover}}" style="width: 100%;"/></i>
+	<div class="msg-content float-right">
+		<div class="msg-content-inner">
+			<img class="msg-content-image" src="../images/cover.png" data-src ='{{$value.content.content}}' data-css='a50' style="max-width: 100px;" />
+		</div>
+		<div class="right-5"></div>
+	</div>
+	<div class="mui-item-clear"></div>
+</div>
+{{/if}} {{else if $value.objectName == "RC:TxtMsg"}} {{if $value.senderUserId !== UserId}}
+<div class="msg-item" style="">
+	<i class="msg-user" style="padding: 0;width: 50px !important;height: 50px !important;display: inline-block;"><img src="../images/cover.png" data-src="{{$value.content.extra.cover}}" style="width: 100%;"/></i>
+	<div class="msg-content">
+		<div class="msg-content-inner">
+	{{$value.content.content}}
+		</div>
+		<div class="msg-content-arrow"></div>
+	</div>
+	<div class="mui-item-clear"></div>
+</div>
+{{else}}
+<div class="msg-item" style="">
+	<i class="msg-user float-right" style="padding: 0;width: 50px !important;height: 50px !important;display: inline-block;"><img src="../images/cover.png" data-src="{{$value.content.extra.cover}}" style="width: 100%;"/></i>
+	<div class="msg-content float-right">
+		<div class="msg-content-inner">
+			{{$value.content.content}}
+		</div>
+		<div class="right-5"></div>
+	</div>
+	<div class="mui-item-clear"></div>
+</div>
+{{/if}} {{else if $value.objectName == "s:CardMsg"}} {{if $value.senderUserId !== UserId}}
+<div class="msg-item" style="border: 1px solid red;padding-bottom: 0;">
+	<i class="msg-user" style="padding: 0;width: 50px !important;height: 50px !important;display: inline-block;"><img src="../images/cover.png" data-src="{{$value.content.cover}}" style="width: 100%;"/></i>
+	<div class="msg-content" style="background-color: #fff;min-width: 118px;padding-top: 0;">
+		<div class="msg-content-inner">
+			<p class="border-bottom font_12">名片</p>
+			<p style="margin-bottom: 0;">
+				<img src="../images/cover.png" data-src="{{$value.content.cover}}" data-css='a50' style="width: 40px;height: 40px;vertical-align: middle;" />
+				<span style="padding-left: 8px;" class="font_12 color_333">{{$value.content.username}}</span>
+			</p>
+		</div>
+		<div class="msg-content-arrow" style="background-color: #fff;border-color: #fff;"></div>
+	</div>
+	<div class="mui-item-clear"></div>
+</div>
+{{else}}
+<div class="msg-item" style="border: 1px solid red;padding-bottom: 0;">
+	<i class="msg-user float-right" style="padding: 0;width: 50px !important;height: 50px !important;display: inline-block;"><img src="../images/cover.png" data-src="{{$value.content.cover}}" style="width: 100%;"/></i>
+	<div class="msg-content float-right" style="background-color: #fff;min-width: 118px;padding-top: 0;">
+		<div class="msg-content-inner">
+			<p class="border-bottom font_12">名片</p>
+			<p style="margin-bottom: 0;">
+				<img src="../images/cover.png" data-src="{{$value.content.cover}}" data-css='a50' style="width: 40px;height: 40px;vertical-align: middle;" />
+				<span style="padding-left: 8px;" class="font_12 color_333">{{$value.content.username}}</span>
+			</p>
+		</div>
+		<div class="right-5" style="background-color: #fff;border-color: #fff;"></div>
+	</div>
+	<div class="mui-item-clear"></div>
+</div>
+{{/if}} {{else if $value.objectName == "RC:VcMsg"}} {{if $value.senderUserId !== UserId}}
+<div class="msg-item" style="border: 1px solid red;">
+	<i class="msg-user" style="padding: 0;width: 50px !important;height: 50px !important;display: inline-block;"><img src="../images/cover.png" style="width: 100%;"/></i>
+	<div class="msg-content">
+		<div class="msg-content-inner">
+			<span class="mui-icon mui-icon-mic" style="font-size: 18px;font-weight: bold;"></span>
+			<span class="play-state">点击播放</span>
+		</div>
+		<div class="msg-content-arrow"></div>
+	</div>
+	<div class="mui-item-clear"></div>
+</div>
+{{else}}
+<div class="msg-item" style="border: 1px solid red;">
+	<i class="msg-user float-right" style="padding: 0;width: 50px !important;height: 50px !important;display: inline-block;"><img src="../images/cover.png" style="width: 100%;"/></i>
+	<div class="msg-content float-right">
+		<div class="msg-content-inner">
+			<span class="mui-icon mui-icon-mic" style="font-size: 18px;font-weight: bold;"></span>
+			<span class="play-state">点击播放</span>
+		</div>
+		<div class="right-5"></div>
+	</div>
+	<div class="mui-item-clear"></div>
+</div>
+{{/if}} {{/if}} {{/each}}

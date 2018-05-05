@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>周边动态</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/my_dynamic.css" />
+		<link rel="stylesheet" href="../css/big_img.css" />
+		<link rel="stylesheet" type="text/css" href="../css/dynamic_biaoqing_box.css" />
+		<style type="text/css">
+			.biaoqing-icon {
+				width: 44px;
+				height: 44px;
+				background-image: url(../images/biaoqing-icon.png);
+				background-size: 60% 60%;
+				display: inline-block;
+				top: -10px;
+				right: 40px;
+			}
+			
+			.footer-dynamic-detail {
+				height: 45px;
+				padding-right: 10px;
+				padding-left: 10px;
+				padding-top: 10px;
+				background-color: #fff;
+				
+			}
+			
+			.fasong-pinglun {
+				width: 39px;
+				height: 23px;
+				background-color: #028CE6;
+				text-align: center;
+				top: 9px;
+				right: 11px;
+				z-index: 1000;
+			}
+			
+			.shurupinglun-box {
+				width: 100%;
+				padding-right: 40px;
+				height: 34px;
+			}
+			
+			.textarea {
+				margin-bottom: 0px;
+				padding: 0;
+				font-size: 14px;
+				border: none;
+				height: 28px;
+				min-height: 21px;
+				border-bottom: 1px solid #028CE6;
+				border-radius: 0;
+				padding-top: 5px;
+				padding-right: 44px;
+			}
+			.mui-bar-nav ~ .mui-content .mui-pull-top-pocket {
+				top: 30px !important;
+			}
+			#mui-content>.simplify-dynamic-box:first-child{
+				margin-top: 0 !important;
+			}
+			.xiaolouxiang-ji{
+				padding: 3px 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--下拉刷新容器-->
+		<div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<!--数据列表-->
+				<div class="mui-table-view mui-table-view-chevron releative" id="mui-content" style="background-color: transparent;">
+				</div>
+			</div>
+		</div>
+		
+			<!--
+            	作者：949961306@qq.com
+            	时间：2016-06-16
+            	描述：输入评论区
+            -->
+		<!--<footer class="none" id="footer" style="width: 100%;bottom: 0px;position: fixed;">
+			<div class="footer-dynamic-detail">
+
+				<div class="fasong-pinglun absolute color-fff font_14" id="send-msg">
+					发送
+				</div>
+				<div class="shurupinglun-box releative">
+					<div name="" rows="" cols="" placeholder="评论" class="textarea" contenteditable="true"></div>
+					<i class="biaoqing-icon absolute background" id="biaoqing-icon"></i>
+				</div>
+
+			</div>
+			<ul class="dynamic-biaoqing-box none" id="dynamic-biaoqing-box">
+				<li class="biaoqing-li">
+					<i><img src="../images/QQ20160621110159.png" alt="" /></i>
+				</li>
+				<li class="biaoqing-li">
+					<i><img src="../images/QQ20160621110159.png" alt="" /></i>
+				</li>
+				<li class="biaoqing-li">
+					<i><img src="QQ20160621110159.png" alt="" /></i>
+				</li>
+				<li class="biaoqing-li">
+					<i><img src="../images/QQ20160621110159.png" alt="" /></i>
+				</li>
+				<li class="biaoqing-li">
+					<i><img src="../images/QQ20160621110159.png" alt="" /></i>
+				</li>
+				<li class="biaoqing-li">
+					<i><img src="../images/QQ20160621110159.png" alt="" /></i>
+				</li>
+				<li class="biaoqing-li">
+					<i><img src="../images/QQ20160621110159.png" alt="" /></i>
+				</li>
+				<li class="biaoqing-li">
+					<i><img src="../images/QQ20160621110159.png" alt="" /></i>
+				</li>
+				<li class="biaoqing-li">
+					<i><img src="../images/QQ20160621110159.png" alt="" /></i>
+				</li>
+				<li class="biaoqing-li">
+					<i><img src="../images/QQ20160621110159.png" alt="" /></i>
+				</li>
+				<li class="biaoqing-li">
+					<i><img src="../images/QQ20160621110159.png" alt="" /></i>
+				</li>
+			</ul>
+
+		</footer>-->
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/cache.js"></script>
+		<script src="../js/zs.js"></script>
+		<script src="../js/functions.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/delArray.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../template/surrounding_dynamic.min.js"></script>
+		<script src="../js/surrounding_dynamic_dynamic.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8">
+			new zs.Init('SurroundingDynamicDynamic');
+		</script>
+	</body>
+
+</html>
